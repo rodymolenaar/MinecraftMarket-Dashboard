@@ -1,0 +1,7 @@
+@mixin alert($class, $bg: #eee, $color: #333){
+  .alert-#{$class} {
+    background: $bg;
+    border-color: $bg;
+    color: $color;
+  }
+}

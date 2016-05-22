@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MinecraftMarket</title>
+  <link href="dist/css/main.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">MinecraftMarket</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">View market</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">rodymol123 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Change market</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Billing</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="page-wrapper">
+    <div class="sidebar">
+      <div class="sidebar__top">
+        <div class="sidebar__top__plan">
+          <div class="sidebar__top__plan_details">
+            <div class="sidebar__top__plan__plan_name">
+              Premium
+            </div>
+            <div class="sidebar__top__plan__plan_duration">
+              Lifetime
+            </div>
+          </div>
+          <div class="sidebar__top__plan_actions">
+            <a href="#" class="sidebar__top__plan__action">
+              Plans
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__nav">
+        <div class="sidebar__nav__group">
+          <a href="#" class="sidebar__nav__item">
+            Dashboard
+          </a>
+        </div>
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">settings</div>
+          <a href="#" class="sidebar__nav__item sidebar__nav__item--active">General</a>
+          <div class="dropdown">
+            <a class="sidebar__nav__item" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
+            <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
+              <a href="#" class="sidebar__nav__dropdown-menu__item">Transactions</a>
+              <a href="#" class="sidebar__nav__dropdown-menu__item">Gateways</a>
+            </div>
+          </div>
+          <a href="#" class="sidebar__nav__item">Servers</a>
+          <a href="#" class="sidebar__nav__item">Design</a>
+        </div>
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">content</div>
+          <a href="#" class="sidebar__nav__item">Categories & items</a>
+          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="#" class="sidebar__nav__item">Variables</a>
+          <a href="#" class="sidebar__nav__item">Bans</a>
+          <a href="#" class="sidebar__nav__item">Discount codes</a>
+          <a href="#" class="sidebar__nav__item">Sales</a>
+        </div>
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">support</div>
+          <a href="#" class="sidebar__nav__item">Knowledge base</a>
+          <a href="#" class="sidebar__nav__item">Tickets</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="featurebar">
+        <div class="featurebar__heading">General settings</div>
+        <!-- <div class="featurebar__nav">
+        <a href="#" class="featurebar__nav__item featurebar__nav__item--active">Transactions</a>
+        <a href="#" class="featurebar__nav__item">Statistics</a>
+        <a href="#" class="featurebar__nav__item">Import / export</a>
+      </div> -->
+    </div>
+    <div class="container">
+      <div class="alert alert-danger text-center">As a thank you everybody who has supported us this far we are currently offering <b>Lifetime Premium</b> for £14.99, limited time only!</div>
+      <div class="row">
+        <div class="col-md-8">
+
+
+          <form id="generalform" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="csrfmiddlewaretoken" value="7BrU42DCGBNffux0vMYufWvDGezw6O1q">
+            <div class="panel panel-default">
+              <div class="panel-heading">rodymol123 general settings
+                <div class="pull-right"><a href="#">
+                  <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#deletemarket"><i class="fa fa-trash-o"></i> Delete
+                  </button>
+                </a></div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="deletemarket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                      <h4 class="modal-title" id="myModalLabel">Delete market</h4>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure you want to delete this market?
+                    </div>
+                    <div class="modal-footer">
+                      <a href="/controlpanel/market/delete/11875/">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                      </a>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <label>Name:
+                        <a href="#" data-toggle="popover" data-content="The name you want to call your market, for instance &quot;MinecraftMarket store&quot;." data-original-title="" title="">(?)</a>
+                      </label>
+                      <input class="form-control" id="id_marketName" name="marketName" placeholder="My new webstore" type="text" value="rodymol123">
+                    </div>
+                  </div>
+                </div>
+                <div class="bs-example bs-example-tabs">
+                  <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#desc" data-toggle="tab">Description</a></li>
+                    <li class=""><a href="#tos" data-toggle="tab">Terms and conditions</a></li>
+
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="desc">
+                      <div class="form-group">
+                        <div class="django-ckeditor-widget" data-field-id="id_marketDesc" style="display: inline-block;">
+                          <textarea class="form-control" cols="40" id="id_marketDesc" name="marketDesc" rows="10" data-processed="0" data-config="{&quot;language&quot;: &quot;en&quot;, &quot;toolbar_Basic&quot;: [[&quot;Source&quot;, &quot;-&quot;, &quot;Bold&quot;, &quot;Italic&quot;]], &quot;height&quot;: 300, &quot;width&quot;: 715, &quot;toolbar&quot;: &quot;Custom&quot;, &quot;filebrowserWindowWidth&quot;: 940, &quot;toolbar_Custom&quot;: [[&quot;Bold&quot;, &quot;Italic&quot;, &quot;Underline&quot;, &quot;Strike&quot;, &quot;Subscript&quot;, &quot;Superscript&quot;, &quot;-&quot;, &quot;RemoveFormat&quot;], [&quot;NumberedList&quot;, &quot;BulletedList&quot;, &quot;-&quot;, &quot;Outdent&quot;, &quot;Indent&quot;, &quot;-&quot;, &quot;Blockquote&quot;, &quot;-&quot;, &quot;JustifyLeft&quot;, &quot;JustifyCenter&quot;, &quot;JustifyRight&quot;, &quot;JustifyBlock&quot;, &quot;-&quot;, &quot;BidiLtr&quot;, &quot;BidiRtl&quot;], [&quot;Image&quot;, &quot;Table&quot;, &quot;HorizontalRule&quot;, &quot;Smiley&quot;, &quot;SpecialChar&quot;], [&quot;Link&quot;, &quot;Unlink&quot;, &quot;Anchor&quot;], [&quot;Styles&quot;, &quot;Format&quot;, &quot;Font&quot;, &quot;FontSize&quot;], [&quot;TextColor&quot;, &quot;BGColor&quot;], [&quot;Source&quot;], [&quot;Maximize&quot;]], &quot;toolbar_Full&quot;: [[&quot;Styles&quot;, &quot;Format&quot;, &quot;Bold&quot;, &quot;Italic&quot;, &quot;Underline&quot;, &quot;Strike&quot;, &quot;SpellChecker&quot;, &quot;Undo&quot;, &quot;Redo&quot;], [&quot;Link&quot;, &quot;Unlink&quot;, &quot;Anchor&quot;], [&quot;Image&quot;, &quot;Flash&quot;, &quot;Table&quot;, &quot;HorizontalRule&quot;], [&quot;TextColor&quot;, &quot;BGColor&quot;], [&quot;Smiley&quot;, &quot;SpecialChar&quot;], [&quot;Source&quot;]], &quot;skin&quot;: &quot;moono&quot;, &quot;filebrowserWindowHeight&quot;: 725}" data-external-plugin-resources="[]" data-id="id_marketDesc" data-type="ckeditortype" style="visibility: hidden; display: none;">&lt;p&gt;Welcome to your new market, we have already created a example category and items to give you a feeling of how your market could look once finished.&lt;/p&gt;</textarea><div id="cke_id_marketDesc" class="cke_1 cke cke_reset cke_chrome cke_editor_id_marketDesc cke_ltr cke_browser_webkit" dir="ltr" lang="en" role="application" aria-labelledby="cke_id_marketDesc_arialbl" style="width: 715px;"><span id="cke_id_marketDesc_arialbl" class="cke_voice_label">Rich Text Editor, id_marketDesc</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -webkit-user-select: none;"><span id="cke_14" class="cke_voice_label">Editor toolbars</span><span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_14" onmousedown="return false;"><span id="cke_19" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_20" class="cke_button cke_button__bold cke_button_off" href="javascript:void('Bold')" title="Bold" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_20_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(2,event);" onfocus="return CKEDITOR.tools.callFunction(3,event);" onclick="CKEDITOR.tools.callFunction(4,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -24px;background-size:auto;">&nbsp;</span><span id="cke_20_label" class="cke_button_label cke_button__bold_label" aria-hidden="false">Bold</span></a><a id="cke_21" class="cke_button cke_button__italic cke_button_off" href="javascript:void('Italic')" title="Italic" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_21_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(5,event);" onfocus="return CKEDITOR.tools.callFunction(6,event);" onclick="CKEDITOR.tools.callFunction(7,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -48px;background-size:auto;">&nbsp;</span><span id="cke_21_label" class="cke_button_label cke_button__italic_label" aria-hidden="false">Italic</span></a><a id="cke_22" class="cke_button cke_button__underline cke_button_off" href="javascript:void('Underline')" title="Underline" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_22_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(8,event);" onfocus="return CKEDITOR.tools.callFunction(9,event);" onclick="CKEDITOR.tools.callFunction(10,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -144px;background-size:auto;">&nbsp;</span><span id="cke_22_label" class="cke_button_label cke_button__underline_label" aria-hidden="false">Underline</span></a><a id="cke_23" class="cke_button cke_button__strike cke_button_off" href="javascript:void('Strikethrough')" title="Strikethrough" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_23_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(11,event);" onfocus="return CKEDITOR.tools.callFunction(12,event);" onclick="CKEDITOR.tools.callFunction(13,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -72px;background-size:auto;">&nbsp;</span><span id="cke_23_label" class="cke_button_label cke_button__strike_label" aria-hidden="false">Strikethrough</span></a><a id="cke_24" class="cke_button cke_button__subscript cke_button_off" href="javascript:void('Subscript')" title="Subscript" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_24_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(14,event);" onfocus="return CKEDITOR.tools.callFunction(15,event);" onclick="CKEDITOR.tools.callFunction(16,this);return false;"><span class="cke_button_icon cke_button__subscript_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -96px;background-size:auto;">&nbsp;</span><span id="cke_24_label" class="cke_button_label cke_button__subscript_label" aria-hidden="false">Subscript</span></a><a id="cke_25" class="cke_button cke_button__superscript cke_button_off" href="javascript:void('Superscript')" title="Superscript" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_25_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(17,event);" onfocus="return CKEDITOR.tools.callFunction(18,event);" onclick="CKEDITOR.tools.callFunction(19,this);return false;"><span class="cke_button_icon cke_button__superscript_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -120px;background-size:auto;">&nbsp;</span><span id="cke_25_label" class="cke_button_label cke_button__superscript_label" aria-hidden="false">Superscript</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_26" class="cke_button cke_button__removeformat cke_button_off" href="javascript:void('Remove Format')" title="Remove Format" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_26_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(20,event);" onfocus="return CKEDITOR.tools.callFunction(21,event);" onclick="CKEDITOR.tools.callFunction(22,this);return false;"><span class="cke_button_icon cke_button__removeformat_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1776px;background-size:auto;">&nbsp;</span><span id="cke_26_label" class="cke_button_label cke_button__removeformat_label" aria-hidden="false">Remove Format</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_27" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_28" class="cke_button cke_button__numberedlist cke_button_off" href="javascript:void('Insert/Remove Numbered List')" title="Insert/Remove Numbered List" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_28_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(23,event);" onfocus="return CKEDITOR.tools.callFunction(24,event);" onclick="CKEDITOR.tools.callFunction(25,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1416px;background-size:auto;">&nbsp;</span><span id="cke_28_label" class="cke_button_label cke_button__numberedlist_label" aria-hidden="false">Insert/Remove Numbered List</span></a><a id="cke_29" class="cke_button cke_button__bulletedlist cke_button_off" href="javascript:void('Insert/Remove Bulleted List')" title="Insert/Remove Bulleted List" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_29_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(26,event);" onfocus="return CKEDITOR.tools.callFunction(27,event);" onclick="CKEDITOR.tools.callFunction(28,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1368px;background-size:auto;">&nbsp;</span><span id="cke_29_label" class="cke_button_label cke_button__bulletedlist_label" aria-hidden="false">Insert/Remove Bulleted List</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_30" class="cke_button cke_button__outdent cke_button_disabled " href="javascript:void('Decrease Indent')" title="Decrease Indent" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_30_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(29,event);" onfocus="return CKEDITOR.tools.callFunction(30,event);" onclick="CKEDITOR.tools.callFunction(31,this);return false;"><span class="cke_button_icon cke_button__outdent_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1104px;background-size:auto;">&nbsp;</span><span id="cke_30_label" class="cke_button_label cke_button__outdent_label" aria-hidden="false">Decrease Indent</span></a><a id="cke_31" class="cke_button cke_button__indent cke_button_off" href="javascript:void('Increase Indent')" title="Increase Indent" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_31_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(32,event);" onfocus="return CKEDITOR.tools.callFunction(33,event);" onclick="CKEDITOR.tools.callFunction(34,this);return false;"><span class="cke_button_icon cke_button__indent_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1056px;background-size:auto;">&nbsp;</span><span id="cke_31_label" class="cke_button_label cke_button__indent_label" aria-hidden="false">Increase Indent</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_32" class="cke_button cke_button__blockquote cke_button_off" href="javascript:void('Block Quote')" title="Block Quote" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_32_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(35,event);" onfocus="return CKEDITOR.tools.callFunction(36,event);" onclick="CKEDITOR.tools.callFunction(37,this);return false;"><span class="cke_button_icon cke_button__blockquote_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -216px;background-size:auto;">&nbsp;</span><span id="cke_32_label" class="cke_button_label cke_button__blockquote_label" aria-hidden="false">Block Quote</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_33" class="cke_button cke_button__justifyleft cke_button_off" href="javascript:void('Align Left')" title="Align Left" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_33_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(38,event);" onfocus="return CKEDITOR.tools.callFunction(39,event);" onclick="CKEDITOR.tools.callFunction(40,this);return false;"><span class="cke_button_icon cke_button__justifyleft_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1176px;background-size:auto;">&nbsp;</span><span id="cke_33_label" class="cke_button_label cke_button__justifyleft_label" aria-hidden="false">Align Left</span></a><a id="cke_34" class="cke_button cke_button__justifycenter cke_button_off" href="javascript:void('Center')" title="Center" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_34_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(41,event);" onfocus="return CKEDITOR.tools.callFunction(42,event);" onclick="CKEDITOR.tools.callFunction(43,this);return false;"><span class="cke_button_icon cke_button__justifycenter_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1152px;background-size:auto;">&nbsp;</span><span id="cke_34_label" class="cke_button_label cke_button__justifycenter_label" aria-hidden="false">Center</span></a><a id="cke_35" class="cke_button cke_button__justifyright cke_button_off" href="javascript:void('Align Right')" title="Align Right" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_35_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(44,event);" onfocus="return CKEDITOR.tools.callFunction(45,event);" onclick="CKEDITOR.tools.callFunction(46,this);return false;"><span class="cke_button_icon cke_button__justifyright_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1200px;background-size:auto;">&nbsp;</span><span id="cke_35_label" class="cke_button_label cke_button__justifyright_label" aria-hidden="false">Align Right</span></a><a id="cke_36" class="cke_button cke_button__justifyblock cke_button_off" href="javascript:void('Justify')" title="Justify" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_36_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(47,event);" onfocus="return CKEDITOR.tools.callFunction(48,event);" onclick="CKEDITOR.tools.callFunction(49,this);return false;"><span class="cke_button_icon cke_button__justifyblock_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1128px;background-size:auto;">&nbsp;</span><span id="cke_36_label" class="cke_button_label cke_button__justifyblock_label" aria-hidden="false">Justify</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_37" class="cke_button cke_button__bidiltr cke_button_off" href="javascript:void('Text direction from left to right')" title="Text direction from left to right" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_37_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(50,event);" onfocus="return CKEDITOR.tools.callFunction(51,event);" onclick="CKEDITOR.tools.callFunction(52,this);return false;"><span class="cke_button_icon cke_button__bidiltr_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -168px;background-size:auto;">&nbsp;</span><span id="cke_37_label" class="cke_button_label cke_button__bidiltr_label" aria-hidden="false">Text direction from left to right</span></a><a id="cke_38" class="cke_button cke_button__bidirtl cke_button_off" href="javascript:void('Text direction from right to left')" title="Text direction from right to left" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_38_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(53,event);" onfocus="return CKEDITOR.tools.callFunction(54,event);" onclick="CKEDITOR.tools.callFunction(55,this);return false;"><span class="cke_button_icon cke_button__bidirtl_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -192px;background-size:auto;">&nbsp;</span><span id="cke_38_label" class="cke_button_label cke_button__bidirtl_label" aria-hidden="false">Text direction from right to left</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_39" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_40" class="cke_button cke_button__image cke_button_off" href="javascript:void('Image')" title="Image" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_40_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(56,event);" onfocus="return CKEDITOR.tools.callFunction(57,event);" onclick="CKEDITOR.tools.callFunction(58,this);return false;"><span class="cke_button_icon cke_button__image_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1008px;background-size:auto;">&nbsp;</span><span id="cke_40_label" class="cke_button_label cke_button__image_label" aria-hidden="false">Image</span></a><a id="cke_41" class="cke_button cke_button__table cke_button_off" href="javascript:void('Table')" title="Table" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_41_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(59,event);" onfocus="return CKEDITOR.tools.callFunction(60,event);" onclick="CKEDITOR.tools.callFunction(61,this);return false;"><span class="cke_button_icon cke_button__table_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -2040px;background-size:auto;">&nbsp;</span><span id="cke_41_label" class="cke_button_label cke_button__table_label" aria-hidden="false">Table</span></a><a id="cke_42" class="cke_button cke_button__horizontalrule cke_button_off" href="javascript:void('Insert Horizontal Line')" title="Insert Horizontal Line" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_42_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(62,event);" onfocus="return CKEDITOR.tools.callFunction(63,event);" onclick="CKEDITOR.tools.callFunction(64,this);return false;"><span class="cke_button_icon cke_button__horizontalrule_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -960px;background-size:auto;">&nbsp;</span><span id="cke_42_label" class="cke_button_label cke_button__horizontalrule_label" aria-hidden="false">Insert Horizontal Line</span></a><a id="cke_43" class="cke_button cke_button__smiley cke_button_off" href="javascript:void('Smiley')" title="Smiley" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_43_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(65,event);" onfocus="return CKEDITOR.tools.callFunction(66,event);" onclick="CKEDITOR.tools.callFunction(67,this);return false;"><span class="cke_button_icon cke_button__smiley_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1896px;background-size:auto;">&nbsp;</span><span id="cke_43_label" class="cke_button_label cke_button__smiley_label" aria-hidden="false">Smiley</span></a><a id="cke_44" class="cke_button cke_button__specialchar cke_button_off" href="javascript:void('Insert Special Character')" title="Insert Special Character" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_44_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(68,event);" onfocus="return CKEDITOR.tools.callFunction(69,event);" onclick="CKEDITOR.tools.callFunction(70,this);return false;"><span class="cke_button_icon cke_button__specialchar_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -2016px;background-size:auto;">&nbsp;</span><span id="cke_44_label" class="cke_button_label cke_button__specialchar_label" aria-hidden="false">Insert Special Character</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_45" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_46" class="cke_button cke_button__link cke_button_off" href="javascript:void('Link')" title="Link" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_46_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(71,event);" onfocus="return CKEDITOR.tools.callFunction(72,event);" onclick="CKEDITOR.tools.callFunction(73,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1296px;background-size:auto;">&nbsp;</span><span id="cke_46_label" class="cke_button_label cke_button__link_label" aria-hidden="false">Link</span></a><a id="cke_47" class="cke_button cke_button__unlink cke_button_disabled " href="javascript:void('Unlink')" title="Unlink" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_47_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(74,event);" onfocus="return CKEDITOR.tools.callFunction(75,event);" onclick="CKEDITOR.tools.callFunction(76,this);return false;"><span class="cke_button_icon cke_button__unlink_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1320px;background-size:auto;">&nbsp;</span><span id="cke_47_label" class="cke_button_label cke_button__unlink_label" aria-hidden="false">Unlink</span></a><a id="cke_48" class="cke_button cke_button__anchor cke_button_off" href="javascript:void('Anchor')" title="Anchor" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_48_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(77,event);" onfocus="return CKEDITOR.tools.callFunction(78,event);" onclick="CKEDITOR.tools.callFunction(79,this);return false;"><span class="cke_button_icon cke_button__anchor_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1272px;background-size:auto;">&nbsp;</span><span id="cke_48_label" class="cke_button_label cke_button__anchor_label" aria-hidden="false">Anchor</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_49" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span id="cke_15" class="cke_combo cke_combo__styles cke_combo_off" role="presentation"><span id="cke_15_label" class="cke_combo_label">Styles</span><a class="cke_combo_button" title="Formatting Styles" tabindex="-1" href="javascript:void('Formatting Styles')" hidefocus="true" role="button" aria-labelledby="cke_15_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(81,event,this);" onfocus="return CKEDITOR.tools.callFunction(82,event);" onclick="CKEDITOR.tools.callFunction(80,this);return false;"><span id="cke_15_text" class="cke_combo_text cke_combo_inlinelabel">Styles</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_16" class="cke_combo cke_combo__format cke_combo_off" role="presentation"><span id="cke_16_label" class="cke_combo_label">Format</span><a class="cke_combo_button" title="Paragraph Format" tabindex="-1" href="javascript:void('Paragraph Format')" hidefocus="true" role="button" aria-labelledby="cke_16_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(84,event,this);" onfocus="return CKEDITOR.tools.callFunction(85,event);" onclick="CKEDITOR.tools.callFunction(83,this);return false;"><span id="cke_16_text" class="cke_combo_text cke_combo_inlinelabel">Format</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_17" class="cke_combo cke_combo__font cke_combo_off" role="presentation"><span id="cke_17_label" class="cke_combo_label">Font</span><a class="cke_combo_button" title="Font Name" tabindex="-1" href="javascript:void('Font Name')" hidefocus="true" role="button" aria-labelledby="cke_17_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(87,event,this);" onfocus="return CKEDITOR.tools.callFunction(88,event);" onclick="CKEDITOR.tools.callFunction(86,this);return false;"><span id="cke_17_text" class="cke_combo_text cke_combo_inlinelabel">Font</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_18" class="cke_combo cke_combo__fontsize cke_combo_off" role="presentation"><span id="cke_18_label" class="cke_combo_label">Size</span><a class="cke_combo_button" title="Font Size" tabindex="-1" href="javascript:void('Font Size')" hidefocus="true" role="button" aria-labelledby="cke_18_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(90,event,this);" onfocus="return CKEDITOR.tools.callFunction(91,event);" onclick="CKEDITOR.tools.callFunction(89,this);return false;"><span id="cke_18_text" class="cke_combo_text cke_combo_inlinelabel">Size</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_50" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_51" class="cke_button cke_button__textcolor cke_button_off " href="javascript:void('Text Color')" title="Text Color" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_51_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(92,event);" onfocus="return CKEDITOR.tools.callFunction(93,event);" onclick="CKEDITOR.tools.callFunction(94,this);return false;"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -432px;background-size:auto;">&nbsp;</span><span id="cke_51_label" class="cke_button_label cke_button__textcolor_label" aria-hidden="false">Text Color</span><span class="cke_button_arrow"></span></a><a id="cke_52" class="cke_button cke_button__bgcolor cke_button_off " href="javascript:void('Background Color')" title="Background Color" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_52_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(95,event);" onfocus="return CKEDITOR.tools.callFunction(96,event);" onclick="CKEDITOR.tools.callFunction(97,this);return false;"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -408px;background-size:auto;">&nbsp;</span><span id="cke_52_label" class="cke_button_label cke_button__bgcolor_label" aria-hidden="false">Background Color</span><span class="cke_button_arrow"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_53" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_54" class="cke_button cke_button__source cke_button_off" href="javascript:void('Source')" title="Source" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_54_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(98,event);" onfocus="return CKEDITOR.tools.callFunction(99,event);" onclick="CKEDITOR.tools.callFunction(100,this);return false;"><span class="cke_button_icon cke_button__source_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1944px;background-size:auto;">&nbsp;</span><span id="cke_54_label" class="cke_button_label cke_button__source_label" aria-hidden="false">Source</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_55" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_56" class="cke_button cke_button__maximize cke_button_off" href="javascript:void('Maximize')" title="Maximize" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_56_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(101,event);" onfocus="return CKEDITOR.tools.callFunction(102,event);" onclick="CKEDITOR.tools.callFunction(103,this);return false;"><span class="cke_button_icon cke_button__maximize_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1464px;background-size:auto;">&nbsp;</span><span id="cke_56_label" class="cke_button_label cke_button__maximize_label" aria-hidden="false">Maximize</span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_1_contents" class="cke_contents cke_reset" role="presentation" style="height: 300px;"><span id="cke_61" class="cke_voice_label">Press ALT 0 for help</span><iframe src="" frameborder="0" class="cke_wysiwyg_frame cke_reset" style="width: 100%; height: 100%;" title="Rich Text Editor, id_marketDesc" aria-describedby="cke_61" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_1_bottom" class="cke_bottom cke_reset_all" role="presentation" style="-webkit-user-select: none;"><span id="cke_1_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Resize" onmousedown="CKEDITOR.tools.callFunction(1, event)">◢</span><span id="cke_1_path_label" class="cke_voice_label">Elements path</span><span id="cke_1_path" class="cke_path" role="group" aria-labelledby="cke_1_path_label"><span class="cke_path_empty">&nbsp;</span></span></span></div></div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="tos">
+                      <div class="form-group">
+                        <div class="django-ckeditor-widget" data-field-id="id_TOS" style="display: inline-block;">
+                          <textarea class="form-control" cols="40" id="id_TOS" name="TOS" rows="10" data-processed="0" data-config="{&quot;language&quot;: &quot;en&quot;, &quot;toolbar_Basic&quot;: [[&quot;Source&quot;, &quot;-&quot;, &quot;Bold&quot;, &quot;Italic&quot;]], &quot;height&quot;: 300, &quot;width&quot;: 715, &quot;toolbar&quot;: &quot;Custom&quot;, &quot;filebrowserWindowWidth&quot;: 940, &quot;toolbar_Custom&quot;: [[&quot;Bold&quot;, &quot;Italic&quot;, &quot;Underline&quot;, &quot;Strike&quot;, &quot;Subscript&quot;, &quot;Superscript&quot;, &quot;-&quot;, &quot;RemoveFormat&quot;], [&quot;NumberedList&quot;, &quot;BulletedList&quot;, &quot;-&quot;, &quot;Outdent&quot;, &quot;Indent&quot;, &quot;-&quot;, &quot;Blockquote&quot;, &quot;-&quot;, &quot;JustifyLeft&quot;, &quot;JustifyCenter&quot;, &quot;JustifyRight&quot;, &quot;JustifyBlock&quot;, &quot;-&quot;, &quot;BidiLtr&quot;, &quot;BidiRtl&quot;], [&quot;Image&quot;, &quot;Table&quot;, &quot;HorizontalRule&quot;, &quot;Smiley&quot;, &quot;SpecialChar&quot;], [&quot;Link&quot;, &quot;Unlink&quot;, &quot;Anchor&quot;], [&quot;Styles&quot;, &quot;Format&quot;, &quot;Font&quot;, &quot;FontSize&quot;], [&quot;TextColor&quot;, &quot;BGColor&quot;], [&quot;Source&quot;], [&quot;Maximize&quot;]], &quot;toolbar_Full&quot;: [[&quot;Styles&quot;, &quot;Format&quot;, &quot;Bold&quot;, &quot;Italic&quot;, &quot;Underline&quot;, &quot;Strike&quot;, &quot;SpellChecker&quot;, &quot;Undo&quot;, &quot;Redo&quot;], [&quot;Link&quot;, &quot;Unlink&quot;, &quot;Anchor&quot;], [&quot;Image&quot;, &quot;Flash&quot;, &quot;Table&quot;, &quot;HorizontalRule&quot;], [&quot;TextColor&quot;, &quot;BGColor&quot;], [&quot;Smiley&quot;, &quot;SpecialChar&quot;], [&quot;Source&quot;]], &quot;skin&quot;: &quot;moono&quot;, &quot;filebrowserWindowHeight&quot;: 725}" data-external-plugin-resources="[]" data-id="id_TOS" data-type="ckeditortype" style="visibility: hidden; display: none;"></textarea><div id="cke_id_TOS" class="cke_2 cke cke_reset cke_chrome cke_editor_id_TOS cke_ltr cke_browser_webkit" dir="ltr" lang="en" role="application" aria-labelledby="cke_id_TOS_arialbl" style="width: 715px;"><span id="cke_id_TOS_arialbl" class="cke_voice_label">Rich Text Editor, id_TOS</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_2_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -webkit-user-select: none;"><span id="cke_70" class="cke_voice_label">Editor toolbars</span><span id="cke_2_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_70" onmousedown="return false;"><span id="cke_75" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_76" class="cke_button cke_button__bold cke_button_off" href="javascript:void('Bold')" title="Bold" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_76_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(109,event);" onfocus="return CKEDITOR.tools.callFunction(110,event);" onclick="CKEDITOR.tools.callFunction(111,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -24px;background-size:auto;">&nbsp;</span><span id="cke_76_label" class="cke_button_label cke_button__bold_label" aria-hidden="false">Bold</span></a><a id="cke_77" class="cke_button cke_button__italic cke_button_off" href="javascript:void('Italic')" title="Italic" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_77_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(112,event);" onfocus="return CKEDITOR.tools.callFunction(113,event);" onclick="CKEDITOR.tools.callFunction(114,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -48px;background-size:auto;">&nbsp;</span><span id="cke_77_label" class="cke_button_label cke_button__italic_label" aria-hidden="false">Italic</span></a><a id="cke_78" class="cke_button cke_button__underline cke_button_off" href="javascript:void('Underline')" title="Underline" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_78_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(115,event);" onfocus="return CKEDITOR.tools.callFunction(116,event);" onclick="CKEDITOR.tools.callFunction(117,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -144px;background-size:auto;">&nbsp;</span><span id="cke_78_label" class="cke_button_label cke_button__underline_label" aria-hidden="false">Underline</span></a><a id="cke_79" class="cke_button cke_button__strike cke_button_off" href="javascript:void('Strikethrough')" title="Strikethrough" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_79_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(118,event);" onfocus="return CKEDITOR.tools.callFunction(119,event);" onclick="CKEDITOR.tools.callFunction(120,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -72px;background-size:auto;">&nbsp;</span><span id="cke_79_label" class="cke_button_label cke_button__strike_label" aria-hidden="false">Strikethrough</span></a><a id="cke_80" class="cke_button cke_button__subscript cke_button_off" href="javascript:void('Subscript')" title="Subscript" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_80_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(121,event);" onfocus="return CKEDITOR.tools.callFunction(122,event);" onclick="CKEDITOR.tools.callFunction(123,this);return false;"><span class="cke_button_icon cke_button__subscript_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -96px;background-size:auto;">&nbsp;</span><span id="cke_80_label" class="cke_button_label cke_button__subscript_label" aria-hidden="false">Subscript</span></a><a id="cke_81" class="cke_button cke_button__superscript cke_button_off" href="javascript:void('Superscript')" title="Superscript" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_81_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(124,event);" onfocus="return CKEDITOR.tools.callFunction(125,event);" onclick="CKEDITOR.tools.callFunction(126,this);return false;"><span class="cke_button_icon cke_button__superscript_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -120px;background-size:auto;">&nbsp;</span><span id="cke_81_label" class="cke_button_label cke_button__superscript_label" aria-hidden="false">Superscript</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_82" class="cke_button cke_button__removeformat cke_button_off" href="javascript:void('Remove Format')" title="Remove Format" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_82_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(127,event);" onfocus="return CKEDITOR.tools.callFunction(128,event);" onclick="CKEDITOR.tools.callFunction(129,this);return false;"><span class="cke_button_icon cke_button__removeformat_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1776px;background-size:auto;">&nbsp;</span><span id="cke_82_label" class="cke_button_label cke_button__removeformat_label" aria-hidden="false">Remove Format</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_83" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_84" class="cke_button cke_button__numberedlist cke_button_off" href="javascript:void('Insert/Remove Numbered List')" title="Insert/Remove Numbered List" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_84_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(130,event);" onfocus="return CKEDITOR.tools.callFunction(131,event);" onclick="CKEDITOR.tools.callFunction(132,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1416px;background-size:auto;">&nbsp;</span><span id="cke_84_label" class="cke_button_label cke_button__numberedlist_label" aria-hidden="false">Insert/Remove Numbered List</span></a><a id="cke_85" class="cke_button cke_button__bulletedlist cke_button_off" href="javascript:void('Insert/Remove Bulleted List')" title="Insert/Remove Bulleted List" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_85_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(133,event);" onfocus="return CKEDITOR.tools.callFunction(134,event);" onclick="CKEDITOR.tools.callFunction(135,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1368px;background-size:auto;">&nbsp;</span><span id="cke_85_label" class="cke_button_label cke_button__bulletedlist_label" aria-hidden="false">Insert/Remove Bulleted List</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_86" class="cke_button cke_button__outdent cke_button_disabled " href="javascript:void('Decrease Indent')" title="Decrease Indent" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_86_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(136,event);" onfocus="return CKEDITOR.tools.callFunction(137,event);" onclick="CKEDITOR.tools.callFunction(138,this);return false;"><span class="cke_button_icon cke_button__outdent_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1104px;background-size:auto;">&nbsp;</span><span id="cke_86_label" class="cke_button_label cke_button__outdent_label" aria-hidden="false">Decrease Indent</span></a><a id="cke_87" class="cke_button cke_button__indent cke_button_off" href="javascript:void('Increase Indent')" title="Increase Indent" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_87_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(139,event);" onfocus="return CKEDITOR.tools.callFunction(140,event);" onclick="CKEDITOR.tools.callFunction(141,this);return false;"><span class="cke_button_icon cke_button__indent_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1056px;background-size:auto;">&nbsp;</span><span id="cke_87_label" class="cke_button_label cke_button__indent_label" aria-hidden="false">Increase Indent</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_88" class="cke_button cke_button__blockquote cke_button_off" href="javascript:void('Block Quote')" title="Block Quote" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_88_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(142,event);" onfocus="return CKEDITOR.tools.callFunction(143,event);" onclick="CKEDITOR.tools.callFunction(144,this);return false;"><span class="cke_button_icon cke_button__blockquote_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -216px;background-size:auto;">&nbsp;</span><span id="cke_88_label" class="cke_button_label cke_button__blockquote_label" aria-hidden="false">Block Quote</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_89" class="cke_button cke_button__justifyleft cke_button_off" href="javascript:void('Align Left')" title="Align Left" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_89_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(145,event);" onfocus="return CKEDITOR.tools.callFunction(146,event);" onclick="CKEDITOR.tools.callFunction(147,this);return false;"><span class="cke_button_icon cke_button__justifyleft_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1176px;background-size:auto;">&nbsp;</span><span id="cke_89_label" class="cke_button_label cke_button__justifyleft_label" aria-hidden="false">Align Left</span></a><a id="cke_90" class="cke_button cke_button__justifycenter cke_button_off" href="javascript:void('Center')" title="Center" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_90_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(148,event);" onfocus="return CKEDITOR.tools.callFunction(149,event);" onclick="CKEDITOR.tools.callFunction(150,this);return false;"><span class="cke_button_icon cke_button__justifycenter_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1152px;background-size:auto;">&nbsp;</span><span id="cke_90_label" class="cke_button_label cke_button__justifycenter_label" aria-hidden="false">Center</span></a><a id="cke_91" class="cke_button cke_button__justifyright cke_button_off" href="javascript:void('Align Right')" title="Align Right" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_91_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(151,event);" onfocus="return CKEDITOR.tools.callFunction(152,event);" onclick="CKEDITOR.tools.callFunction(153,this);return false;"><span class="cke_button_icon cke_button__justifyright_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1200px;background-size:auto;">&nbsp;</span><span id="cke_91_label" class="cke_button_label cke_button__justifyright_label" aria-hidden="false">Align Right</span></a><a id="cke_92" class="cke_button cke_button__justifyblock cke_button_off" href="javascript:void('Justify')" title="Justify" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_92_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(154,event);" onfocus="return CKEDITOR.tools.callFunction(155,event);" onclick="CKEDITOR.tools.callFunction(156,this);return false;"><span class="cke_button_icon cke_button__justifyblock_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1128px;background-size:auto;">&nbsp;</span><span id="cke_92_label" class="cke_button_label cke_button__justifyblock_label" aria-hidden="false">Justify</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_93" class="cke_button cke_button__bidiltr cke_button_off" href="javascript:void('Text direction from left to right')" title="Text direction from left to right" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_93_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(157,event);" onfocus="return CKEDITOR.tools.callFunction(158,event);" onclick="CKEDITOR.tools.callFunction(159,this);return false;"><span class="cke_button_icon cke_button__bidiltr_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -168px;background-size:auto;">&nbsp;</span><span id="cke_93_label" class="cke_button_label cke_button__bidiltr_label" aria-hidden="false">Text direction from left to right</span></a><a id="cke_94" class="cke_button cke_button__bidirtl cke_button_off" href="javascript:void('Text direction from right to left')" title="Text direction from right to left" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_94_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(160,event);" onfocus="return CKEDITOR.tools.callFunction(161,event);" onclick="CKEDITOR.tools.callFunction(162,this);return false;"><span class="cke_button_icon cke_button__bidirtl_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -192px;background-size:auto;">&nbsp;</span><span id="cke_94_label" class="cke_button_label cke_button__bidirtl_label" aria-hidden="false">Text direction from right to left</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_95" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_96" class="cke_button cke_button__image cke_button_off" href="javascript:void('Image')" title="Image" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_96_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(163,event);" onfocus="return CKEDITOR.tools.callFunction(164,event);" onclick="CKEDITOR.tools.callFunction(165,this);return false;"><span class="cke_button_icon cke_button__image_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1008px;background-size:auto;">&nbsp;</span><span id="cke_96_label" class="cke_button_label cke_button__image_label" aria-hidden="false">Image</span></a><a id="cke_97" class="cke_button cke_button__table cke_button_off" href="javascript:void('Table')" title="Table" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_97_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(166,event);" onfocus="return CKEDITOR.tools.callFunction(167,event);" onclick="CKEDITOR.tools.callFunction(168,this);return false;"><span class="cke_button_icon cke_button__table_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -2040px;background-size:auto;">&nbsp;</span><span id="cke_97_label" class="cke_button_label cke_button__table_label" aria-hidden="false">Table</span></a><a id="cke_98" class="cke_button cke_button__horizontalrule cke_button_off" href="javascript:void('Insert Horizontal Line')" title="Insert Horizontal Line" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_98_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(169,event);" onfocus="return CKEDITOR.tools.callFunction(170,event);" onclick="CKEDITOR.tools.callFunction(171,this);return false;"><span class="cke_button_icon cke_button__horizontalrule_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -960px;background-size:auto;">&nbsp;</span><span id="cke_98_label" class="cke_button_label cke_button__horizontalrule_label" aria-hidden="false">Insert Horizontal Line</span></a><a id="cke_99" class="cke_button cke_button__smiley cke_button_off" href="javascript:void('Smiley')" title="Smiley" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_99_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(172,event);" onfocus="return CKEDITOR.tools.callFunction(173,event);" onclick="CKEDITOR.tools.callFunction(174,this);return false;"><span class="cke_button_icon cke_button__smiley_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1896px;background-size:auto;">&nbsp;</span><span id="cke_99_label" class="cke_button_label cke_button__smiley_label" aria-hidden="false">Smiley</span></a><a id="cke_100" class="cke_button cke_button__specialchar cke_button_off" href="javascript:void('Insert Special Character')" title="Insert Special Character" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_100_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(175,event);" onfocus="return CKEDITOR.tools.callFunction(176,event);" onclick="CKEDITOR.tools.callFunction(177,this);return false;"><span class="cke_button_icon cke_button__specialchar_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -2016px;background-size:auto;">&nbsp;</span><span id="cke_100_label" class="cke_button_label cke_button__specialchar_label" aria-hidden="false">Insert Special Character</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_101" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_102" class="cke_button cke_button__link cke_button_off" href="javascript:void('Link')" title="Link" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_102_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(178,event);" onfocus="return CKEDITOR.tools.callFunction(179,event);" onclick="CKEDITOR.tools.callFunction(180,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1296px;background-size:auto;">&nbsp;</span><span id="cke_102_label" class="cke_button_label cke_button__link_label" aria-hidden="false">Link</span></a><a id="cke_103" class="cke_button cke_button__unlink cke_button_disabled " href="javascript:void('Unlink')" title="Unlink" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_103_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(181,event);" onfocus="return CKEDITOR.tools.callFunction(182,event);" onclick="CKEDITOR.tools.callFunction(183,this);return false;"><span class="cke_button_icon cke_button__unlink_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1320px;background-size:auto;">&nbsp;</span><span id="cke_103_label" class="cke_button_label cke_button__unlink_label" aria-hidden="false">Unlink</span></a><a id="cke_104" class="cke_button cke_button__anchor cke_button_off" href="javascript:void('Anchor')" title="Anchor" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_104_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(184,event);" onfocus="return CKEDITOR.tools.callFunction(185,event);" onclick="CKEDITOR.tools.callFunction(186,this);return false;"><span class="cke_button_icon cke_button__anchor_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1272px;background-size:auto;">&nbsp;</span><span id="cke_104_label" class="cke_button_label cke_button__anchor_label" aria-hidden="false">Anchor</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_105" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span id="cke_71" class="cke_combo cke_combo__styles cke_combo_off" role="presentation"><span id="cke_71_label" class="cke_combo_label">Styles</span><a class="cke_combo_button" title="Formatting Styles" tabindex="-1" href="javascript:void('Formatting Styles')" hidefocus="true" role="button" aria-labelledby="cke_71_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(188,event,this);" onfocus="return CKEDITOR.tools.callFunction(189,event);" onclick="CKEDITOR.tools.callFunction(187,this);return false;"><span id="cke_71_text" class="cke_combo_text cke_combo_inlinelabel">Styles</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_72" class="cke_combo cke_combo__format cke_combo_off" role="presentation"><span id="cke_72_label" class="cke_combo_label">Format</span><a class="cke_combo_button" title="Paragraph Format" tabindex="-1" href="javascript:void('Paragraph Format')" hidefocus="true" role="button" aria-labelledby="cke_72_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(191,event,this);" onfocus="return CKEDITOR.tools.callFunction(192,event);" onclick="CKEDITOR.tools.callFunction(190,this);return false;"><span id="cke_72_text" class="cke_combo_text cke_combo_inlinelabel">Format</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_73" class="cke_combo cke_combo__font cke_combo_off" role="presentation"><span id="cke_73_label" class="cke_combo_label">Font</span><a class="cke_combo_button" title="Font Name" tabindex="-1" href="javascript:void('Font Name')" hidefocus="true" role="button" aria-labelledby="cke_73_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(194,event,this);" onfocus="return CKEDITOR.tools.callFunction(195,event);" onclick="CKEDITOR.tools.callFunction(193,this);return false;"><span id="cke_73_text" class="cke_combo_text cke_combo_inlinelabel">Font</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_74" class="cke_combo cke_combo__fontsize cke_combo_off" role="presentation"><span id="cke_74_label" class="cke_combo_label">Size</span><a class="cke_combo_button" title="Font Size" tabindex="-1" href="javascript:void('Font Size')" hidefocus="true" role="button" aria-labelledby="cke_74_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(197,event,this);" onfocus="return CKEDITOR.tools.callFunction(198,event);" onclick="CKEDITOR.tools.callFunction(196,this);return false;"><span id="cke_74_text" class="cke_combo_text cke_combo_inlinelabel">Size</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_106" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_107" class="cke_button cke_button__textcolor cke_button_off " href="javascript:void('Text Color')" title="Text Color" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_107_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(199,event);" onfocus="return CKEDITOR.tools.callFunction(200,event);" onclick="CKEDITOR.tools.callFunction(201,this);return false;"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -432px;background-size:auto;">&nbsp;</span><span id="cke_107_label" class="cke_button_label cke_button__textcolor_label" aria-hidden="false">Text Color</span><span class="cke_button_arrow"></span></a><a id="cke_108" class="cke_button cke_button__bgcolor cke_button_off " href="javascript:void('Background Color')" title="Background Color" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_108_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(202,event);" onfocus="return CKEDITOR.tools.callFunction(203,event);" onclick="CKEDITOR.tools.callFunction(204,this);return false;"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -408px;background-size:auto;">&nbsp;</span><span id="cke_108_label" class="cke_button_label cke_button__bgcolor_label" aria-hidden="false">Background Color</span><span class="cke_button_arrow"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_109" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_110" class="cke_button cke_button__source cke_button_off" href="javascript:void('Source')" title="Source" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_110_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(205,event);" onfocus="return CKEDITOR.tools.callFunction(206,event);" onclick="CKEDITOR.tools.callFunction(207,this);return false;"><span class="cke_button_icon cke_button__source_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1944px;background-size:auto;">&nbsp;</span><span id="cke_110_label" class="cke_button_label cke_button__source_label" aria-hidden="false">Source</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_111" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_112" class="cke_button cke_button__maximize cke_button_off" href="javascript:void('Maximize')" title="Maximize" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_112_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(208,event);" onfocus="return CKEDITOR.tools.callFunction(209,event);" onclick="CKEDITOR.tools.callFunction(210,this);return false;"><span class="cke_button_icon cke_button__maximize_icon" style="background-image:url(https://assets.minecraftmarket.com/static/ckeditor5/ckeditor/plugins/icons.png?t=F7OI);background-position:0 -1464px;background-size:auto;">&nbsp;</span><span id="cke_112_label" class="cke_button_label cke_button__maximize_label" aria-hidden="false">Maximize</span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_2_contents" class="cke_contents cke_reset" role="presentation" style="height: 300px;"><span id="cke_116" class="cke_voice_label">Press ALT 0 for help</span><iframe src="" frameborder="0" class="cke_wysiwyg_frame cke_reset" title="Rich Text Editor, id_TOS" aria-describedby="cke_116" tabindex="0" allowtransparency="true" style="width: 100%; height: 100%;"></iframe></div><span id="cke_2_bottom" class="cke_bottom cke_reset_all" role="presentation" style="-webkit-user-select: none;"><span id="cke_2_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Resize" onmousedown="CKEDITOR.tools.callFunction(108, event)">◢</span><span id="cke_2_path_label" class="cke_voice_label">Elements path</span><span id="cke_2_path" class="cke_path" role="group" aria-labelledby="cke_2_path_label"><span class="cke_path_empty">&nbsp;</span></span></span></div></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="form-group">
+                      <label>Theme:
+                        <a href="#" data-toggle="popover" data-content="The theme/style you want to use for your market, if you have a premium account you can create your own." data-original-title="" title="">(?)</a>
+                      </label>
+                      <select class="form-control" id="id_marketTheme" name="marketTheme" style="display: none;">
+                        <option value="">---------</option>
+                        <option value="205">Blue</option>
+                        <option value="206">Green</option>
+                        <option value="207">Orange</option>
+                        <option value="208">Red</option>
+                        <option value="613">White</option>
+                        <option value="2232">MaterialCraft</option>
+                        <option value="4761" selected="selected">MaterialCraft--SASSD</option>
+                      </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_marketTheme" title="MaterialCraft--SASSD"><span class="filter-option pull-left">MaterialCraft--SASSD</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0"><a tabindex="0" class="" style=""><span class="text">---------</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Blue</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">Green</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">Orange</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">Red</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">White</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="6"><a tabindex="0" class="" style=""><span class="text">MaterialCraft</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="7" class="selected"><a tabindex="0" class="" style=""><span class="text">MaterialCraft--SASSD</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="form-group">
+                      <label>Currency:
+                        <a href="#" data-toggle="popover" data-content="The currency you want your market to default to when visited, users can convert this to others when purchasing." data-original-title="" title="">(?)</a>
+
+                      </label>
+                      <select class="form-control" id="id_currency" name="currency" style="display: none;">
+                        <option value="8">AUD</option>
+                        <option value="20">BRL</option>
+                        <option value="48">GBP</option>
+                        <option value="27">CAD</option>
+                        <option value="37">CZK</option>
+                        <option value="39">DKK</option>
+                        <option value="45" selected="selected">EUR</option>
+                        <option value="56">HKD</option>
+                        <option value="60">HUF</option>
+                        <option value="62">ILS</option>
+                        <option value="70">JPY</option>
+                        <option value="101">MYR</option>
+                        <option value="100">MXN</option>
+                        <option value="143">TWD</option>
+                        <option value="108">NZD</option>
+                        <option value="106">NOK</option>
+                        <option value="113">PHP</option>
+                        <option value="115">PLN</option>
+                        <option value="120">RUB</option>
+                        <option value="127">SGD</option>
+                        <option value="126">SEK</option>
+                        <option value="29">CHF</option>
+                        <option value="136">THB</option>
+                        <option value="141">TRY</option>
+                        <option value="147">USD</option>
+                      </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_currency" title="EUR"><span class="filter-option pull-left">EUR</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0"><a tabindex="0" class="" style=""><span class="text">AUD</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">BRL</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">GBP</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">CAD</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">CZK</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">DKK</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="6" class="selected"><a tabindex="0" class="" style=""><span class="text">EUR</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="7"><a tabindex="0" class="" style=""><span class="text">HKD</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="8"><a tabindex="0" class="" style=""><span class="text">HUF</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="9"><a tabindex="0" class="" style=""><span class="text">ILS</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="10"><a tabindex="0" class="" style=""><span class="text">JPY</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="11"><a tabindex="0" class="" style=""><span class="text">MYR</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="12"><a tabindex="0" class="" style=""><span class="text">MXN</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="13"><a tabindex="0" class="" style=""><span class="text">TWD</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="14"><a tabindex="0" class="" style=""><span class="text">NZD</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="15"><a tabindex="0" class="" style=""><span class="text">NOK</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="16"><a tabindex="0" class="" style=""><span class="text">PHP</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="17"><a tabindex="0" class="" style=""><span class="text">PLN</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="18"><a tabindex="0" class="" style=""><span class="text">RUB</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="19"><a tabindex="0" class="" style=""><span class="text">SGD</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="20"><a tabindex="0" class="" style=""><span class="text">SEK</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="21"><a tabindex="0" class="" style=""><span class="text">CHF</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="22"><a tabindex="0" class="" style=""><span class="text">THB</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="23"><a tabindex="0" class="" style=""><span class="text">TRY</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="24"><a tabindex="0" class="" style=""><span class="text">USD</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="form-group">
+                      <label>Language:
+                        <a href="#" data-toggle="popover" data-content="The language you want your market to default to when visited." data-original-title="" title="">(?)</a>
+
+                      </label>
+                      <select class="form-control" id="id_locale" name="locale" style="display: none;">
+                        <option value="1" selected="selected">English</option>
+                        <option value="2">German</option>
+                        <option value="3">Spanish</option>
+                        <option value="4">French</option>
+                        <option value="5">Dutch</option>
+                        <option value="6">Italian</option>
+                        <option value="7">Finnish</option>
+                        <option value="8">Swedish</option>
+                        <option value="9">Norwegian</option>
+                        <option value="10">Danish</option>
+                        <option value="11">Bulgarian</option>
+                        <option value="12">Russian</option>
+                        <option value="13">Portuguese</option>
+                        <option value="14">Hungarian</option>
+                      </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_locale" title="English"><span class="filter-option pull-left">English</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">English</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">German</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">Spanish</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">French</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">Dutch</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">Italian</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="6"><a tabindex="0" class="" style=""><span class="text">Finnish</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="7"><a tabindex="0" class="" style=""><span class="text">Swedish</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="8"><a tabindex="0" class="" style=""><span class="text">Norwegian</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="9"><a tabindex="0" class="" style=""><span class="text">Danish</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="10"><a tabindex="0" class="" style=""><span class="text">Bulgarian</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="11"><a tabindex="0" class="" style=""><span class="text">Russian</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="12"><a tabindex="0" class="" style=""><span class="text">Portuguese</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="13"><a tabindex="0" class="" style=""><span class="text">Hungarian</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-heading">Domain name</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="form-group">
+                      <label>Subdomain:
+                        <a href="#" data-toggle="popover" data-content="The subdomain or URL you want to use to access your market or use to point your CNAME record toward." data-original-title="" title="">(?)</a>
+                      </label>
+
+                      <div class="input-group">
+                        <input class="form-control" id="id_subDomain" name="subDomain" placeholder="mymarket" type="text" value="rodymol123">
+                        <span class="input-group-addon">.minecraftmarket.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="form-group">
+                      <label>CNAME:
+                        <a href="#" data-toggle="popover" data-content="The URL you pointed towards your market subdomain in your domain DNS settings, a CNAME is not required." data-original-title="" title="">(?)</a>
+
+                      </label>
+                      <input class="form-control" id="id_cName" name="cName" placeholder="donate.mydomain.com" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-heading">Global commands
+                <div class="btn-group pull-right">
+                  <a href="#">
+                    <button id="addglobal" class="btn btn-warning btn-xs" type="button"><i class="fa fa-plus"></i> Add
+                      command
+                    </button>
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#variables">
+                    <button class="btn btn-danger btn-xs"><i class="fa fa-flag"></i> Variables</button>
+                  </a>
+                  <!-- Modal -->
+                  <div class="modal fade" id="variables" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h4 class="modal-title" id="myModalLabel">Command variables</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h3>{name} <small>- This variable will be replaced with the customers username.</small></h3>
+                          <h3>{uuid} <small>- This variable will be replaced with the customers UUID.</small></h3>
+                          <h3>{transactionid} <small>- This variable will be replaced with the transaction id.</small></h3>
+                          <h3>{price} <small>- This variable will be replaced with the overall price paid by the customer.</small></h3>
+                          <h3>{currency} <small>- This variable will be replaced with the currency set for this payment which is also the market currency.</small></h3>
+                          <h3>{time} <small>- This variable will be replaced with the time of purchase.</small></h3>
+                          <h3>{date} <small>- This variable will be replaced with the date of purchase.</small></h3>
+                          <h3>{email} <small>- This variable will be replaced with the customers email when applicable.</small></h3>
+                          <h3>{ip} <small>- This variable will be replaced with the customers ip that is recorded on checkout.</small></h3>
+                          <h3>{itemid} <small>- This variable will be replaced with the ID of the item this command is associated with.</small></h3>
+                          <h3>{itemprice} <small>- This variable will be replaced with the price of the item this command is associated with.</small></h3>
+                          <h3>{itemname} <small>- This variable will be replaced with the name of the item this command is associated with.</small></h3>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="panel-body">
+                <div id="globalform" class="commands ui-sortable">
+                  <input id="id_globalcommands_set-TOTAL_FORMS" name="globalcommands_set-TOTAL_FORMS" type="hidden" value="1"><input id="id_globalcommands_set-INITIAL_FORMS" name="globalcommands_set-INITIAL_FORMS" type="hidden" value="0"><input id="id_globalcommands_set-MIN_NUM_FORMS" name="globalcommands_set-MIN_NUM_FORMS" type="hidden" value="0"><input id="id_globalcommands_set-MAX_NUM_FORMS" name="globalcommands_set-MAX_NUM_FORMS" type="hidden" value="1000">
+
+                  <div id="command_None" class="command">
+                    <div class="row">
+
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <div class="form-group">
+                          <input id="id_globalcommands_set-0-id" name="globalcommands_set-0-id" type="hidden"><select class="form-control" id="id_globalcommands_set-0-options" name="globalcommands_set-0-options" style="display: none;">
+                            <option value="1">Initial</option>
+                            <option value="2">Expiry</option>
+                            <option value="4">Chargeback</option>
+                            <option value="5">Refund</option>
+                          </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-options" title="Initial"><span class="filter-option pull-left">Initial</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Initial</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Expiry</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">Chargeback</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">Refund</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon">/</span>
+                            <input class="form-control" id="id_globalcommands_set-0-command" name="globalcommands_set-0-command" type="text">
+                            <span class="input-group-btn">
+                              <button class="btn btn-danger deleteglobal">Delete</button>
+                              <button type="button" class="btn btn-default commandhandle"><i class="fa fa-arrows"></i></button>
+                              <button id="options0" type="button" class="btn btn-warning showoptions"><i class="fa fa-gear"></i></button>
+
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="well commandoptions options0" style="display: none;">
+                      <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                          <div class="form-group">
+                            <label>Execute on:
+                              <a href="#" data-toggle="popover" data-content="The server you want this command to specifically execute on, this will override selected servers above." data-original-title="" title="">(?)</a>
+
+                            </label>
+                            <select class="form-control" id="id_globalcommands_set-0-servers" name="globalcommands_set-0-servers" style="display: none;">
+                              <option value="">All selected servers</option>
+                              <option value="12446">Default server</option>
+                            </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-servers" title="All selected servers"><span class="filter-option pull-left">All selected servers</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">All selected servers</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Default server</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                          <div class="form-group">
+                            <label>Required slots:
+                              <a href="#" data-toggle="popover" data-content="The amount of free inventory slots required by the player in order for the command to execute." data-original-title="" title="">(?)</a>
+
+                            </label>
+                            <select class="form-control" id="id_globalcommands_set-0-requiredslots" name="globalcommands_set-0-requiredslots" style="display: none;">
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                              <option value="32">32</option>
+                              <option value="33">33</option>
+                              <option value="34">34</option>
+                              <option value="35">35</option>
+                              <option value="36">36</option>
+                            </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-requiredslots" title="0"><span class="filter-option pull-left">0</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">0</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">1</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">2</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">3</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">4</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">5</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="6"><a tabindex="0" class="" style=""><span class="text">6</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="7"><a tabindex="0" class="" style=""><span class="text">7</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="8"><a tabindex="0" class="" style=""><span class="text">8</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="9"><a tabindex="0" class="" style=""><span class="text">9</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="10"><a tabindex="0" class="" style=""><span class="text">10</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="11"><a tabindex="0" class="" style=""><span class="text">11</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="12"><a tabindex="0" class="" style=""><span class="text">12</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="13"><a tabindex="0" class="" style=""><span class="text">13</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="14"><a tabindex="0" class="" style=""><span class="text">14</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="15"><a tabindex="0" class="" style=""><span class="text">15</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="16"><a tabindex="0" class="" style=""><span class="text">16</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="17"><a tabindex="0" class="" style=""><span class="text">17</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="18"><a tabindex="0" class="" style=""><span class="text">18</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="19"><a tabindex="0" class="" style=""><span class="text">19</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="20"><a tabindex="0" class="" style=""><span class="text">20</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="21"><a tabindex="0" class="" style=""><span class="text">21</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="22"><a tabindex="0" class="" style=""><span class="text">22</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="23"><a tabindex="0" class="" style=""><span class="text">23</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="24"><a tabindex="0" class="" style=""><span class="text">24</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="25"><a tabindex="0" class="" style=""><span class="text">25</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="26"><a tabindex="0" class="" style=""><span class="text">26</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="27"><a tabindex="0" class="" style=""><span class="text">27</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="28"><a tabindex="0" class="" style=""><span class="text">28</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="29"><a tabindex="0" class="" style=""><span class="text">29</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="30"><a tabindex="0" class="" style=""><span class="text">30</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="31"><a tabindex="0" class="" style=""><span class="text">31</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="32"><a tabindex="0" class="" style=""><span class="text">32</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="33"><a tabindex="0" class="" style=""><span class="text">33</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="34"><a tabindex="0" class="" style=""><span class="text">34</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="35"><a tabindex="0" class="" style=""><span class="text">35</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="36"><a tabindex="0" class="" style=""><span class="text">36</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <div class="form-group">
+                            <label>Required online:
+                              <a href="#" data-toggle="popover" data-content="This option will restrict the command to only executing when either the player is online or offline." data-original-title="" title="">(?)</a>
+
+                            </label>
+                            <select class="form-control" id="id_globalcommands_set-0-requiredonline" name="globalcommands_set-0-requiredonline" style="display: none;">
+                              <option value="1">No</option>
+                              <option value="2">Yes</option>
+                            </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-requiredonline" title="No"><span class="filter-option pull-left">No</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">No</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Yes</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <div class="form-group">
+                            <label>Execution delay:
+                              <a href="#" data-toggle="popover" data-content="The delay between the plugin recieving the command and then executing on the server." data-original-title="" title="">(?)</a>
+
+                            </label>
+
+                            <div class="input-group">
+                              <input class="form-control" id="id_globalcommands_set-0-delay" name="globalcommands_set-0-delay" type="text" value="0">
+                              <span class="input-group-addon">Seconds</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <div class="form-group">
+                            <label>Repeat:
+                              <a href="#" data-toggle="popover" data-content="This option enables the ability to repeat the command over a every 'X' hours for 'X' cycles." data-original-title="" title="">(?)</a>
+
+                            </label>
+                            <select class="form-control" id="id_globalcommands_set-0-repeat" name="globalcommands_set-0-repeat" style="display: none;">
+                              <option value="False">No</option>
+                              <option value="True">Yes</option>
+                            </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-repeat" title="No"><span class="filter-option pull-left">No</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">No</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Yes</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <div class="form-group">
+                            <label>Period:
+                              <a href="#" data-toggle="popover" data-content="The command will be repeated every 'X' amount of hours." data-original-title="" title="">(?)</a>
+
+                            </label>
+
+                            <div class="input-group">
+                              <input class="form-control" id="id_globalcommands_set-0-repeatperiod" name="globalcommands_set-0-repeatperiod" type="text" value="0">
+                              <span class="input-group-addon">Hours</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <div class="form-group">
+                            <label>Cycles:
+                              <a href="#" data-toggle="popover" data-content="The amount of times the command will be repeated." data-original-title="" title="">(?)</a>
+
+                            </label>
+                            <input class="form-control" id="id_globalcommands_set-0-repeatcycles" name="globalcommands_set-0-repeatcycles" type="text" value="0">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="panel-footer">
+                <a href="#">
+                  <button type="submit" class="btn btn-success align-right">Save</button>
+                </a>
+              </div>
+            </div>
+
+
+          </form>
+
+          <div id="command-template" class="command" style="display: none;">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="form-group">
+                  <input id="id_globalcommands_set-0-id" name="globalcommands_set-0-id" type="hidden"><select class="form-control" id="id_globalcommands_set-0-options" name="globalcommands_set-0-options" style="display: none;">
+                    <option value="1" selected="selected">Initial</option>
+                    <option value="2">Expiry</option>
+                    <option value="4">Chargeback</option>
+                    <option value="5">Refund</option>
+                  </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-options" title="Initial"><span class="filter-option pull-left">Initial</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Initial</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Expiry</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">Chargeback</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">Refund</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                </div>
+              </div>
+              <div class="col-lg-10">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">/</span>
+                    <input class="form-control" id="id_globalcommands_set-0-command" name="globalcommands_set-0-command" type="text" value="">
+                    <span class="input-group-btn">
+                      <button class="btn btn-danger deleteglobal" onclick="deleteglobal(); return false;">Delete
+                      </button>
+                      <button type="button" class="btn btn-default commandhandle"><i class="fa fa-arrows"></i></button>
+                      <button id="options0" type="button" class="btn btn-warning showoptions"><i class="fa fa-gear"></i></button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="well commandoptions options0" style="display: none;">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="form-group">
+                    <label>Execute on:
+                      <a href="#" data-toggle="popover" data-content="The server you want this command to specifically execute on, this will override selected servers above." data-original-title="" title="">(?)</a>
+
+                    </label>
+                    <select class="form-control" id="id_globalcommands_set-0-servers" name="globalcommands_set-0-servers" style="display: none;">
+                      <option value="" selected="selected">All selected servers</option>
+
+                      <option value="12446">Default server</option>
+
+                    </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-servers" title="All selected servers"><span class="filter-option pull-left">All selected servers</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">All selected servers</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Default server</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label>Required slots:
+                      <a href="#" data-toggle="popover" data-content="The amount of free inventory slots required by the player in order for the command to execute." data-original-title="" title="">(?)</a>
+
+                    </label>
+                    <select class="form-control" id="id_globalcommands_set-0-requiredslots" name="globalcommands_set-0-requiredslots" style="display: none;">
+                      <option value="0" selected="selected">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                      <option value="32">32</option>
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                    </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-requiredslots" title="0"><span class="filter-option pull-left">0</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">0</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">1</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">2</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">3</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">4</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">5</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="6"><a tabindex="0" class="" style=""><span class="text">6</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="7"><a tabindex="0" class="" style=""><span class="text">7</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="8"><a tabindex="0" class="" style=""><span class="text">8</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="9"><a tabindex="0" class="" style=""><span class="text">9</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="10"><a tabindex="0" class="" style=""><span class="text">10</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="11"><a tabindex="0" class="" style=""><span class="text">11</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="12"><a tabindex="0" class="" style=""><span class="text">12</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="13"><a tabindex="0" class="" style=""><span class="text">13</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="14"><a tabindex="0" class="" style=""><span class="text">14</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="15"><a tabindex="0" class="" style=""><span class="text">15</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="16"><a tabindex="0" class="" style=""><span class="text">16</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="17"><a tabindex="0" class="" style=""><span class="text">17</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="18"><a tabindex="0" class="" style=""><span class="text">18</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="19"><a tabindex="0" class="" style=""><span class="text">19</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="20"><a tabindex="0" class="" style=""><span class="text">20</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="21"><a tabindex="0" class="" style=""><span class="text">21</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="22"><a tabindex="0" class="" style=""><span class="text">22</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="23"><a tabindex="0" class="" style=""><span class="text">23</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="24"><a tabindex="0" class="" style=""><span class="text">24</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="25"><a tabindex="0" class="" style=""><span class="text">25</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="26"><a tabindex="0" class="" style=""><span class="text">26</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="27"><a tabindex="0" class="" style=""><span class="text">27</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="28"><a tabindex="0" class="" style=""><span class="text">28</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="29"><a tabindex="0" class="" style=""><span class="text">29</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="30"><a tabindex="0" class="" style=""><span class="text">30</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="31"><a tabindex="0" class="" style=""><span class="text">31</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="32"><a tabindex="0" class="" style=""><span class="text">32</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="33"><a tabindex="0" class="" style=""><span class="text">33</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="34"><a tabindex="0" class="" style=""><span class="text">34</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="35"><a tabindex="0" class="" style=""><span class="text">35</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="36"><a tabindex="0" class="" style=""><span class="text">36</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label>Required online:
+                      <a href="#" data-toggle="popover" data-content="This option will restrict the command to only executing when either the player is online or offline." data-original-title="" title="">(?)</a>
+
+                    </label>
+                    <select class="form-control" id="id_globalcommands_set-0-requiredonline" name="globalcommands_set-0-requiredonline" style="display: none;">
+                      <option value="1">No</option>
+                      <option value="2">Yes</option>
+                    </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-requiredonline" title="No"><span class="filter-option pull-left">No</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">No</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Yes</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label>Execution delay:
+                      <a href="#" data-toggle="popover" data-content="The delay between the plugin recieving the command and then executing on the server." data-original-title="" title="">(?)</a>
+
+                    </label>
+
+                    <div class="input-group">
+                      <input class="form-control" id="id_globalcommands_set-0-delay" name="globalcommands_set-0-delay" type="text" value="0">
+                      <span class="input-group-addon">Seconds</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label>Repeat:
+                      <a href="#" data-toggle="popover" data-content="This option enables the ability to repeat the command over a every 'X' hours for 'X' cycles." data-original-title="" title="">(?)</a>
+
+                    </label>
+                    <select class="form-control" id="id_globalcommands_set-0-repeat" name="globalcommands_set-0-repeat" style="display: none;">
+                      <option value="False">No</option>
+                      <option value="True">Yes</option>
+                    </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_globalcommands_set-0-repeat" title="No"><span class="filter-option pull-left">No</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">No</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Yes</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label>Period:
+                      <a href="#" data-toggle="popover" data-content="The command will be repeated every 'X' amount of hours." data-original-title="" title="">(?)</a>
+
+                    </label>
+
+                    <div class="input-group">
+                      <input class="form-control" id="id_globalcommands_set-0-repeatperiod" name="globalcommands_set-0-repeatperiod" type="text" value="0">
+                      <span class="input-group-addon">Hours</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label>Cycles:
+                      <a href="#" data-toggle="popover" data-content="The amount of times the command will be repeated." data-original-title="" title="">(?)</a>
+
+                    </label>
+                    <input class="form-control" id="id_globalcommands_set-0-repeatcycles" name="globalcommands_set-0-repeatcycles" type="text" value="0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="dist/js/main.js"></script>
+</body>
+</html>

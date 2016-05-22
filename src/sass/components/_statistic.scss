@@ -1,0 +1,79 @@
+.statistic {
+  min-height: 100px;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: #333;
+  background: #eee;
+  @include md-shadow(1);
+}
+
+.statistic__icon {
+  display: block;
+  height: 60px;
+  font-size: 40px;
+  line-height: 60px;
+  width: 100px;
+  float: left;
+  text-align: center;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  margin-right: 20px;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.statistic__value {
+  margin-top: -5px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.statistic__heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.statistic__desc {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.statistic--red {
+  color: #fff;
+  background: $brand-danger;
+}
+
+.statistic--green {
+  color: #fff;
+  background: $brand-success;
+}
+
+.statistic--green-light {
+  color: #fff;
+  background: lighten($brand-success, 7.5%);
+}
+
+.statistic--green-lighter {
+  color: #fff;
+  background: lighten($brand-success, 15%);
+}
+
+.statistic--blue {
+  color: #fff;
+  background: $brand-info;
+}
+
+.statistic--blue-light {
+  color: #fff;
+  background: lighten($brand-info, 7.5%);
+}
+
+.statistic--blue-lighter {
+  color: #fff;
+  background: lighten($brand-info, 15%);
+}
+
+.statistic--orange {
+  color: #fff;
+  background: $brand-primary;
+}

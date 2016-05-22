@@ -1,0 +1,9 @@
+.alert {
+  @include md-shadow(1);
+}
+
+@include alert(primary, $btn-primary-bg, #fff);
+@include alert(success, $btn-success-bg, #fff);
+@include alert(info, $btn-info-bg, #fff);
+@include alert(warning, #FF7949, #fff);
+@include alert(danger, $btn-danger-bg, #fff);
