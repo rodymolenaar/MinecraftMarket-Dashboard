@@ -22,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">MinecraftMarket</a>
+        <a class="navbar-brand menu-toggle" href="#"><i class="fa fa-bars"></i> MinecraftMarket</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -107,6 +107,7 @@
     </div>
 
     <div class="content">
+      <div id="drawer-backdrop" class="menu-toggle drawer-backdrop"></div>
       <div class="featurebar">
         <div class="featurebar__heading">Dashboard</div>
         <!-- <div class="featurebar__nav">
@@ -261,5 +262,13 @@
 </div>
 
 <script src="dist/js/main.js"></script>
+<script>
+$(".menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#drawer-backdrop").toggleClass("drawer-backdrop-open");
+  $(".content").toggleClass("sidebar-expanded");
+  $(".sidebar").toggleClass("sidebar-open");
+});
+</script>
 </body>
 </html>

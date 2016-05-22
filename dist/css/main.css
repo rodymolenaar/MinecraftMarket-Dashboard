@@ -13415,6 +13415,10 @@ button.close {
   width: 256px;
   -webkit-transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+  @media (max-width: 970px) {
+    .sidebar {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); } }
 
 .content {
   display: -webkit-box;
@@ -13433,6 +13437,61 @@ button.close {
   -webkit-box-flex: 1;
   flex: 1;
   overflow: auto; }
+
+@media only screen and (max-width: 599px) {
+  .content {
+    left: 0; } }
+
+@media (max-width: 599px) {
+  .content {
+    min-height: 0; } }
+
+@media only screen and (max-width: 599px) {
+  .sidebar {
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate3d(-256px, 0, 0);
+    transform: translate3d(-256px, 0, 0);
+    visibility: hidden;
+    -webkit-transition: transform 0.3s cubic-bezier(0.4, 0, 1, 1), visibility 0s ease 0.3s;
+    -webkit-transition: visibility 0s ease 0.3s, -webkit-transform 0.3s cubic-bezier(0.4, 0, 1, 1);
+    transition: visibility 0s ease 0.3s, -webkit-transform 0.3s cubic-bezier(0.4, 0, 1, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 1, 1), visibility 0s ease 0.3s;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 1, 1), visibility 0s ease 0.3s, -webkit-transform 0.3s cubic-bezier(0.4, 0, 1, 1); } }
+
+@media only screen and (max-width: 599px) {
+  .sidebar-open {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    visibility: visible !important;
+    -webkit-transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+    transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+    transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+    transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0, 0, 0.2, 1) !important; } }
+
+.drawer-backdrop {
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s ease,visibility 0s ease .3s;
+  transition: opacity .3s ease,visibility 0s ease .3s; }
+
+.drawer-backdrop-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease; }
 
 .sidebar__nav {
   display: block;
