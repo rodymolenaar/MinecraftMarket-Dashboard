@@ -82,10 +82,12 @@
   transition: opacity .3s ease,visibility 0s ease .3s;
 }
 
-.drawer-backdrop-open {
-  pointer-events: auto;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease;
+@media only screen and (max-width: 599px) {
+  .drawer-backdrop-open {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+  }
 }

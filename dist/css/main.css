@@ -13486,12 +13486,13 @@ button.close {
   -webkit-transition: opacity .3s ease,visibility 0s ease .3s;
   transition: opacity .3s ease,visibility 0s ease .3s; }
 
-.drawer-backdrop-open {
-  pointer-events: auto;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease; }
+@media only screen and (max-width: 599px) {
+  .drawer-backdrop-open {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease; } }
 
 .sidebar__nav {
   display: block;
@@ -13568,6 +13569,7 @@ button.close {
 
 .sidebar__top {
   display: block;
+  min-height: 65px;
   padding: 10px 24px;
   border-bottom: 1px solid #e8e8e8;
   background: #F5F5F5; }
