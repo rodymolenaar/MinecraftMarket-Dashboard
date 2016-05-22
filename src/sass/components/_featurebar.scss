@@ -1,0 +1,45 @@
+.featurebar {
+  display: block;
+  color: #fff;
+  background: $brand-primary;
+  font-weight: 400;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.featurebar__heading {
+  font-size: 22px;
+  padding: 10px 24px;
+}
+
+.featurebar__nav {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.featurebar__nav__item {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(#fff, .8);
+  text-transform: uppercase;
+  transition: background-color .35s cubic-bezier(0.35,0,0.25,1);
+  white-space: nowrap;
+  position: relative;
+  float: left;
+  font-weight: 500;
+  text-overflow: ellipsis;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.featurebar__nav__item--active {
+  color: #fff;
+  box-shadow: inset 0 -2px 0 #fff;
+}

@@ -1,0 +1,16 @@
+.btn {
+  @include md-shadow(1);
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    @include md-shadow(2);
+  }
+}
+
+@include btn(default, $btn-default-bg);
+@include btn(primary, $btn-primary-bg);
+@include btn(success, $btn-success-bg);
+@include btn(info, $btn-info-bg);
+@include btn(warning, #FF7949);
+@include btn(danger, $btn-danger-bg);
+@include btn(link, #fff);

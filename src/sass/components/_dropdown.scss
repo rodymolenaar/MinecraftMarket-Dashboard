@@ -1,0 +1,16 @@
+.dropdown-menu {
+  @extend .md-shadow-2;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  & li {
+    > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &:hover,
+      &:focus {
+        background: darken(#fff, 7.5%);
+      }
+    }
+  }
+}

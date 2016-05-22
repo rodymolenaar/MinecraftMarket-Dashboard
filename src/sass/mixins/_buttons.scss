@@ -1,0 +1,52 @@
+@mixin btn($class, $bg){
+  .btn-#{$class} {
+    background-size: 200%;
+    background-position: 50%;
+    background: $bg;
+    border-color: $bg;
+
+    &:focus {
+      background-color: $bg;
+      border-color: $bg;
+    }
+
+    &:hover,
+    &:active:hover {
+      background-color: darken($bg, 6%);
+      border-color: darken($bg, 6%);
+    }
+
+    &:active {
+      background-color: darken($bg, 12%);
+      border-color: darken($bg, 12%);
+      background-size: 1000%;
+    }
+  }
+  .btn-#{$class}-inverted {
+    background-size: 200%;
+    background-position: 50%;
+    background: #fff;
+    border-color: #fff;
+    color: $bg;
+
+    &:focus {
+      background-color: #fff;
+      border-color: #fff;
+      color: darken($bg, 5%);
+    }
+
+    &:hover,
+    &:active:hover {
+      background-color: darken(#fff, 6%);
+      border-color: darken(#fff, 6%);
+      color: darken($bg, 5%);
+    }
+
+    &:active {
+      background-color: darken(#fff, 12%);
+      border-color: darken(#fff, 12%);
+      color: darken($bg, 5%);
+      background-size: 1000%;
+    }
+  }
+}

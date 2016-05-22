@@ -1,0 +1,45 @@
+.sidebar__top {
+  display: block;
+  padding: 10px 24px;
+  border-bottom: 1px solid darken(#F5F5F5, 5%);
+  background: #F5F5F5;
+}
+
+.sidebar__top__plan {
+  @extend .row;
+  font-size: 14px;
+}
+
+.sidebar__top__plan_details {
+  @extend .col-xs-7;
+}
+
+.sidebar__top__plan__plan_name {
+  font-size: 18px;
+}
+
+.sidebar__top__plan__plan_duration {
+  font-size: 14px;
+}
+
+.sidebar__top__plan_actions {
+  @extend .col-xs-5;
+}
+
+.sidebar__top__plan__action {
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+  padding: 8px 12px;
+  color: $brand-primary;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: darken($brand-primary, 10%);
+    background: rgba($brand-primary, .3);
+    text-decoration: none;
+  }
+}

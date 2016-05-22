@@ -1,0 +1,7 @@
+.card {
+  display: block;
+  padding: 19px;
+  margin-bottom: 20px;
+  background: #fff;
+  @include md-shadow(1);
+}
