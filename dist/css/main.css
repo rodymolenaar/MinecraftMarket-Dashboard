@@ -13509,7 +13509,7 @@ button.close {
   background: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   z-index: 20;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
@@ -13527,6 +13527,9 @@ button.close {
     visibility: visible;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease; } }
+
+.no-scroll {
+  overflow: hidden; }
 
 .sidebar__nav {
   display: block;
