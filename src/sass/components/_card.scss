@@ -5,3 +5,49 @@
   background: #fff;
   @include md-shadow(1);
 }
+
+.card__group {
+  display: block;
+}
+
+.card__group__heading {
+  display: block;
+  position: relative;
+  margin-left: -19px;
+  margin-right: -19px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 10px 19px;
+  text-transform: uppercase;
+  background: #eee;
+}
+
+.card__group__heading--danger {
+  background: $brand-danger;
+  color: #fff;
+}
+
+.card__group__actions {
+  display: inline-block;
+  float: right;
+  min-height: 42px;
+  margin-top: -10px;
+}
+
+.card__group__action {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid transparent;
+  min-height: 42px;
+}
+
+.card__group__action--orange {
+  color: $brand-primary;
+}
+
+.card__group__action--red {
+  color: $brand-danger;
+}

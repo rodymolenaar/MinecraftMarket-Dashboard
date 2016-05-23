@@ -128,7 +128,125 @@
 
         <div class="col-md-8">
           <div class="card">
+            <form>
+              <div class="card__group">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Steve's MC">
+                </div>
 
+                <div>
+                  <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
+                    <li role="presentation"><a href="#termsandconditions" aria-controls="termsandconditions" role="tab" data-toggle="tab">Terms and Conditions</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="description">
+                      <div class="form-group">
+                        <textarea class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="termsandconditions">
+                      <div class="form-group">
+                        <textarea class="form-control"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="theme">Theme</label>
+                      <select class="form-control">
+                        <option>MaterialCraft</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="theme">Currency</label>
+                      <select class="form-control">
+                        <option>EUR</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="theme">Language</label>
+                      <select class="form-control">
+                        <option>English</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__group">
+                <div class="card__group__heading">Domain name</div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="subdomain">Subdomain</label>
+                      <div class="input-group">
+                        <input name="subdomain" type="text" class="form-control" placeholder="mymarket">
+                        <span class="input-group-addon">.minecraftmarket.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="cname">CNAME</label>
+                      <input type="text" class="form-control" id="cname" placeholder="donate.mydomain.com">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__group">
+                <div class="card__group__heading">
+                  Global commands
+                  <div class="card__group__actions">
+                    <button class="card__group__action card__group__action--red"><i class="fa fa-flag"></i><span class="hidden-xs"> Variables>/span></button>
+                    <button class="card__group__action card__group__action--orange"><i class="fa fa-plus"></i><span class="hidden-xs"> New</span></button>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-xs-2">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option value="1">Initial</option>
+                        <option value="2">Expiry</option>
+                        <option value="4">Chargeback</option>
+                        <option value="5">Refund</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon">/</span>
+                        <input class="form-control" type="text">
+                        <span class="input-group-btn">
+                          <button class="btn btn-danger-inverted deleteglobal">Delete</button>
+                          <button type="button" class="btn btn-default-inverted commandhandle"><i class="fa fa-arrows"></i></button>
+                          <button id="options0" type="button" class="btn btn-warning-inverted showoptions"><i class="fa fa-gear"></i></button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__group">
+                <div class="card__group__heading card__group__heading--danger">Danger zone</div>
+                <button class="btn btn-danger">Delete market</button>
+              </div>
+
+            </form>
           </div>
         </div>
 
@@ -149,6 +267,7 @@
 $(".menu-toggle").click(function(e) {
   e.preventDefault();
   $("#drawer-backdrop").toggleClass("drawer-backdrop-open");
+  $("body").toggleClass("no-scroll");
   $(".content").toggleClass("sidebar-expanded");
   $(".sidebar").toggleClass("sidebar-open");
 });

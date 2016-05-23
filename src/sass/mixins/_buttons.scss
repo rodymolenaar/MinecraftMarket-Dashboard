@@ -25,28 +25,50 @@
   .btn-#{$class}-inverted {
     background-size: 200%;
     background-position: 50%;
-    background: #fff;
-    border-color: #fff;
+    background: transparent;
+    border-color: transparent;
     color: $bg;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: none;
+
+    @if ($class == "default") {
+      color: #333;
+    }
 
     &:focus {
-      background-color: #fff;
-      border-color: #fff;
+      background-color: none;
+      border-color: none;
       color: darken($bg, 5%);
+      @if ($class == "default") {
+        color: #333;
+      }
+      box-shadow: none;
+      outline: 0;
     }
 
     &:hover,
     &:active:hover {
-      background-color: darken(#fff, 6%);
-      border-color: darken(#fff, 6%);
+      background-color: transparent;
+      border-color: transparent;
       color: darken($bg, 5%);
+      @if ($class == "default") {
+        color: #333;
+      }
+      box-shadow: none;
+      outline: 0;
     }
 
     &:active {
-      background-color: darken(#fff, 12%);
-      border-color: darken(#fff, 12%);
+      background-color: transparent;
+      border-color: transparent;
       color: darken($bg, 5%);
+      @if ($class == "default") {
+        color: #333;
+      }
       background-size: 1000%;
+      box-shadow: none;
+      outline: 0;
     }
   }
 }
