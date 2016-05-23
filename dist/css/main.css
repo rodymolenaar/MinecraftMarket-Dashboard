@@ -13535,15 +13535,8 @@ button.close {
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
-  -webkit-box-flex: 1;
-  flex: 1 1 auto;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto; }
 
