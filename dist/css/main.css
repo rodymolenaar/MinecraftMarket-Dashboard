@@ -13396,6 +13396,39 @@ button.close {
 .navbar {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
+.navbar-toggle {
+  color: #fff;
+  float: right;
+  padding: 21px 15px;
+  font-size: 20px;
+  line-height: 22px;
+  height: 64px;
+  margin: 0;
+  margin-right: 15px; }
+
+.navbar-brand {
+  padding: 0; }
+  .navbar-brand .navbar-logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: -4px; }
+    @media (min-width: 599px) {
+      .navbar-brand .navbar-logo {
+        margin-left: 15px; } }
+  .navbar-brand .navbar-hamburger {
+    display: none; }
+    @media only screen and (max-width: 599px) {
+      .navbar-brand .navbar-hamburger {
+        display: inline-block;
+        padding: 21px 15px; } }
+  .navbar-brand .navbar-name {
+    display: inline-block;
+    padding: 21px 15px; }
+    @media only screen and (max-width: 599px) {
+      .navbar-brand .navbar-name {
+        display: none !important; } }
+
 .sidebar {
   display: -webkit-box;
   display: flex;
