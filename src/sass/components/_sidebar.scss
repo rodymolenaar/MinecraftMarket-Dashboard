@@ -3,7 +3,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  top: 64px;
+  top: 0;
+  padding-top: 64px;
   box-sizing: border-box;
   @include md-shadow(1);
   background-color: white;

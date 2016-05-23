@@ -1,0 +1,32 @@
+.content-inner {
+  @include container-fixed;
+}
+
+@media (max-width: 919px) {
+  .content-inner {
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1239px) and (min-width: 920px) {
+  .content-inner {
+    width: 640px;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 1659px) and (min-width: 1240) {
+  .content-inner {
+    width: 960px;
+    padding: 0 12px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .content-inner {
+    width: 1160px;
+    padding: 0 12px;
+  }
+}

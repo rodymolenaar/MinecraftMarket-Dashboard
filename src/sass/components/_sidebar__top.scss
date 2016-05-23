@@ -1,5 +1,15 @@
 .sidebar__top {
-  display: block;
+  flex-shrink: 0;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  white-space: nowrap;
+  box-shadow: none;
+  padding: 4px 0;
+  transition: box-shadow .3s ease,padding .3s ease,width .3s cubic-bezier(0.4,0.0,0.2,1);
   min-height: 65px;
   padding: 10px 24px;
   border-bottom: 1px solid darken(#F5F5F5, 5%);
