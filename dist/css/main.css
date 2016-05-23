@@ -13560,9 +13560,6 @@ button.close {
 .sidebar__nav__heading {
   display: block;
   padding: 6px 24px;
-  overflow: hidden;
-  cursor: default;
-  -webkit-user-select: none;
   color: rgba(0, 0, 0, 0.38);
   font-size: 14px;
   font-weight: 500;
@@ -13573,14 +13570,11 @@ button.close {
 
 .sidebar__nav__item {
   display: block;
-  position: relative;
   padding: 10px 24px;
-  overflow: visible;
   color: rgba(0, 0, 0, 0.54);
   font-weight: 500;
   letter-spacing: 0;
   line-height: 20px;
-  text-align: start;
   text-transform: none; }
   .sidebar__nav__item:hover, .sidebar__nav__item:focus {
     color: inherit;
