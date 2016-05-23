@@ -13556,7 +13556,6 @@ button.close {
 
 .sidebar__nav__heading {
   display: block;
-  flex-shrink: 0;
   padding: 6px 24px;
   overflow: hidden;
   cursor: default;
