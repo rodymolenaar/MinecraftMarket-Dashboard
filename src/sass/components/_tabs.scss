@@ -41,6 +41,7 @@
     & > .active > a:hover,
     & > .active > a:focus {
       border: none;
+      border-radius: 0;
     }
   }
 
