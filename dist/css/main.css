@@ -14215,6 +14215,7 @@ input[type="checkbox"],
   .nav-tabs > li.active > a:hover,
   .nav-tabs > li.active > a:focus:hover {
     border: none;
+    background: transparent;
     color: #FF6C13; }
 
 .nav-tabs > li.disabled > a {
