@@ -6,6 +6,42 @@
   @include md-shadow(1);
 }
 
+.card__heading {
+  display: block;
+  padding: 10px 19px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card__heading__actions {
+  display: inline-block;
+  float: right;
+  min-height: 45px;
+  margin-top: -8px;
+}
+
+.card__heading__action {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid transparent;
+  min-height: 42px;
+}
+
+.card__heading__action--green {
+  color: $brand-success;
+}
+
+.card__heading__action--orange {
+  color: $brand-primary;
+}
+
+.card__heading__action--red {
+  color: $brand-danger;
+}
+
 .card__group {
   display: block;
 }
@@ -49,5 +85,52 @@
 }
 
 .card__group__action--red {
+  color: $brand-danger;
+}
+
+.category {
+  & .item {
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+}
+
+.subcategory {
+  @include md-shadow(1);
+  & .card {
+    box-shadow: none;
+  }
+  & .card__heading {
+    background: #eee;
+  }
+  & .item {
+    box-shadow: none;
+  }
+}
+
+.item {
+  @include md-shadow(1);
+  > .card__heading {
+    background: #fff;
+  }
+}
+
+.item__details {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 19px;
+}
+
+.item__details__item {
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.item__details__item--green {
+  color: $brand-success;
+}
+
+.item__details__item--red {
   color: $brand-danger;
 }
