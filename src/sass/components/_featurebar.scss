@@ -26,7 +26,6 @@
 
 .featurebar__nav {
   display: block;
-  position: relative;
   @media only screen and (max-width: 767px) {
     height: 44px;
     user-select: none;
@@ -47,7 +46,6 @@
   text-transform: uppercase;
   transition: background-color .35s cubic-bezier(0.35,0,0.25,1);
   white-space: nowrap;
-  position: relative;
   float: left;
   font-weight: 500;
   text-overflow: ellipsis;

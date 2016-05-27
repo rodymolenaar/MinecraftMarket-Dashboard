@@ -14231,8 +14231,7 @@ input[type="checkbox"],
     -webkit-overflow-scrolling: touch; } }
 
 .featurebar__nav {
-  display: block;
-  position: relative; }
+  display: block; }
   @media only screen and (max-width: 767px) {
     .featurebar__nav {
       height: 44px;
@@ -14257,7 +14256,6 @@ input[type="checkbox"],
   -webkit-transition: background-color 0.35s cubic-bezier(0.35, 0, 0.25, 1);
   transition: background-color 0.35s cubic-bezier(0.35, 0, 0.25, 1);
   white-space: nowrap;
-  position: relative;
   float: left;
   font-weight: 500;
   text-overflow: ellipsis; }
