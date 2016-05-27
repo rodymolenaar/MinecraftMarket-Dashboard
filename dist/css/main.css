@@ -14231,7 +14231,8 @@ input[type="checkbox"],
     -webkit-overflow-scrolling: touch; } }
 
 .featurebar__nav {
-  display: block; }
+  display: block;
+  position: relative; }
   @media only screen and (max-width: 767px) {
     .featurebar__nav {
       height: 44px;
