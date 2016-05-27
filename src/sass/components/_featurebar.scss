@@ -8,12 +8,10 @@
 }
 
 .featurebar__heading {
-  display: block;
   font-size: 22px;
   padding: 10px 24px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
 }
 
 .featurebar__responsive {
@@ -21,8 +19,6 @@
     overflow: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 100%;
-    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -36,7 +32,6 @@
     transition: margin-left .4s cubic-bezier(.4,.01,.165,.99) .4s;
     margin-left: 0;
     margin-right: 0;
-    text-align: justify;
   }
 }
 
@@ -49,12 +44,8 @@
   text-transform: uppercase;
   transition: background-color .35s cubic-bezier(0.35,0,0.25,1);
   white-space: nowrap;
-  float: left;
   font-weight: 500;
   text-overflow: ellipsis;
-  @media only screen and (max-width: 767px) {
-    float: none;
-  }
 
   &:hover,
   &:focus {

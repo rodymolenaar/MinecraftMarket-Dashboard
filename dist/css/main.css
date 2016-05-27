@@ -14218,20 +14218,16 @@ input[type="checkbox"],
   margin-bottom: 20px; }
 
 .featurebar__heading {
-  display: block;
   font-size: 22px;
   padding: 10px 24px;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%; }
+  white-space: nowrap; }
 
 @media screen and (max-width: 767px) {
   .featurebar__responsive {
     overflow: scroll;
     overflow-y: hidden;
-    white-space: nowrap;
-    width: 100%;
-    -webkit-overflow-scrolling: touch; } }
+    white-space: nowrap; } }
 
 .featurebar__nav {
   display: block; }
@@ -14246,8 +14242,7 @@ input[type="checkbox"],
       -webkit-transition: margin-left 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0.4s;
       transition: margin-left 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0.4s;
       margin-left: 0;
-      margin-right: 0;
-      text-align: justify; } }
+      margin-right: 0; } }
 
 .featurebar__nav__item {
   display: inline-block;
@@ -14259,12 +14254,8 @@ input[type="checkbox"],
   -webkit-transition: background-color 0.35s cubic-bezier(0.35, 0, 0.25, 1);
   transition: background-color 0.35s cubic-bezier(0.35, 0, 0.25, 1);
   white-space: nowrap;
-  float: left;
   font-weight: 500;
   text-overflow: ellipsis; }
-  @media only screen and (max-width: 767px) {
-    .featurebar__nav__item {
-      float: none; } }
   .featurebar__nav__item:hover, .featurebar__nav__item:focus {
     color: #fff;
     text-decoration: none; }
