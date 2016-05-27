@@ -5,14 +5,15 @@
   font-weight: 400;
   margin-top: -20px;
   margin-bottom: 20px;
-  z-index: 2;
 }
 
 .featurebar__heading {
   display: block;
   font-size: 22px;
   padding: 10px 24px;
-  z-index: 2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .featurebar__responsive {
@@ -28,7 +29,6 @@
 
 .featurebar__nav {
   display: block;
-  z-index: 1;
   @media only screen and (max-width: 767px) {
     height: 44px;
     user-select: none;

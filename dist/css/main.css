@@ -14215,14 +14215,15 @@ input[type="checkbox"],
   background: #FF6C13;
   font-weight: 400;
   margin-top: -20px;
-  margin-bottom: 20px;
-  z-index: 2; }
+  margin-bottom: 20px; }
 
 .featurebar__heading {
   display: block;
   font-size: 22px;
   padding: 10px 24px;
-  z-index: 2; }
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%; }
 
 @media screen and (max-width: 767px) {
   .featurebar__responsive {
@@ -14233,8 +14234,7 @@ input[type="checkbox"],
     -webkit-overflow-scrolling: touch; } }
 
 .featurebar__nav {
-  display: block;
-  z-index: 1; }
+  display: block; }
   @media only screen and (max-width: 767px) {
     .featurebar__nav {
       height: 44px;
