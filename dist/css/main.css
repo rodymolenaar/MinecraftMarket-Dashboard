@@ -14218,6 +14218,7 @@ input[type="checkbox"],
   margin-bottom: 20px; }
 
 .featurebar__heading {
+  display: block;
   font-size: 22px;
   padding: 10px 24px; }
 
