@@ -14221,10 +14221,29 @@ input[type="checkbox"],
   font-size: 22px;
   padding: 10px 24px; }
 
+@media screen and (max-width: 767px) {
+  .featurebar__responsive {
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-overflow-scrolling: touch; } }
+
 .featurebar__nav {
-  display: block;
-  overflow-x: auto;
-  overflow-y: hidden; }
+  display: block; }
+  @media only screen and (max-width: 767px) {
+    .featurebar__nav {
+      height: 44px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: auto;
+      -webkit-transition: margin-left 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0.4s;
+      transition: margin-left 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0.4s;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: justify; } }
 
 .featurebar__nav__item {
   display: inline-block;
@@ -14240,6 +14259,9 @@ input[type="checkbox"],
   float: left;
   font-weight: 500;
   text-overflow: ellipsis; }
+  @media only screen and (max-width: 767px) {
+    .featurebar__nav__item {
+      float: none; } }
   .featurebar__nav__item:hover, .featurebar__nav__item:focus {
     color: #fff;
     text-decoration: none; }
