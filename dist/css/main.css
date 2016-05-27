@@ -14250,7 +14250,9 @@ input[type="checkbox"],
   position: relative;
   font-size: 22px;
   padding: 10px 24px;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
   .featurebar__heading:before, .featurebar__heading:after {
     content: " ";
     display: table; }
