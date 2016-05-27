@@ -4,6 +4,9 @@
     background-position: 50%;
     background: $bg;
     border-color: $bg;
+    border-radius: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
 
     &:focus {
       background-color: $bg;

@@ -13481,7 +13481,10 @@ input[type="checkbox"],
   background-size: 200%;
   background-position: 50%;
   background: #fff;
-  border-color: #fff; }
+  border-color: #fff;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase; }
   .btn-default:focus {
     background-color: #fff;
     border-color: #fff; }
@@ -13530,7 +13533,10 @@ input[type="checkbox"],
   background-size: 200%;
   background-position: 50%;
   background: #FF6C13;
-  border-color: #FF6C13; }
+  border-color: #FF6C13;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase; }
   .btn-primary:focus {
     background-color: #FF6C13;
     border-color: #FF6C13; }
@@ -13575,7 +13581,10 @@ input[type="checkbox"],
   background-size: 200%;
   background-position: 50%;
   background: #7AC142;
-  border-color: #7AC142; }
+  border-color: #7AC142;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase; }
   .btn-success:focus {
     background-color: #7AC142;
     border-color: #7AC142; }
@@ -13620,7 +13629,10 @@ input[type="checkbox"],
   background-size: 200%;
   background-position: 50%;
   background: #5bc0de;
-  border-color: #5bc0de; }
+  border-color: #5bc0de;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase; }
   .btn-info:focus {
     background-color: #5bc0de;
     border-color: #5bc0de; }
@@ -13665,7 +13677,10 @@ input[type="checkbox"],
   background-size: 200%;
   background-position: 50%;
   background: #FF7949;
-  border-color: #FF7949; }
+  border-color: #FF7949;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase; }
   .btn-warning:focus {
     background-color: #FF7949;
     border-color: #FF7949; }
@@ -13710,7 +13725,10 @@ input[type="checkbox"],
   background-size: 200%;
   background-position: 50%;
   background: #d9534f;
-  border-color: #d9534f; }
+  border-color: #d9534f;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase; }
   .btn-danger:focus {
     background-color: #d9534f;
     border-color: #d9534f; }
@@ -13755,7 +13773,10 @@ input[type="checkbox"],
   background-size: 200%;
   background-position: 50%;
   background: #fff;
-  border-color: #fff; }
+  border-color: #fff;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase; }
   .btn-link:focus {
     background-color: #fff;
     border-color: #fff; }
@@ -13874,6 +13895,9 @@ input[type="checkbox"],
   padding: 10px 19px;
   text-transform: uppercase;
   background: #eee; }
+
+.card__group__heading--top {
+  margin-top: -19px; }
 
 .card__group__heading--danger {
   background: #d9534f;
@@ -14012,7 +14036,8 @@ input[type="checkbox"],
   -webkit-box-flex: 1;
   flex: 1;
   overflow: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 @media only screen and (max-width: 599px) {
   .content {
@@ -14021,6 +14046,9 @@ input[type="checkbox"],
 @media (max-width: 599px) {
   .content {
     min-height: 0; } }
+
+.content__actions {
+  display: block; }
 
 @media only screen and (max-width: 599px) {
   .sidebar {
@@ -14222,12 +14250,18 @@ input[type="checkbox"],
   font-size: 22px;
   padding: 10px 24px;
   text-overflow: ellipsis; }
+  .featurebar__heading:before, .featurebar__heading:after {
+    content: " ";
+    display: table; }
+  .featurebar__heading:after {
+    clear: both; }
 
 @media screen and (max-width: 767px) {
   .featurebar__responsive {
     overflow: scroll;
     overflow-y: hidden;
-    white-space: nowrap; } }
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; } }
 
 .featurebar__nav {
   display: block; }

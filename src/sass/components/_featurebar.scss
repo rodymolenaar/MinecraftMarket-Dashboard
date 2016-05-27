@@ -13,6 +13,8 @@
   font-size: 22px;
   padding: 10px 24px;
   text-overflow: ellipsis;
+
+  @include clearfix();
 }
 
 .featurebar__responsive {
@@ -20,6 +22,7 @@
     overflow: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
