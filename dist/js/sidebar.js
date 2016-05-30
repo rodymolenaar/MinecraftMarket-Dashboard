@@ -9,12 +9,6 @@ $(".menu-toggle").click(function (e) {
   $(".sidebar").toggleClass("sidebar-open");
 });
 
-var scrollingDiv = document.getElementsByClassName("content")[0];
-
-scrollingDiv.addEventListener('touchmove', function (event) {
-  event.stopPropagation();
-});
-
 },{}]},{},[1]);
 
 //# sourceMappingURL=sidebar.js.map

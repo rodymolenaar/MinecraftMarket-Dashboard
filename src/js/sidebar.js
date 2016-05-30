@@ -5,9 +5,3 @@ $(".menu-toggle").click(function(e) {
   $(".content").toggleClass("sidebar-expanded");
   $(".sidebar").toggleClass("sidebar-open");
 });
-
-var scrollingDiv = document.getElementsByClassName("content")[0];
-
-scrollingDiv.addEventListener('touchmove', function(event){
-  event.stopPropagation();
-});
