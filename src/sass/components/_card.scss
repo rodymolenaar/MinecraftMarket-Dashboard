@@ -8,7 +8,7 @@
 
 .card__heading {
   display: block;
-  padding: 10px 19px;
+  margin-bottom: 30px;
   font-size: 18px;
   font-weight: 500;
 }
@@ -16,8 +16,6 @@
 .card__heading__actions {
   display: inline-block;
   float: right;
-  min-height: 45px;
-  margin-top: -8px;
 }
 
 .card__heading__action {
@@ -27,7 +25,12 @@
   text-transform: uppercase;
   background: transparent;
   border: 1px solid transparent;
-  min-height: 42px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
 }
 
 .card__heading__action--green {

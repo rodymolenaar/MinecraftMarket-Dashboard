@@ -75,13 +75,19 @@
           <a href="index.html" class="sidebar__nav__item">
             Dashboard
           </a>
+          <a href="statistics.html" class="sidebar__nav__item sidebar__nav__item--active">
+            Statistics
+          </a>
+          <a href="#" class="sidebar__nav__item">
+            Finance
+          </a>
         </div>
 
         <div class="sidebar__nav__group">
           <div class="sidebar__nav__heading">settings</div>
           <a href="general.html" class="sidebar__nav__item">General</a>
           <div class="dropdown">
-            <a class="sidebar__nav__item sidebar__nav__item--active" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
+            <a class="sidebar__nav__item" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
             <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
               <a href="transactions.html" class="sidebar__nav__dropdown-menu__item sidebar__nav__dropdown-menu__item--active">Transactions</a>
               <a href="#" class="sidebar__nav__dropdown-menu__item">Gateways</a>
@@ -114,82 +120,82 @@
     <div class="content">
       <div id="drawer-backdrop" class="menu-toggle drawer-backdrop"></div>
       <div class="featurebar">
-        <div class="featurebar__heading">Transactions</div>
+        <div class="featurebar__heading">Statistics</div>
         <div class="featurebar__responsive">
           <div class="featurebar__nav">
-            <a href="#" class="featurebar__nav__item featurebar__nav__item--active">Transactions</a>
-            <a href="#" class="featurebar__nav__item">Statistics</a>
-            <a href="#" class="featurebar__nav__item">Import / export</a>
+            <a href="#" class="featurebar__nav__item featurebar__nav__item--active">Store</a>
+            <a href="#" class="featurebar__nav__item">Payments</a>
+            <a href="#" class="featurebar__nav__item">Gateways</a>
+            <a href="#" class="featurebar__nav__item">Content</a>
           </div>
         </div>
       </div>
       <div class="content-inner">
-        <div class="card">
-          <div class="card__group">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Username</option>
-                  </select>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">Total monthly expenses</div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input class="form-control">
+                  <span class="input-group-addon">EUR</span>
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary-inverted">Update</button>
+                  </span>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Enter search query here" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary btn-block">Search</button>
               </div>
             </div>
           </div>
-          <div class="card__group">
-            <div class="card__group__heading">
-              Payments
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">Profit this month</div>
+              <h3>-5.00 EUR</h3>
             </div>
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Username</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Gateway</th>
-                    <th>Date</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">Average monthly profit</div>
+              <h3>0.00 EUR</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">Total</div>
+              <h3>20.00 EUR</h3>
+            </div>
+          </div>
+        </div>
 
-                  <tr>
-                    <td><img src="https://www.minecraftmarket.com/api/profiles/heads/rodymol123/25" title="rodymol123" alt="rodymol123"> rodymol123</td>
-                    <td>20.00 EUR</td>
-                    <td><span class="label label-success">Completed</span>
-
-                    </td>
-                    <td>Manual
-
-                    </td>
-                    <td>jul 28, 2015, 12:20 a.m. UTC</td>
-                    <td>
-                      <div class="pull-right">
-                        <button class="btn btn-info-inverted btn-xs" type="button">Details</button>
-                        <button class="btn btn-danger-inverted btn-xs">Delete</button>
-                      </div>
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">This year</div>
+              <h3>0.00 EUR</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">This month</div>
+              <h3>0.00 EUR</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">This week</div>
+              <h3>0.00 EUR</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card__heading">Today</div>
+              <h3>0.00 EUR</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-</div>
+  </div>
 
 </div>
 </div>

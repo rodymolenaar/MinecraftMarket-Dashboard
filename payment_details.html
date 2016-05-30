@@ -75,6 +75,9 @@
           <a href="index.html" class="sidebar__nav__item">
             Dashboard
           </a>
+          <a href="statistics.html" class="sidebar__nav__item">
+            Statistics
+          </a>
         </div>
 
         <div class="sidebar__nav__group">
@@ -117,64 +120,122 @@
         <div class="featurebar__heading">Transactions</div>
         <div class="featurebar__responsive">
           <div class="featurebar__nav">
-            <a href="#" class="featurebar__nav__item featurebar__nav__item--active">Transactions</a>
+            <a href="#" class="featurebar__nav__item">Transactions</a>
             <a href="#" class="featurebar__nav__item">Statistics</a>
             <a href="#" class="featurebar__nav__item">Import / export</a>
           </div>
         </div>
       </div>
       <div class="content-inner">
-        <div class="card">
-          <div class="card__group">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Username</option>
-                  </select>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card__heading">User details</div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="https://mcapi.ca/skin/3d/rodymol123/false" class="img img-responsive">
+                </div>
+                <div class="col-md-10">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td class="weight--500">
+                          Username
+                        </td>
+                        <td>
+                          rodymol123
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="weight--500">UUID</td>
+                        <td>3bafdbfbd5894551844cb76847dc1ab4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="btn btn-warning-inverted" type="button"><i class="fa fa-pencil"></i> Change</button>
+                  <button class="btn btn-danger-inverted" type="button"><i class="fa fa-ban"></i> Ban</button>
+                  <button class="btn btn-info-inverted" type="button"><i class="fa fa-eye"></i> Lookup</button>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Enter search query here" class="form-control">
+            </div>
+            <div class="card">
+              <div class="card__heading">Payment details
+                <div class="pull-right">
+                  <button class="btn btn-danger-inverted btn-xs">Delete payment</button>
                 </div>
               </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary btn-block">Search</button>
-              </div>
+              <table class="table">
+                <tbody>
+
+                  <tr>
+                    <td class="weight--500">Gateway</td>
+                    <td><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" class="img img-responsive img-gateway"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="weight--500">Status</td>
+                    <td>
+                      <span class="label label-success">Completed</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="weight--500">Transaction ID</td>
+                    <td>eb55f98be539303e8ce586568a5f32d7</td>
+                  </tr>
+                  <tr>
+                    <td class="weight--500">Amount</td>
+                    <td>20.00 EUR</td>
+                  </tr>
+                  <tr>
+                    <td class="weight--500">Date</td>
+                    <td>jul 28, 2015, 12:20 a.m. UTC</td>
+                  </tr>
+
+
+                </tbody>
+              </table>
             </div>
-          </div>
-          <div class="card__group">
-            <div class="card__group__heading">
-              Payments
-            </div>
-            <div class="table-responsive">
+            <div class="card">
+              <div class="card__heading">Items</div>
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Username</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Gateway</th>
-                    <th>Date</th>
-                    <th></th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th colspan="2">Expires</th>
                   </tr>
                 </thead>
                 <tbody>
 
                   <tr>
-                    <td><img src="https://www.minecraftmarket.com/api/profiles/heads/rodymol123/25" title="rodymol123" alt="rodymol123"> rodymol123</td>
-                    <td>20.00 EUR</td>
-                    <td><span class="label label-success">Completed</span>
-
-                    </td>
-                    <td>Manual
-
-                    </td>
+                    <td>Example Item 1</td>
+                    <td>5.00 EUR</td>
                     <td>jul 28, 2015, 12:20 a.m. UTC</td>
                     <td>
                       <div class="pull-right">
-                        <button class="btn btn-info-inverted btn-xs" type="button">Details</button>
+                        <button class="btn btn-danger-inverted btn-xs">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Example Item 2</td>
+                    <td>10.00 EUR</td>
+                    <td>jul 28, 2015, 12:20 a.m. UTC</td>
+                    <td>
+                      <div class="pull-right">
+                        <button class="btn btn-danger-inverted btn-xs">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Example Item 3</td>
+                    <td>25.00 EUR</td>
+                    <td>jul 28, 2015, 12:20 a.m. UTC</td>
+                    <td>
+                      <div class="pull-right">
                         <button class="btn btn-danger-inverted btn-xs">Delete</button>
                       </div>
                     </td>
@@ -182,6 +243,44 @@
 
                 </tbody>
               </table>
+            </div>
+            <div class="card">
+              <div class="card__heading">Commands</div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Command</th>
+                    <th>Server</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card__heading">
+                Notes
+                <div class="card__heading__actions">
+                  <a href="#" class="card__heading__action">New</a>
+                </div>
+              </div>
+              <p>
+                Click "New" to create a note for this payment, so your team know what's up!
+              </p>
+            </div>
+            <div class="card">
+              <div class="card__heading">
+                Previous payments
+              </div>
+              <p>
+                This user hasn't made any previous payments.
+              </p>
             </div>
           </div>
         </div>

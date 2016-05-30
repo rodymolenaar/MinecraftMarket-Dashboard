@@ -43,11 +43,11 @@
       background-color: none;
       border-color: none;
       color: darken($bg, 5%);
+      box-shadow: none;
+      outline: 0;
       @if ($class == "default") {
         color: #333;
       }
-      box-shadow: none;
-      outline: 0;
     }
 
     &:hover,
