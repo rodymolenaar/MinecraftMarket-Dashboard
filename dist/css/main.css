@@ -13105,6 +13105,14 @@ button.close {
 .img-gateway {
   height: 23px; }
 
+html {
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  height: 100%;
+  overflow: auto; }
+
 label {
   font-weight: normal;
   font-size: 14px; }
