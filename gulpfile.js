@@ -35,8 +35,10 @@ elixir(function(mix) {
 });
 
 elixir(function(mix) {
+    mix.browserify('sidebar.js');
     mix.scripts([
          paths.jquery + 'dist/jquery.js',
-         paths.bootstrap + 'javascripts/bootstrap.js'
+         paths.bootstrap + 'javascripts/bootstrap.js',
+         'dist/js/sidebar.js'
        ], 'dist/js/main.js', './');
 });
