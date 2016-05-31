@@ -5,3 +5,12 @@
 .img-gateway {
   height: 23px;
 }
+
+.skin {
+  @extend .img-responsive;
+  @include center-block();
+
+  @media (max-width: $container-md) {
+    margin-bottom: 15px;
+  }
+}

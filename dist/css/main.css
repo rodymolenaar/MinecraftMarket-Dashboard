@@ -8398,7 +8398,7 @@ figure {
 img {
   vertical-align: middle; }
 
-.img-responsive {
+.img-responsive, .skin {
   display: block;
   max-width: 100%;
   height: auto; }
@@ -13104,6 +13104,14 @@ button.close {
 
 .img-gateway {
   height: 23px; }
+
+.skin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 970px) {
+    .skin {
+      margin-bottom: 15px; } }
 
 label {
   font-weight: normal;
