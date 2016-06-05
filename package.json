@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-file-include": "^0.13.7",
     "laravel-elixir": "^6.0.0-1"
   },
   "author": "Rody Molenaar",
