@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
         <span class="sr-only">Toggle navigation</span>
         <i class="fa fa-ellipsis-v"></i>
       </button>
-      <a class="navbar-brand menu-toggle" href="#" style="position: relative;">
+      <a class="navbar-brand menu-toggle" href="#">
         <div class="navbar-hamburger">
           <i class="fa fa-bars"></i>
         </div>
@@ -53,8 +53,9 @@
 
     <div class="sidebar">
 
-        <div class="sidebar__top">
+      <div class="sidebar__top">
   <div class="sidebar__top__plan">
+    
     <div class="sidebar__top__plan_details">
       <div class="sidebar__top__plan__plan_name">
         Premium
@@ -62,14 +63,16 @@
       <div class="sidebar__top__plan__plan_duration">
         Lifetime
       </div>
-    </div>
+    </div><!-- /.sidebar__top__plan_details -->
+
     <div class="sidebar__top__plan_actions">
       <a href="#" class="sidebar__top__plan__action">
         Plans
       </a>
-    </div>
-  </div>
-</div>
+    </div><!-- /.sidebar__top__plan_actions -->
+
+  </div><!-- /.sidebar__top__plan -->
+</div><!-- /.sidebar__top -->
 
 
       <div class="sidebar__nav">
@@ -128,63 +131,65 @@
       </div>
       <div class="content-inner">
         <div class="card">
-          <div class="card__group">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Username</option>
-                  </select>
+          <div class="card__body">
+            <div class="card__group">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Username</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Enter search query here" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block">Search</button>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Enter search query here" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary btn-block">Search</button>
-              </div>
             </div>
-          </div>
-          <div class="card__group">
-            <div class="card__group__heading">
-              Payments
-            </div>
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Username</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Gateway</th>
-                    <th>Date</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
+            <div class="card__group">
+              <div class="card__group__heading">
+                Payments
+              </div>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Username</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th>Gateway</th>
+                      <th>Date</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
 
-                  <tr>
-                    <td><img src="https://www.minecraftmarket.com/api/profiles/heads/rodymol123/25" title="rodymol123" alt="rodymol123"> rodymol123</td>
-                    <td>20.00 EUR</td>
-                    <td><span class="label label-success">Completed</span>
+                    <tr>
+                      <td><img src="https://www.minecraftmarket.com/api/profiles/heads/rodymol123/25" title="rodymol123" alt="rodymol123"> rodymol123</td>
+                      <td>20.00 EUR</td>
+                      <td><span class="label label-success">Completed</span>
 
-                    </td>
-                    <td>Manual
+                      </td>
+                      <td>Manual
 
-                    </td>
-                    <td>jul 28, 2015, 12:20 a.m. UTC</td>
-                    <td>
-                      <div class="pull-right">
-                        <button class="btn btn-info-inverted btn-xs" type="button">Details</button>
-                        <button class="btn btn-danger-inverted btn-xs">Delete</button>
-                      </div>
-                    </td>
-                  </tr>
+                      </td>
+                      <td>jul 28, 2015, 12:20 a.m. UTC</td>
+                      <td>
+                        <div class="pull-right">
+                          <button class="btn btn-info-inverted btn-xs" type="button">Details</button>
+                          <button class="btn btn-danger-inverted btn-xs">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
 
-                </tbody>
-              </table>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

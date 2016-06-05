@@ -1,6 +1,5 @@
 .card {
   display: block;
-  padding: 19px;
   margin-bottom: 20px;
   background: #fff;
   @include md-shadow(1);
@@ -8,7 +7,7 @@
 
 .card__heading {
   display: block;
-  margin-bottom: 30px;
+  padding: 19px;
   font-size: 18px;
   font-weight: 500;
 }
@@ -43,6 +42,11 @@
 
 .card__heading__action--red {
   color: $brand-danger;
+}
+
+.card__body {
+  display: block;
+  padding: 19px;
 }
 
 .card__group {
@@ -95,37 +99,18 @@
   color: $brand-danger;
 }
 
-.category {
-  & .item {
-    box-shadow: none;
-    margin-bottom: 20px;
-  }
-}
-
-.subcategory {
-  @include md-shadow(1);
-  & .card {
-    box-shadow: none;
-  }
-  & .card__heading {
-    background: #eee;
-  }
-  & .item {
-    box-shadow: none;
-  }
-}
-
 .item {
   @include md-shadow(1);
-  > .card__heading {
-    background: #fff;
-  }
+  background: lighten(#eee, 2.5%);
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
 
 .item__details {
   font-size: 14px;
   text-transform: uppercase;
-  padding: 0 19px;
+  padding: 19px;
+  padding-top: 0;
 }
 
 .item__details__item {

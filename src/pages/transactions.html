@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('./components/_head.html')
+@@include('./components/_head.html')
 <body>
   @@include('./components/_navbar.html')
   <div class="page-wrapper">
 
     <div class="sidebar">
 
-        @@include('./components/sidebar/_sidebar__top.html')
+      @@include('./components/sidebar/_sidebar__top.html')
 
       <div class="sidebar__nav">
 
@@ -65,63 +65,65 @@
       </div>
       <div class="content-inner">
         <div class="card">
-          <div class="card__group">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Username</option>
-                  </select>
+          <div class="card__body">
+            <div class="card__group">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Username</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Enter search query here" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block">Search</button>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Enter search query here" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary btn-block">Search</button>
-              </div>
             </div>
-          </div>
-          <div class="card__group">
-            <div class="card__group__heading">
-              Payments
-            </div>
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Username</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Gateway</th>
-                    <th>Date</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
+            <div class="card__group">
+              <div class="card__group__heading">
+                Payments
+              </div>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Username</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th>Gateway</th>
+                      <th>Date</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
 
-                  <tr>
-                    <td><img src="https://www.minecraftmarket.com/api/profiles/heads/rodymol123/25" title="rodymol123" alt="rodymol123"> rodymol123</td>
-                    <td>20.00 EUR</td>
-                    <td><span class="label label-success">Completed</span>
+                    <tr>
+                      <td><img src="https://www.minecraftmarket.com/api/profiles/heads/rodymol123/25" title="rodymol123" alt="rodymol123"> rodymol123</td>
+                      <td>20.00 EUR</td>
+                      <td><span class="label label-success">Completed</span>
 
-                    </td>
-                    <td>Manual
+                      </td>
+                      <td>Manual
 
-                    </td>
-                    <td>jul 28, 2015, 12:20 a.m. UTC</td>
-                    <td>
-                      <div class="pull-right">
-                        <button class="btn btn-info-inverted btn-xs" type="button">Details</button>
-                        <button class="btn btn-danger-inverted btn-xs">Delete</button>
-                      </div>
-                    </td>
-                  </tr>
+                      </td>
+                      <td>jul 28, 2015, 12:20 a.m. UTC</td>
+                      <td>
+                        <div class="pull-right">
+                          <button class="btn btn-info-inverted btn-xs" type="button">Details</button>
+                          <button class="btn btn-danger-inverted btn-xs">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
 
-                </tbody>
-              </table>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

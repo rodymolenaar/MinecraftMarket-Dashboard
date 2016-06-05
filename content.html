@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
         <span class="sr-only">Toggle navigation</span>
         <i class="fa fa-ellipsis-v"></i>
       </button>
-      <a class="navbar-brand menu-toggle" href="#" style="position: relative;">
+      <a class="navbar-brand menu-toggle" href="#">
         <div class="navbar-hamburger">
           <i class="fa fa-bars"></i>
         </div>
@@ -53,8 +53,9 @@
 
     <div class="sidebar">
 
-        <div class="sidebar__top">
+      <div class="sidebar__top">
   <div class="sidebar__top__plan">
+    
     <div class="sidebar__top__plan_details">
       <div class="sidebar__top__plan__plan_name">
         Premium
@@ -62,14 +63,16 @@
       <div class="sidebar__top__plan__plan_duration">
         Lifetime
       </div>
-    </div>
+    </div><!-- /.sidebar__top__plan_details -->
+
     <div class="sidebar__top__plan_actions">
       <a href="#" class="sidebar__top__plan__action">
         Plans
       </a>
-    </div>
-  </div>
-</div>
+    </div><!-- /.sidebar__top__plan_actions -->
+
+  </div><!-- /.sidebar__top__plan -->
+</div><!-- /.sidebar__top -->
 
 
       <div class="sidebar__nav">
@@ -127,43 +130,29 @@
       </div>
       <div class="content-inner">
         <div class="category">
-          <div class="card__heading">
-            Example category
-            <div class="card__heading__actions">
-              <button class="card__heading__action"><i class="fa fa-plus"></i><span class="hidden-xs"> Add subcategory</span></button>
-              <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
-              <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
-              <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
-              <button class="card__heading__action"><i class="fa fa-arrows-v"></i></button>
-            </div>
-          </div>
           <div class="card">
-            <div class="item">
-              <div class="card__heading">
-                Example Item 1
-                <div class="card__heading__actions">
-                  <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
-                  <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
-                  <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
-                </div>
-              </div>
-              <div class="item__details">
-                <span class="item__details__item">5.00 EUR</span>
-                <span class="item__details__item item__details__item--green">Enabled</span>
+            <div class="card__heading">
+              Example category
+              <div class="card__heading__actions">
+                <button class="card__heading__action"><i class="fa fa-plus"></i><span class="hidden-xs"> Add subcategory</span></button>
+                <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
+                <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
+                <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
+                <button class="card__heading__action"><i class="fa fa-arrows-v"></i></button>
               </div>
             </div>
-            <div class="subcategory">
-              <div class="card__heading">
-                Example subcategory 1
-                <div class="card__heading__actions">
-                  <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
-                  <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
-                  <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
-                  <button class="card__heading__action"><i class="fa fa-arrows-v"></i></button>
+            <div class="card__body">
+              <div class="subcategory">
+                <div class="card__heading">
+                  Example subcategory 1
+                  <div class="card__heading__actions">
+                    <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
+                    <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
+                    <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
+                    <button class="card__heading__action"><i class="fa fa-arrows-v"></i></button>
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="item">
+                <div class="card">
                   <div class="card__heading">
                     Example Item 2
                     <div class="card__heading__actions">
@@ -172,9 +161,13 @@
                       <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
                     </div>
                   </div>
-                  <div class="item__details">
-                    <span class="item__details__item">5.00 EUR</span>
-                    <span class="item__details__item item__details__item--green">Enabled</span>
+                  <div class="card__body">
+                    <div class="item">
+                      <div class="item__details">
+                        <span class="item__details__item">5.00 EUR</span>
+                        <span class="item__details__item item__details__item--green">Enabled</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,29 +176,59 @@
         </div>
 
         <div class="category">
-          <div class="card__heading">
-            Example category 2
-            <div class="card__heading__actions">
-              <button class="card__heading__action"><i class="fa fa-plus"></i><span class="hidden-xs"> Add subcategory</span></button>
-              <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
-              <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
-              <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
-              <button class="card__heading__action"><i class="fa fa-arrows-v"></i></button>
-            </div>
-          </div>
           <div class="card">
-            <div class="item">
-              <div class="card__heading">
-                Example Item 3
-                <div class="card__heading__actions">
-                  <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
-                  <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
-                  <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
+            <div class="card__heading">
+              Example category 1
+              <div class="card__heading__actions">
+                <button class="card__heading__action"><i class="fa fa-plus"></i><span class="hidden-xs"> Add subcategory</span></button>
+                <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
+                <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
+                <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
+                <button class="card__heading__action"><i class="fa fa-arrows-v"></i></button>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="item">
+                <div class="card__heading">
+                  Example Item 1
+                  <div class="card__heading__actions">
+                    <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
+                    <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
+                    <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
+                  </div>
+                </div>
+                <div class="item__details">
+                  <span class="item__details__item">5.00 EUR</span>
+                  <span class="item__details__item item__details__item--green">Enabled</span>
                 </div>
               </div>
-              <div class="item__details">
-                <span class="item__details__item">5.00 EUR</span>
-                <span class="item__details__item item__details__item--green">Enabled</span>
+              <div class="item">
+                <div class="card__heading">
+                  Example Item 2
+                  <div class="card__heading__actions">
+                    <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
+                    <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
+                    <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
+                  </div>
+                </div>
+                <div class="item__details">
+                  <span class="item__details__item">5.00 EUR</span>
+                  <span class="item__details__item item__details__item--green">Enabled</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card__heading">
+                  Example Item 3
+                  <div class="card__heading__actions">
+                    <button class="card__heading__action card__heading__action--orange"><i class="fa fa-pencil"></i><span class="hidden-xs"> Edit</span></button>
+                    <button class="card__heading__action card__heading__action--red"><i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span></button>
+                    <button class="card__heading__action"><i class="fa fa-arrows"></i></button>
+                  </div>
+                </div>
+                <div class="item__details">
+                  <span class="item__details__item">5.00 EUR</span>
+                  <span class="item__details__item item__details__item--green">Enabled</span>
+                </div>
               </div>
             </div>
           </div>
@@ -214,13 +237,7 @@
     </div>
   </div>
 
-</div>
-
-</div>
-</div>
-</div>
-
-<script src="dist/js/main.js?v=0.0.2"></script>
+  <script src="dist/js/main.js?v=0.0.2"></script>
 
 </body>
 </html>

@@ -13135,6 +13135,70 @@ button.close {
     .skin {
       margin-bottom: 15px; } }
 
+/* Switch
+   ========================================================================== */
+.switch,
+.switch * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none; }
+
+.switch label {
+  cursor: pointer; }
+
+.switch label input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+  .switch label input[type=checkbox]:checked + .lever {
+    background-color: #f1bfa0; }
+    .switch label input[type=checkbox]:checked + .lever:after {
+      background-color: #FF6C13;
+      left: 24px; }
+
+.switch label .lever {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 15px;
+  background-color: #818181;
+  border-radius: 15px;
+  margin-right: 10px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  vertical-align: middle;
+  margin: 0 16px; }
+  .switch label .lever:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-color: #F1F1F1;
+    border-radius: 21px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+    left: -5px;
+    top: -3px;
+    -webkit-transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease; }
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active::after,
+input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::after {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(255, 108, 19, 0.1); }
+
+input[type=checkbox]:not(:disabled) ~ .lever:active:after,
+input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+
+.switch input[type=checkbox][disabled] + .lever {
+  cursor: default; }
+
+.switch label input[type=checkbox][disabled] + .lever:after,
+.switch label input[type=checkbox][disabled]:checked + .lever:after {
+  background-color: #BDBDBD; }
+
 label {
   font-weight: normal;
   font-size: 14px; }
@@ -13883,14 +13947,13 @@ input[type="checkbox"],
 
 .card {
   display: block;
-  padding: 19px;
   margin-bottom: 20px;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .card__heading {
   display: block;
-  margin-bottom: 30px;
+  padding: 19px;
   font-size: 18px;
   font-weight: 500; }
 
@@ -13917,6 +13980,10 @@ input[type="checkbox"],
 
 .card__heading__action--red {
   color: #d9534f; }
+
+.card__body {
+  display: block;
+  padding: 19px; }
 
 .card__group {
   display: block; }
@@ -13960,28 +14027,17 @@ input[type="checkbox"],
 .card__group__action--red {
   color: #d9534f; }
 
-.category .item {
-  box-shadow: none;
-  margin-bottom: 20px; }
-
-.subcategory {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-  .subcategory .card {
-    box-shadow: none; }
-  .subcategory .card__heading {
-    background: #eee; }
-  .subcategory .item {
-    box-shadow: none; }
-
 .item {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-  .item > .card__heading {
-    background: #fff; }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #f4f4f4;
+  border-radius: 4px;
+  margin-bottom: 15px; }
 
 .item__details {
   font-size: 14px;
   text-transform: uppercase;
-  padding: 0 19px; }
+  padding: 19px;
+  padding-top: 0; }
 
 .item__details__item {
   display: inline-block;
