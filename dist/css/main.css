@@ -13993,19 +13993,19 @@ input[type="checkbox"],
     width: 50px;
     height: 50px;
     margin-top: -4px; }
-    @media (min-width: 599px) {
+    @media (min-width: 970px) {
       .navbar-brand .navbar-logo {
         margin-left: 15px; } }
   .navbar-brand .navbar-hamburger {
     display: none; }
-    @media only screen and (max-width: 599px) {
+    @media only screen and (max-width: 970px) {
       .navbar-brand .navbar-hamburger {
         display: inline-block;
         padding: 21px 15px; } }
   .navbar-brand .navbar-name {
     display: inline-block;
     padding: 21px 15px; }
-    @media only screen and (max-width: 599px) {
+    @media only screen and (max-width: 750px) {
       .navbar-brand .navbar-name {
         display: none !important; } }
 
@@ -14048,18 +14048,18 @@ input[type="checkbox"],
   -webkit-overflow-scrolling: touch;
   z-index: 1; }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 970px) {
   .content {
     left: 0; } }
 
-@media (max-width: 599px) {
+@media (max-width: 970px) {
   .content {
     min-height: 0; } }
 
 .content__actions {
   display: block; }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 970px) {
   .sidebar {
     z-index: 100;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -14072,7 +14072,7 @@ input[type="checkbox"],
     transition: transform 0.3s cubic-bezier(0.4, 0, 1, 1), visibility 0s ease 0.3s;
     transition: transform 0.3s cubic-bezier(0.4, 0, 1, 1), visibility 0s ease 0.3s, -webkit-transform 0.3s cubic-bezier(0.4, 0, 1, 1); } }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 970px) {
   .sidebar-open {
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
@@ -14098,7 +14098,7 @@ input[type="checkbox"],
   -webkit-transition: opacity .3s ease,visibility 0s ease .3s;
   transition: opacity .3s ease,visibility 0s ease .3s; }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 970px) {
   .drawer-backdrop-open {
     pointer-events: auto;
     opacity: 1;

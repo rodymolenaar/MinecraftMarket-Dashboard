@@ -32,12 +32,12 @@
   z-index: 1;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: $container-md) {
   .content {
     left: 0;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: $container-md) {
   .content {
     min-height: 0;
   }
@@ -47,7 +47,7 @@
   display: block;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: $container-md) {
   .sidebar {
     z-index: 100;
     -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
@@ -60,7 +60,7 @@
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: $container-md) {
   .sidebar-open {
     -webkit-transform: translate3d(0,0,0) !important;
     transform: translate3d(0,0,0) !important;
@@ -86,7 +86,7 @@
   transition: opacity .3s ease,visibility 0s ease .3s;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: $container-md) {
   .drawer-backdrop-open {
     pointer-events: auto;
     opacity: 1;
