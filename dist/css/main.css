@@ -12923,7 +12923,7 @@ button.close {
 .visible-md {
   display: none !important; }
 
-.visible-lg {
+.visible-lg, .statistic__icon {
   display: none !important; }
 
 .visible-xs-block,
@@ -13010,14 +13010,15 @@ button.close {
     display: inline-block !important; } }
 
 @media (min-width: 1200px) {
-  .visible-lg {
+  .visible-lg, .statistic__icon {
     display: block !important; }
-  table.visible-lg {
+  table.visible-lg, table.statistic__icon {
     display: table !important; }
-  tr.visible-lg {
+  tr.visible-lg, tr.statistic__icon {
     display: table-row !important; }
-  th.visible-lg,
-  td.visible-lg {
+  th.visible-lg, th.statistic__icon,
+  td.visible-lg,
+  td.statistic__icon {
     display: table-cell !important; } }
 
 @media (min-width: 1200px) {
