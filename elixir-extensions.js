@@ -7,10 +7,16 @@ var Task = Elixir.Task;
 Elixir.extend('fileinclude', function() {
 
   new Task('fileinclude', function() {
-    return gulp.src('./src/pages/**').pipe(fileinclude({
+    
+    return gulp
+    .src('./src/pages/**')
+    .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
-    })).pipe(gulp.dest('./'));
-  });
+    }))
+    .pipe(gulp.dest('./'));
+
+  })
+  .watch('./src/pages/**');
 
 });
