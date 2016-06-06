@@ -98,31 +98,3 @@
 .card__group__action--red {
   color: $brand-danger;
 }
-
-.item {
-  @include md-shadow(1);
-  background: lighten(#eee, 2.5%);
-  border-radius: 4px;
-  margin-bottom: 15px;
-}
-
-.item__details {
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 19px;
-  padding-top: 0;
-}
-
-.item__details__item {
-  display: inline-block;
-  font-weight: 500;
-  margin-right: 5px;
-}
-
-.item__details__item--green {
-  color: $brand-success;
-}
-
-.item__details__item--red {
-  color: $brand-danger;
-}

@@ -1,0 +1,88 @@
+.category {
+  > .category {
+    padding-left: 35px;
+  }
+}
+
+.category__heading {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: $brand-primary;
+  margin-bottom: 15px;
+}
+
+.item {
+  @include md-shadow(1);
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+.item--disabled {
+  opacity: .7;
+}
+
+.item__details {
+  display: inline-block;
+  padding: 15px;
+}
+
+.item__name {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.item__actions {
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.item__actions__action {
+  display: inline-block;
+  border: 0;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 21px 26.5px;
+  float: left;
+  min-height: 77px;
+  min-width: 75px;
+  background: #eee;
+  color: #333;
+
+  &:focus {
+    outline: 0;
+    background: darken(#eee, 5%);
+  }
+}
+
+.item__actions__action--primary {
+  background: $brand-primary;
+  color: #fff;
+
+  &:focus {
+    background: darken($brand-primary, 10%);
+  }
+}
+
+.item__actions__action--orange {
+  background: $brand-warning;
+  color: #fff;
+
+  &:focus {
+    background: darken($brand-warning, 10%);
+  }
+}
+
+.item__actions__action--red {
+  background: $brand-danger;
+  color: #fff;
+
+  &:focus {
+    outline: 0;
+    background: darken($brand-danger, 10%);
+  }
+}

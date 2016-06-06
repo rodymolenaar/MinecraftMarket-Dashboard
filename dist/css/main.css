@@ -14027,29 +14027,6 @@ input[type="checkbox"],
 .card__group__action--red {
   color: #d9534f; }
 
-.item {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background: #f4f4f4;
-  border-radius: 4px;
-  margin-bottom: 15px; }
-
-.item__details {
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 19px;
-  padding-top: 0; }
-
-.item__details__item {
-  display: inline-block;
-  font-weight: 500;
-  margin-right: 5px; }
-
-.item__details__item--green {
-  color: #7AC142; }
-
-.item__details__item--red {
-  color: #d9534f; }
-
 .navbar {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
@@ -14316,6 +14293,74 @@ input[type="checkbox"],
   .content-inner {
     width: 1160px;
     padding: 0 12px; } }
+
+.category > .category {
+  padding-left: 35px; }
+
+.category__heading {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: #FF6C13;
+  margin-bottom: 15px; }
+
+.item {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #fff;
+  margin-bottom: 15px; }
+
+.item--disabled {
+  opacity: .7; }
+
+.item__details {
+  display: inline-block;
+  padding: 15px; }
+
+.item__name {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 5px; }
+
+.item__actions {
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+  font-weight: 500; }
+
+.item__actions__action {
+  display: inline-block;
+  border: 0;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 21px 26.5px;
+  float: left;
+  min-height: 77px;
+  min-width: 75px;
+  background: #eee;
+  color: #333; }
+  .item__actions__action:focus {
+    outline: 0;
+    background: #e1e1e1; }
+
+.item__actions__action--primary {
+  background: #FF6C13;
+  color: #fff; }
+  .item__actions__action--primary:focus {
+    background: #df5400; }
+
+.item__actions__action--orange {
+  background: #f0ad4e;
+  color: #fff; }
+  .item__actions__action--orange:focus {
+    background: #ec971f; }
+
+.item__actions__action--red {
+  background: #d9534f;
+  color: #fff; }
+  .item__actions__action--red:focus {
+    outline: 0;
+    background: #c9302c; }
 
 .featurebar {
   display: block;
