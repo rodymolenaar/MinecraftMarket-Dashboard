@@ -13135,6 +13135,15 @@ button.close {
     .skin {
       margin-bottom: 15px; } }
 
+.truncate, .item__name {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  @media (max-width: 970px) {
+    .truncate, .item__name {
+      width: 150px; } }
+
 /* Switch
    ========================================================================== */
 .switch,
@@ -14322,11 +14331,18 @@ input[type="checkbox"],
   font-weight: 500;
   margin-right: 5px; }
 
+@media only screen and (max-width: 970px) {
+  .item__price {
+    display: none; } }
+
 .item__actions {
   display: inline-block;
   float: right;
   font-size: 18px;
   font-weight: 500; }
+  @media only screen and (max-width: 970px) {
+    .item__actions {
+      font-size: 16px; } }
 
 .item__actions__action {
   display: inline-block;
@@ -14336,9 +14352,12 @@ input[type="checkbox"],
   padding: 21px 26.5px;
   float: left;
   min-height: 77px;
-  min-width: 75px;
   background: #eee;
   color: #333; }
+  @media only screen and (max-width: 970px) {
+    .item__actions__action {
+      min-height: 55px;
+      padding: 10px 15px; } }
   .item__actions__action:focus {
     outline: 0;
     background: #e1e1e1; }

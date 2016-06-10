@@ -32,6 +32,14 @@
   font-size: 18px;
   font-weight: 500;
   margin-right: 5px;
+
+  @extend .truncate;
+}
+
+.item__price {
+  @media only screen and (max-width: $container-md) {
+    display: none;
+  }
 }
 
 .item__actions {
@@ -39,6 +47,10 @@
   float: right;
   font-size: 18px;
   font-weight: 500;
+
+  @media only screen and (max-width: $container-md) {
+    font-size: 16px;
+  }
 }
 
 .item__actions__action {
@@ -49,9 +61,13 @@
   padding: 21px 26.5px;
   float: left;
   min-height: 77px;
-  min-width: 75px;
   background: #eee;
   color: #333;
+
+  @media only screen and (max-width: $container-md) {
+    min-height: 55px;
+    padding: 10px 15px;
+  }
 
   &:focus {
     outline: 0;

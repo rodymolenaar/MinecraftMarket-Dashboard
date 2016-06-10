@@ -14,3 +14,14 @@
     margin-bottom: 15px;
   }
 }
+
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: $container-md) {
+    width: 150px;
+  }
+}
