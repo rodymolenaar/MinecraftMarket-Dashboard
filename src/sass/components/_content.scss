@@ -25,6 +25,9 @@
 .item__details {
   display: inline-block;
   padding: 15px;
+  @media only screen and (max-width: $container-md) {
+    width: 40%;
+  }
 }
 
 .item__name {
@@ -34,6 +37,11 @@
   margin-right: 5px;
 
   @extend .truncate;
+
+  @media only screen and (max-width: $container-md) {
+    font-size: 14px;
+    width: 80%;
+  }
 }
 
 .item__price {
@@ -65,8 +73,8 @@
   color: #333;
 
   @media only screen and (max-width: $container-md) {
-    min-height: 55px;
-    padding: 10px 15px;
+    min-height: 50px;
+    padding: 8px 15px;
   }
 
   &:focus {
