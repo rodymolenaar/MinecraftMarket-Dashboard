@@ -1,0 +1,112 @@
+.form-box {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.09), 0 10px 15px rgba(0, 0, 0, 0.12);
+  margin-top: 50px;
+  & .form-header {
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+    margin: 0;
+    padding: 50px;
+  }
+  & .form-body {
+    padding: 0px 50px 50px 50px;
+    & .form-control {
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      border-bottom: 2px solid #E7E7E7;
+      letter-spacing: 1.25px;
+      padding: 15px 0px 15px 0px;
+      margin-bottom: 25px;
+      @include placeholder($input-color-placeholder, uppercase);
+      &:focus {
+        border-color: $brand-primary;
+      }
+    }
+    & label {
+      border: 0;
+      background: transparent;
+    }
+  }
+  & .form-link {
+    display: block;
+    padding: 20px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 0;
+    color: #848C9F;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $brand-primary;
+    }
+  }
+  & label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #848C9F;
+  }
+  & .form-actions {
+    @include clearfix();
+    & .form-action {
+      background: #E8E9EC;
+      color: #848C9D;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      border: 0;
+      text-align: center;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+    & .form-action-secondary {
+      background: #E8E9EC;
+      color: #848C9D;
+    }
+    & .form-action-primary {
+      background: $brand-primary;
+      color: #fff;
+    }
+    & .form-action-single {
+      display: block;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      padding: 20px 50px;
+    }
+    & .form-action-dual {
+      display: inline-block;
+      width: 50%;
+      padding: 20px;
+      &:nth-child(1) {
+        float: left;
+        border-bottom-left-radius: 6px;
+      }
+      &:nth-child(2) {
+        border-bottom-right-radius: 6px;
+        float: right;
+      }
+    }
+  }
+}
+
+.auth__logo {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.auth__logo__heading {
+  display: block;
+  margin-top: 15px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+}
