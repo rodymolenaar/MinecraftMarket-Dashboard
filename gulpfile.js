@@ -32,7 +32,6 @@ elixir.config.publicPath = 'dist';
 elixir(function(mix) {
     mix.sass('main.scss', 'dist/css/main.css')
        .fileinclude()
-       .copy(paths.bootstrap + 'fonts/bootstrap/**', 'dist/fonts/bootstrap')
        .copy(paths.fontawesome + 'fonts/**', 'dist/fonts/font-awesome')
        .copy(paths.mdif + 'dist/fonts/**', 'dist/fonts/material-design-iconic-font');
 });
