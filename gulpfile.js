@@ -41,6 +41,7 @@ elixir(function(mix) {
     mix.scripts([
          paths.jquery + 'dist/jquery.js',
          paths.bootstrap + 'javascripts/bootstrap.js',
+         'node_modules/justgage/justgage.js',
          'dist/js/sidebar.js'
        ], 'dist/js/main.js', './');
 });
