@@ -1,20 +1,22 @@
 {
-  "name": "minecraftmarket-dashboard",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/js/main.js",
+  "name": "minecraftmarket",
+  "description": "A Vue.js project",
+  "author": "MinecraftMarket",
+  "private": true,
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
+    "vue": "^1.0.0",
+    "vue-resource": "^0.9.1",
+    "vue-router": "^0.7.13",
     "font-awesome": "^4.6.1",
     "jquery": "^2.2.4",
     "justgage": "^1.2.2",
     "material-design-iconic-font": "^2.2.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-file-include": "^0.13.7",
-    "laravel-elixir": "^6.0.0-1"
-  },
-  "author": "Rody Molenaar",
-  "license": "ISC"
+    "gulp": "^3.8.8",
+    "laravel-elixir": "^4.0.0",
+    "laravel-elixir-vueify": "^1.0.0",
+    "node-sass": "^3.8.0"
+  }
 }
