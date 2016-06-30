@@ -1,6 +1,6 @@
 var elixir = require('laravel-elixir');
 
-require('laravel-elixir-vueify');
+require('./elixir-extensions')
 
 /*
  |--------------------------------------------------------------------------
@@ -30,18 +30,18 @@ elixir.config.publicPath = 'dist';
  */
 
 elixir(function(mix) {
-    mix.browserify('main.js');
-      // .sass('app.scss', 'dist/css/app.css')
-      //  .copy(paths.fontawesome + 'fonts/**', 'dist/fonts/font-awesome')
-      //  .copy(paths.mdif + 'dist/fonts/**', 'dist/fonts/material-design-iconic-font');
+    mix.sass('main.scss', 'dist/css/main.css')
+       .fileinclude()
+       .copy(paths.fontawesome + 'fonts/**', 'dist/fonts/font-awesome')
+       .copy(paths.mdif + 'dist/fonts/**', 'dist/fonts/material-design-iconic-font');
 });
 
-// elixir(function(mix) {
-//     mix.browserify('assets/main.js');
-//     mix.scripts([
-//          paths.jquery + 'dist/jquery.js',
-//          paths.bootstrap + 'javascripts/bootstrap.js',
-//          'node_modules/justgage/justgage.js',
-//          'dist/js/sidebar.js'
-//        ], 'dist/js/main.js', './');
-// });
+elixir(function(mix) {
+    mix.browserify('sidebar.js');
+    mix.scripts([
+         paths.jquery + 'dist/jquery.js',
+         paths.bootstrap + 'javascripts/bootstrap.js',
+         'node_modules/justgage/justgage.js',
+         'dist/js/sidebar.js'
+       ], 'dist/js/main.js', './');
+});

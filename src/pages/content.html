@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/_head.html')
+<body>
+  @@include('./components/_navbar.html')
+  <div class="page-wrapper">
+
+    <div class="sidebar">
+
+      @@include('./components/sidebar/_sidebar__top.html')
+
+      <div class="sidebar__nav">
+
+        <div class="sidebar__nav__group">
+          <a href="index.html" class="sidebar__nav__item">
+            Dashboard
+          </a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">settings</div>
+          <a href="general.html" class="sidebar__nav__item">General</a>
+          <div class="dropdown">
+            <a class="sidebar__nav__item" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
+            <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
+              <a href="transactions.html" class="sidebar__nav__dropdown-menu__item">Transactions</a>
+              <a href="#" class="sidebar__nav__dropdown-menu__item">Gateways</a>
+            </div>
+          </div>
+          <a href="#" class="sidebar__nav__item">Servers</a>
+          <a href="#" class="sidebar__nav__item">Design</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">content</div>
+          <a href="content.html" class="sidebar__nav__item sidebar__nav__item--active">Categories & items</a>
+          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="#" class="sidebar__nav__item">Variables</a>
+          <a href="#" class="sidebar__nav__item">Bans</a>
+          <a href="#" class="sidebar__nav__item">Discount codes</a>
+          <a href="#" class="sidebar__nav__item">Sales</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">support</div>
+          <a href="#" class="sidebar__nav__item">Knowledge base</a>
+          <a href="#" class="sidebar__nav__item">Tickets</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content">
+      <div id="drawer-backdrop" class="menu-toggle drawer-backdrop"></div>
+      <div class="featurebar">
+        <div class="featurebar__heading">Categories & items</div>
+        <div class="featurebar__responsive">
+          <div class="featurebar__nav">
+            <a href="#" class="featurebar__nav__item">Add category</a>
+            <a href="#" class="featurebar__nav__item">Add item</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-inner">
+        <div class="category">
+          <div class="category__heading">
+            Example category 1
+            <div class="pull-right">
+              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
+              <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
+              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></a>
+              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-minus-circle-outline"></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__details">
+              <div class="item__name">
+                Example Item 1
+              </div>
+              <div class="item__price">
+                5.00 EUR
+              </div>
+            </div>
+            <div class="item__actions">
+              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__details">
+              <div class="item__name">
+                Example Item 2
+              </div>
+              <div class="item__price">
+                5.00 EUR
+              </div>
+            </div>
+            <div class="item__actions">
+              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category__heading">
+              Example category 2
+              <div class="pull-right">
+                <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
+                <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
+                <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></a>
+                <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-minus-circle-outline"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__details">
+                <div class="item__name">
+                  Example Item 3
+                </div>
+                <div class="item__price">
+                  5.00 EUR
+                </div>
+              </div>
+              <div class="item__actions">
+                <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+                <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+                <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+              </div>
+            </div>
+            <div class="item item--disabled">
+              <div class="item__details">
+                <div class="item__name">
+                  Example Item 4
+                </div>
+                <div class="item__price">
+                  5.00 EUR
+                </div>
+              </div>
+              <div class="item__actions">
+                <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+                <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+                <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <div class="category__heading">
+            Example category 3
+            <div class="pull-right">
+              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
+              <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
+              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></a>
+              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-minus-circle-outline"></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__details">
+              <div class="item__name">
+                Example Item 5
+              </div>
+              <div class="item__price">
+                5.00 EUR
+              </div>
+            </div>
+            <div class="item__actions">
+              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+            </div>
+          </div>
+          <div class="item item--disabled">
+            <div class="item__details">
+              <div class="item__name">
+                Example Item 6
+              </div>
+              <div class="item__price">
+                5.00 EUR
+              </div>
+            </div>
+            <div class="item__actions">
+              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./components/_footer.html')
+</body>
+</html>
