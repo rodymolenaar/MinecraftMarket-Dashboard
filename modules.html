@@ -99,7 +99,7 @@
 
         <div class="sidebar__nav__group">
           <div class="sidebar__nav__heading">settings</div>
-          <a href="general.html" class="sidebar__nav__item sidebar__nav__item--active">General</a>
+          <a href="general.html" class="sidebar__nav__item">General</a>
           <div class="dropdown">
             <a class="sidebar__nav__item" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
             <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
@@ -114,7 +114,7 @@
         <div class="sidebar__nav__group">
           <div class="sidebar__nav__heading">content</div>
           <a href="content.html" class="sidebar__nav__item">Categories & items</a>
-          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="#" class="sidebar__nav__item sidebar__nav__item--active">Modules</a>
           <a href="#" class="sidebar__nav__item">Variables</a>
           <a href="#" class="sidebar__nav__item">Bans</a>
           <a href="#" class="sidebar__nav__item">Discount codes</a>
@@ -134,7 +134,12 @@
     <div class="content">
       <div id="drawer-backdrop" class="menu-toggle drawer-backdrop"></div>
       <div class="featurebar">
-        <div class="featurebar__heading">Edit item</div>
+        <div class="featurebar__heading">Modules</div>
+        <div class="featurebar__responsive">
+          <div class="featurebar__nav">
+            <a href="#" class="featurebar__nav__item">Add module</a>
+          </div>
+        </div>
       </div>
       <div class="content-inner">
 
@@ -147,13 +152,13 @@
                   <div class="card__group">
                     <div class="form-group">
                       <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Example item 1" value="Example item 1">
+                      <input type="text" class="form-control" id="name" placeholder="Steve's MC">
                     </div>
 
                     <div>
                       <ul class="nav nav-tabs nav-justified" role="tablist">
                         <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
-                        <li role="presentation"><a href="#ingamedescription" aria-controls="ingamedescription" role="tab" data-toggle="tab">In-game-description</a></li>
+                        <li role="presentation"><a href="#termsandconditions" aria-controls="termsandconditions" role="tab" data-toggle="tab">Terms and Conditions</a></li>
                       </ul>
                       <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="description">
@@ -161,77 +166,59 @@
                             <textarea class="form-control"></textarea>
                           </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="ingamedescription">
+                        <div role="tabpanel" class="tab-pane" id="termsandconditions">
                           <div class="form-group">
                             <textarea class="form-control"></textarea>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="card__group">
-                    <div class="card__group__heading">Settings</div>
 
                     <div class="row">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Price</label>
-                          <div class="input-group">
-                            <input class="form-control" id="id_itemPrice" name="itemPrice" type="text" value="5.00">
-                            <span class="input-group-addon">EUR</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Category</label>
+                          <label for="theme">Theme</label>
                           <select class="form-control">
-                            <option value="1">Example category</option>
-                            <option value="2">Expiry</option>
-                            <option value="4">Chargeback</option>
-                            <option value="5">Refund</option>
+                            <option>MaterialCraft</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Servers</label>
+                          <label for="theme">Currency</label>
                           <select class="form-control">
-                            <option value="1">Default server</option>
+                            <option>EUR</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="theme">Language</label>
+                          <select class="form-control">
+                            <option>English</option>
                           </select>
                         </div>
                       </div>
                     </div>
+                  </div>
+
+                  <div class="card__group">
+                    <div class="card__group__heading">Domain name</div>
+
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label>Expire after</label>
+                          <label for="subdomain">Subdomain</label>
                           <div class="input-group">
-                            <input class="form-control" type="text" value="0">
-                            <select class="form-control">
-                              <option value="1">Hours</option>
-                            </select>
+                            <input name="subdomain" type="text" class="form-control" placeholder="mymarket">
+                            <span class="input-group-addon">.minecraftmarket.com</span>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label>Category</label>
-                          <select class="form-control">
-                            <option value="1">Example category</option>
-                            <option value="2">Expiry</option>
-                            <option value="4">Chargeback</option>
-                            <option value="5">Refund</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Servers</label>
-                          <select class="form-control">
-                            <option value="1">Default server</option>
-                          </select>
+                          <label for="cname">CNAME</label>
+                          <input type="text" class="form-control" id="cname" placeholder="donate.mydomain.com">
                         </div>
                       </div>
                     </div>

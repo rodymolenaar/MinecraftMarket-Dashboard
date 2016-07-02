@@ -8,15 +8,13 @@ Elixir.extend('fileinclude', function() {
 
   new Task('fileinclude', function() {
 
-    return gulp
-    .src('./src/pages/*')
+    return gulp.src(['./src/pages/**/*.html', '!./src/pages/components/**/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('./'));
-
+    .pipe(gulp.dest('./'))
   })
-  .watch('./src/pages/*');
+  .watch(['./src/pages/**/*.html', '!src/pages/components/**/*.html']);
 
 });

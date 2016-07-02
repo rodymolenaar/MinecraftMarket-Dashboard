@@ -1,5 +1,6 @@
 var elixir = require('laravel-elixir');
 
+require('laravel-elixir-browserify-official');
 require('./elixir-extensions')
 
 /*
@@ -33,15 +34,6 @@ elixir(function(mix) {
     mix.sass('main.scss', 'dist/css/main.css')
        .fileinclude()
        .copy(paths.fontawesome + 'fonts/**', 'dist/fonts/font-awesome')
-       .copy(paths.mdif + 'dist/fonts/**', 'dist/fonts/material-design-iconic-font');
-});
-
-elixir(function(mix) {
-    mix.browserify('sidebar.js');
-    mix.scripts([
-         paths.jquery + 'dist/jquery.js',
-         paths.bootstrap + 'javascripts/bootstrap.js',
-         'node_modules/justgage/justgage.js',
-         'dist/js/sidebar.js'
-       ], 'dist/js/main.js', './');
+       .copy(paths.mdif + 'dist/fonts/**', 'dist/fonts/material-design-iconic-font')
+       .browserify('main.js', 'dist/js/main.js');
 });
