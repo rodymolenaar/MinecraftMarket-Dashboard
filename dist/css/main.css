@@ -11676,6 +11676,10 @@ button.close {
   background-size: cover;
   background-position: center; }
 
+@media (max-width: 750px) {
+  .subdomain {
+    display: block !important; } }
+
 /* Switch
    ========================================================================== */
 .switch,
@@ -13149,7 +13153,8 @@ input[type="checkbox"],
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.09), 0 10px 15px rgba(0, 0, 0, 0.12);
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 100px; }
 
 .auth__box__bar {
   display: block;

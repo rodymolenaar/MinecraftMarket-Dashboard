@@ -48,3 +48,9 @@
   background-size: cover;
   background-position: center;
 }
+
+.subdomain {
+  @media(max-width: $container-sm) {
+    display: block !important;
+  }
+}
