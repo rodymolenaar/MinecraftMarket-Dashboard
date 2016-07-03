@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/_head.html')
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="auth__logo">
+          <img class="auth__logo__image" src="dist/img/logo.svg">
+          <div class="auth__logo__heading">
+            MinecraftMarket
+          </div>
+        </div>
+        <form>
+          <div class="auth__box">
+            <div class="auth__box__bar">
+              <div class="auth__box__bar__title">
+                rodymol123
+              </div>
+              <div class="auth__box__bar__items">
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-plus"></i><span class="hidden-xs"> Create webstore</span></a>
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-sign-out"></i><span class="hidden-xs"> Logout</span></a>
+              </div>
+            </div>
+            <h2 class="auth__box__heading">Select a market</h2>
+            <div class="auth__box__body">
+
+              <div class="itemlist">
+                <div class="itemlist__item">
+                  <div class="itemlist__item__title">
+                    First market
+                    <button class="itemlist__item__toggle itemlist__item__toggle--active"><i class="fa fa-home"></i></button>
+                  </div>
+                  <div class="itemlist__item__details">
+                    Lifetime premium plan
+                  </div>
+                  <div class="itemlist__item__actions">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <a href="#" type="button" class="btn btn-success-inverted">Login</a>
+                      <a href="#" target="_blank" type="button" class="btn btn-warning-inverted">View market</a>
+                      <button type="button" class="btn btn-danger-inverted" data-toggle="modal" data-target="#delete_market_11875">Delete</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="itemlist__item">
+                  <div class="itemlist__item__title">
+                    Second market
+                    <button class="itemlist__item__toggle"><i class="fa fa-home"></i></button>
+                  </div>
+                  <div class="itemlist__item__details">
+                    Lifetime premium plan
+                  </div>
+                  <div class="itemlist__item__actions">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <a href="#" type="button" class="btn btn-success-inverted">Login</a>
+                      <a href="#" target="_blank" type="button" class="btn btn-warning-inverted">View market</a>
+                      <button type="button" class="btn btn-danger-inverted" data-toggle="modal" data-target="#delete_market_11875">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./components/_footer.html')
+</body>
+</html>

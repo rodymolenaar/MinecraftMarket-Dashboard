@@ -12546,6 +12546,39 @@ input[type="checkbox"],
 .card__group__action--red {
   color: #d9534f; }
 
+.itemlist {
+  display: block; }
+
+.itemlist__item {
+  padding: 15px 0px;
+  border-bottom: 2px solid #eaeaea; }
+  .itemlist__item:last-child {
+    border-bottom: 0; }
+
+.itemlist__item__title {
+  font-size: 20px; }
+
+.itemlist__item__toggle {
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  float: right;
+  color: rgba(0, 0, 0, 0.54); }
+  .itemlist__item__toggle:hover, .itemlist__item__toggle:focus {
+    outline: 0;
+    color: rgba(0, 0, 0, 0.67); }
+
+.itemlist__item__toggle--active {
+  color: #FF6C13; }
+  .itemlist__item__toggle--active:hover, .itemlist__item__toggle--active:focus {
+    color: #FF6C13; }
+
+.itemlist__item__details {
+  font-size: 16px; }
+
+.itemlist__item__actions {
+  margin-left: -12.5px; }
+
 .navbar {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
@@ -13095,6 +13128,41 @@ input[type="checkbox"],
   border-radius: 6px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.09), 0 10px 15px rgba(0, 0, 0, 0.12);
   margin-top: 50px; }
+
+.auth__box__bar {
+  display: block;
+  padding: 0px 50px;
+  min-height: 60px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #F5F5F5;
+  border-bottom: 1px solid #f0f0f0;
+  color: rgba(0, 0, 0, 0.54); }
+
+.auth__box__bar__title {
+  display: inline-block;
+  font-size: 22px;
+  padding: 14.5px 5px; }
+
+.auth__box__bar__items {
+  display: inline-block;
+  float: right;
+  margin-right: -10px; }
+  @media (max-width: 750px) {
+    .auth__box__bar__items {
+      margin-right: -20px; } }
+
+.auth__box__bar__item {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 18px;
+  padding: 17.5px 10px; }
+  @media (max-width: 750px) {
+    .auth__box__bar__item {
+      padding: 17.5px 20px; } }
+  .auth__box__bar__item:hover, .auth__box__bar__item:focus {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87); }
 
 .auth__box__heading {
   font-weight: 400;

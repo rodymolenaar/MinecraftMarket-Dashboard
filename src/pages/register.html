@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/_head.html')
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="auth__logo">
+          <img class="auth__logo__image" src="dist/img/logo.svg">
+          <div class="auth__logo__heading">
+            MinecraftMarket
+          </div>
+        </div>
+        <form>
+          <div class="auth__box">
+            <div class="auth__box__bar">
+              <div class="auth__box__bar__title">
+                rodymol123
+              </div>
+              <div class="auth__box__bar__items">
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-plus"></i><span class="hidden-xs"> Create webstore</span></a>
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-sign-out"></i><span class="hidden-xs"> Logout</span></a>
+              </div>
+            </div>
+            <h2 class="auth__box__heading">Select a market</h2>
+            <div class="auth__box__body">
+
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="username" placeholder="Username">
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-control input-lg" name="email" placeholder="E-mail address">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control input-lg" name="password" placeholder="Password">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm password">
+              </div>
+
+            </div>
+            <div class="auth__actions">
+              <a class="auth__action auth__action--dual auth__action--secondary" href="#">Sign in</a>
+              <button type="submit" class="auth__action auth__action--dual auth__action--primary">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./components/_footer.html')
+</body>
+</html>

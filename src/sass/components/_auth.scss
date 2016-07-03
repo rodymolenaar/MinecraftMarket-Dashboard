@@ -23,6 +23,50 @@
   margin-top: 50px;
 }
 
+.auth__box__bar {
+  display: block;
+  padding: 0px 50px;
+  min-height: 60px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #F5F5F5;
+  border-bottom: 1px solid darken(#F5F5F5, 2%);
+  color: rgba(0,0,0,0.54);
+}
+
+.auth__box__bar__title {
+  display: inline-block;
+  font-size: 22px;
+  padding: 14.5px 5px;
+}
+
+.auth__box__bar__items {
+  display: inline-block;
+  float: right;
+  margin-right: -10px;
+
+  @media(max-width: $container-sm) {
+    margin-right: -20px;
+  }
+}
+
+.auth__box__bar__item {
+  display: inline-block;
+  color: rgba(0,0,0,0.54);
+  font-size: 18px;
+  padding: 17.5px 10px;
+
+  @media(max-width: $container-sm) {
+    padding: 17.5px 20px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+  }
+}
+
 .auth__box__heading {
   font-weight: 400;
   font-size: 25px;
