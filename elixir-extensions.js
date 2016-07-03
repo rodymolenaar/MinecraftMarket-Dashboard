@@ -15,6 +15,6 @@ Elixir.extend('fileinclude', function() {
     }))
     .pipe(gulp.dest('./'))
   })
-  .watch(['./src/pages/**/*.html', '!src/pages/components/**/*.html']);
+  .watch(['./src/pages/**/*.html']);
 
 });
