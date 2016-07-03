@@ -40,6 +40,17 @@
   padding: 14.5px 5px;
 }
 
+.auth__box__bar__title__cog {
+  padding-left: 5px;
+  color: rgba(0,0,0,0.54);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+  }
+}
+
 .auth__box__bar__items {
   display: inline-block;
   float: right;
@@ -79,12 +90,6 @@
 
 .auth__box__body {
   padding: 0px 50px 50px 50px;
-  & .form-control {
-    letter-spacing: 1.25px;
-    padding: 15px 0px 15px 0px;
-    margin-bottom: 25px;
-    @include placeholder($input-color-placeholder, uppercase);
-  }
   & label {
     border: 0;
     background: transparent;
@@ -132,6 +137,7 @@
 
 .auth__action--single {
   display: block;
+  width: 100%;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   padding: 20px 50px;

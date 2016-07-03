@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/_head.html')
+<body class="bg-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="auth__logo">
+          <img class="auth__logo__image" src="dist/img/logo.svg">
+          <div class="auth__logo__heading">
+            MinecraftMarket
+          </div>
+        </div>
+        <form>
+          <div class="auth__box">
+            <div class="auth__box__bar">
+              <div class="auth__box__bar__title">
+                rodymol123 <a href="#" class="auth__box__bar__title__cog"><i class="fa fa-cog"></i></a>
+              </div>
+              <div class="auth__box__bar__items">
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-arrow-left"></i><span class="hidden-xs"> Back</span></a>
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-sign-out"></i><span class="hidden-xs"> Logout</span></a>
+              </div>
+            </div>
+            <h2 class="auth__box__heading">Create a market</h2>
+            <div class="auth__box__body">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control input-lg" name="name" placeholder="My new market" autofocus>
+              </div>
+
+              <div class="form-group">
+                <label for="subDomain">Subdomain</label>
+                <div class="input-group">
+                  <input type="text" class="form-control input-lg" name="subDomain" placeholder="mymarket">
+                  <span class="input-group-addon input-lg">.minecraftmarket.com</span>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="currency">Currency</label>
+                    <select class="form-control input-lg" name="currency">
+                      <option>
+                        USD
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lang">Language</label>
+                    <select class="form-control input-lg" name="lang">
+                      <option>
+                        English
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="auth__actions">
+              <button type="submit" class="auth__action auth__action--single auth__action--primary">Create market</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./components/_footer.html')
+</body>
+</html>

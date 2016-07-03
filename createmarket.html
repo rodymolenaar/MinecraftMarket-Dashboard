@@ -40,29 +40,57 @@
         </div>
         <form>
           <div class="auth__box">
-            <h2 class="auth__box__heading">Register</h2>
+            <div class="auth__box__bar">
+              <div class="auth__box__bar__title">
+                rodymol123 <a href="#" class="auth__box__bar__title__cog"><i class="fa fa-cog"></i></a>
+              </div>
+              <div class="auth__box__bar__items">
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-arrow-left"></i><span class="hidden-xs"> Back</span></a>
+                <a href="#" class="auth__box__bar__item"><i class="fa fa-sign-out"></i><span class="hidden-xs"> Logout</span></a>
+              </div>
+            </div>
+            <h2 class="auth__box__heading">Create a market</h2>
             <div class="auth__box__body">
 
               <div class="form-group">
-                <input type="text" class="form-control form-control--uppercase input-lg" name="username" placeholder="Username" autofocus>
+                <label for="name">Name</label>
+                <input type="text" class="form-control input-lg" name="name" placeholder="My new market" autofocus>
               </div>
 
               <div class="form-group">
-                <input type="email" class="form-control form-control--uppercase input-lg" name="email" placeholder="E-mail address">
+                <label for="subDomain">Subdomain</label>
+                <div class="input-group">
+                  <input type="text" class="form-control input-lg" name="subDomain" placeholder="mymarket">
+                  <span class="input-group-addon input-lg">.minecraftmarket.com</span>
+                </div>
               </div>
 
-              <div class="form-group">
-                <input type="password" class="form-control form-control--uppercase input-lg" name="password" placeholder="Password">
-              </div>
-
-              <div class="form-group">
-                <input type="password" class="form-control form-control--uppercase input-lg" name="confirm_password" placeholder="Confirm password">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="currency">Currency</label>
+                    <select class="form-control input-lg" name="currency">
+                      <option>
+                        USD
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lang">Language</label>
+                    <select class="form-control input-lg" name="lang">
+                      <option>
+                        English
+                      </option>
+                    </select>
+                  </div>
+                </div>
               </div>
 
             </div>
             <div class="auth__actions">
-              <a class="auth__action auth__action--dual auth__action--secondary" href="#">Sign in</a>
-              <button type="submit" class="auth__action auth__action--dual auth__action--primary">Register</button>
+              <button type="submit" class="auth__action auth__action--single auth__action--primary">Create market</button>
             </div>
           </form>
         </div>

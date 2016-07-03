@@ -11654,6 +11654,28 @@ button.close {
 .login-form__label-link {
   float: right; }
 
+.form-control--uppercase {
+  letter-spacing: 1.25px;
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 25px; }
+  .form-control--uppercase::-moz-placeholder {
+    color: #999;
+    text-transform: uppercase;
+    opacity: 1; }
+  .form-control--uppercase:-ms-input-placeholder {
+    color: #999;
+    text-transform: uppercase; }
+  .form-control--uppercase::-webkit-input-placeholder {
+    color: #999;
+    text-transform: uppercase; }
+
+.bg-body {
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
 /* Switch
    ========================================================================== */
 .switch,
@@ -13144,6 +13166,13 @@ input[type="checkbox"],
   font-size: 22px;
   padding: 14.5px 5px; }
 
+.auth__box__bar__title__cog {
+  padding-left: 5px;
+  color: rgba(0, 0, 0, 0.54); }
+  .auth__box__bar__title__cog:hover, .auth__box__bar__title__cog:focus {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87); }
+
 .auth__box__bar__items {
   display: inline-block;
   float: right;
@@ -13175,20 +13204,6 @@ input[type="checkbox"],
 
 .auth__box__body {
   padding: 0px 50px 50px 50px; }
-  .auth__box__body .form-control {
-    letter-spacing: 1.25px;
-    padding: 15px 0px 15px 0px;
-    margin-bottom: 25px; }
-    .auth__box__body .form-control::-moz-placeholder {
-      color: #999;
-      text-transform: uppercase;
-      opacity: 1; }
-    .auth__box__body .form-control:-ms-input-placeholder {
-      color: #999;
-      text-transform: uppercase; }
-    .auth__box__body .form-control::-webkit-input-placeholder {
-      color: #999;
-      text-transform: uppercase; }
   .auth__box__body label {
     border: 0;
     background: transparent; }
@@ -13230,6 +13245,7 @@ input[type="checkbox"],
 
 .auth__action--single {
   display: block;
+  width: 100%;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   padding: 20px 50px; }
