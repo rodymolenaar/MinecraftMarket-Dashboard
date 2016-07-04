@@ -116,7 +116,7 @@
 
         <div class="sidebar__nav__group">
           <div class="sidebar__nav__heading">content</div>
-          <a href="content.html" class="sidebar__nav__item sidebar__nav__item--active">Categories & items</a>
+          <a href="content.html" class="sidebar__nav__item  sidebar__nav__item--active">Categories & items</a>
           <a href="#" class="sidebar__nav__item">Modules</a>
           <a href="#" class="sidebar__nav__item">Variables</a>
           <a href="#" class="sidebar__nav__item">Bans</a>
@@ -137,20 +137,20 @@
     <div class="content">
       <div id="drawer-backdrop" class="menu-toggle drawer-backdrop"></div>
       <div class="featurebar">
-        <div class="featurebar__heading">Edit item</div>
+        <div class="featurebar__heading">Edit category</div>
       </div>
       <div class="content-inner">
 
         <div class="row">
 
-          <div class="col-md-8">
+          <div class="col-md-12">
             <div class="card">
               <div class="card__body">
                 <form>
                   <div class="card__group">
                     <div class="form-group">
                       <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Example item 1" value="Example item 1">
+                      <input type="text" class="form-control" id="name" placeholder="Example category 1" value="Example  category 1">
                     </div>
 
                     <div>
@@ -177,102 +177,35 @@
                     <div class="card__group__heading">Settings</div>
 
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label>Price</label>
-                          <div class="input-group">
-                            <input class="form-control" id="id_itemPrice" name="itemPrice" type="text" value="5.00">
-                            <span class="input-group-addon">EUR</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Category</label>
+                          <label>Display type</label>
                           <select class="form-control">
-                            <option value="1">Example category</option>
-                            <option value="2">Expiry</option>
-                            <option value="4">Chargeback</option>
-                            <option value="5">Refund</option>
+                            <option value="1">Display items in a list with no images</option>
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-3">
                         <div class="form-group">
-                          <label>Servers</label>
-                          <select class="form-control">
-                            <option value="1">Default server</option>
-                          </select>
+                          <label>Purchase limit</label>
+                          <input type="text" class="form-control" value="0">
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Expire after</label>
-                          <div class="input-group">
-                            <input class="form-control input-group-select-input" type="text" value="0">
-                            <select class="form-control input-group-select">
-                              <option value="1">Hours</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Global limit</label>
-                          <div class="input-group">
-                            <input class="form-control input-group-select-input" type="text" value="0">
-                            <select class="form-control input-group-select">
-                              <option value="1">Hours</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>User limit</label>
-                          <div class="input-group">
-                            <input class="form-control input-group-select-input" type="text" value="0">
-                            <select class="form-control input-group-select">
-                              <option value="1">Hours</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Required items</label>
-                          <select class="form-control">
-                            <option value="1">Nothing selected</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label>GUI icon ID</label>
                           <input type="text" class="form-control" placeholder="46 TNT icon in GUI">
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Variables</label>
-                          <select class="form-control">
-                            <option value="1">Nothing selected</option>
-                          </select>
-                        </div>
-                      </div>
                     </div>
                   </div>
-
+                  
                   <div class="form-group">
                     <div class="switch">
                       <label>
                         <input type="checkbox">
                         <div class="lever"></div>
-                         Require at least one required item
+                         Cumulate item purchases inside this category
                       </label>
                     </div>
                   </div>
@@ -281,7 +214,7 @@
                       <label>
                         <input type="checkbox">
                         <div class="lever"></div>
-                        Allow users to change quantity of this item
+                        Delete pending expiry commands of other items in this category upon a new purchase
                       </label>
                     </div>
                   </div>
@@ -290,7 +223,7 @@
                       <label>
                         <input type="checkbox">
                         <div class="lever"></div>
-                        Allow users to pay how much they want above the set price
+                        Do not display this category in the subcategory drop down menu
                       </label>
                     </div>
                   </div>
@@ -299,84 +232,13 @@
                       <label>
                         <input type="checkbox">
                         <div class="lever"></div>
-                        Allow user to choose which server this item will execute upon
+                        Enable this category.
                       </label>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="switch">
-                      <label>
-                        <input type="checkbox">
-                        <div class="lever"></div>
-                        Enable this item
-                      </label>
-                    </div>
-                  </div>
-
-                  <div class="card__group">
-                    <div class="card__group__heading">
-                      Global commands
-                      <div class="card__group__actions">
-                        <button class="card__group__action card__group__action--red"><i class="fa fa-flag"></i><span class="hidden-xs"> Variables</span></button>
-                        <button class="card__group__action card__group__action--orange"><i class="fa fa-plus"></i><span class="hidden-xs"> New</span></button>
-                      </div>
-                    </div>
-
-                    <div class="row">
-
-                      <div class="col-xs-2">
-                        <div class="form-group">
-                          <select class="form-control">
-                            <option value="1">Initial</option>
-                            <option value="2">Expiry</option>
-                            <option value="4">Chargeback</option>
-                            <option value="5">Refund</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-xs-10">
-                        <div class="form-group">
-                          <div class="input-group">
-                            <span class="input-group-addon">/</span>
-                            <input class="form-control" type="text">
-                            <span class="input-group-btn">
-                              <button class="btn btn-danger-inverted deleteglobal">Delete</button>
-                              <button type="button" class="btn btn-default-inverted commandhandle"><i class="fa fa-arrows"></i></button>
-                              <button id="options0" type="button" class="btn btn-warning-inverted showoptions"><i class="fa fa-gear"></i></button>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
 
                 </form>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__group">
-                  <div class="form-group">
-                    <label for="logo">Item image</label>
-                    <div class="input-group">
-                      <input class="form-control" type="text" disabled>
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary">Select file</button>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Hide image border
-                      </label>
-                    </div>
-                  </div>
-                  <p class="help-block">Recommended dimensions: 190x165</p>
-                </div>
               </div>
             </div>
           </div>

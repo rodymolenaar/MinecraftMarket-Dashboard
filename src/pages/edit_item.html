@@ -22,7 +22,7 @@
 
         <div class="sidebar__nav__group">
           <div class="sidebar__nav__heading">settings</div>
-          <a href="general.html" class="sidebar__nav__item sidebar__nav__item--active">General</a>
+          <a href="general.html" class="sidebar__nav__item">General</a>
           <div class="dropdown">
             <a class="sidebar__nav__item" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
             <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
@@ -36,7 +36,7 @@
 
         <div class="sidebar__nav__group">
           <div class="sidebar__nav__heading">content</div>
-          <a href="content.html" class="sidebar__nav__item">Categories & items</a>
+          <a href="content.html" class="sidebar__nav__item sidebar__nav__item--active">Categories & items</a>
           <a href="#" class="sidebar__nav__item">Modules</a>
           <a href="#" class="sidebar__nav__item">Variables</a>
           <a href="#" class="sidebar__nav__item">Bans</a>
@@ -188,37 +188,47 @@
                   </div>
 
                   <div class="form-group">
-                    <div class="checkbox">
+                    <div class="switch">
                       <label>
-                        <input type="checkbox"> Require at least one required item
+                        <input type="checkbox">
+                        <div class="lever"></div>
+                         Require at least one required item
                       </label>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="checkbox">
+                    <div class="switch">
                       <label>
-                        <input type="checkbox"> Allow users to change quantity of this item
+                        <input type="checkbox">
+                        <div class="lever"></div>
+                        Allow users to change quantity of this item
                       </label>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="checkbox">
+                    <div class="switch">
                       <label>
-                        <input type="checkbox"> Allow users to pay how much they want above the set price
+                        <input type="checkbox">
+                        <div class="lever"></div>
+                        Allow users to pay how much they want above the set price
                       </label>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="checkbox">
+                    <div class="switch">
                       <label>
-                        <input type="checkbox"> Allow user to choose which server this item will execute upon
+                        <input type="checkbox">
+                        <div class="lever"></div>
+                        Allow user to choose which server this item will execute upon
                       </label>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="checkbox">
+                    <div class="switch">
                       <label>
-                        <input type="checkbox"> Enable this item
+                        <input type="checkbox">
+                        <div class="lever"></div>
+                        Enable this item
                       </label>
                     </div>
                   </div>

@@ -11697,7 +11697,8 @@ button.close {
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+  margin-left: -5px; }
 
 .switch label {
   cursor: pointer; }
