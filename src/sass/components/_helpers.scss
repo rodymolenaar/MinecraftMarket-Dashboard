@@ -54,3 +54,20 @@
     display: block !important;
   }
 }
+
+.input-group {
+  width: 100%;
+}
+
+@media(min-width: $container-md) {
+
+  .input-group-select-input {
+    width: 30% !important;
+  }
+
+  .input-group-select {
+    width: 67% !important;
+    margin-left: 3% !important;
+  }
+
+}

@@ -131,8 +131,8 @@
                         <div class="form-group">
                           <label>Expire after</label>
                           <div class="input-group">
-                            <input class="form-control" type="text" value="0">
-                            <select class="form-control">
+                            <input class="form-control input-group-select-input" type="text" value="0">
+                            <select class="form-control input-group-select">
                               <option value="1">Hours</option>
                             </select>
                           </div>
@@ -140,23 +140,86 @@
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Category</label>
+                          <label>Global limit</label>
+                          <div class="input-group">
+                            <input class="form-control input-group-select-input" type="text" value="0">
+                            <select class="form-control input-group-select">
+                              <option value="1">Hours</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>User limit</label>
+                          <div class="input-group">
+                            <input class="form-control input-group-select-input" type="text" value="0">
+                            <select class="form-control input-group-select">
+                              <option value="1">Hours</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Required items</label>
                           <select class="form-control">
-                            <option value="1">Example category</option>
-                            <option value="2">Expiry</option>
-                            <option value="4">Chargeback</option>
-                            <option value="5">Refund</option>
+                            <option value="1">Nothing selected</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Servers</label>
+                          <label>GUI icon ID</label>
+                          <input type="text" class="form-control" placeholder="46 TNT icon in GUI">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Variables</label>
                           <select class="form-control">
-                            <option value="1">Default server</option>
+                            <option value="1">Nothing selected</option>
                           </select>
                         </div>
                       </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Require at least one required item
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Allow users to change quantity of this item
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Allow users to pay how much they want above the set price
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Allow user to choose which server this item will execute upon
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Enable this item
+                      </label>
                     </div>
                   </div>
 
@@ -207,42 +270,22 @@
               <div class="card__body">
                 <div class="card__group">
                   <div class="form-group">
-                    <label for="logo">Logo</label>
+                    <label for="logo">Item image</label>
                     <div class="input-group">
                       <input class="form-control" type="text" disabled>
                       <span class="input-group-btn">
                         <button class="btn btn-primary">Select file</button>
                       </span>
                     </div>
-                    <p class="help-block">Recommended dimensions: 500x135</p>
                   </div>
-                </div>
-                <div class="card__group">
                   <div class="form-group">
-                    <label for="cover">Market cover</label>
-                    <div class="input-group">
-                      <input class="form-control" type="text" disabled>
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary">Select file</button>
-                      </span>
-                    </div>
-                    <p class="help-block">Recommended dimensions: 1140x150</p>
-                  </div>
-                </div>
-                <div class="card__group">
-                  <div class="form-group">
-                    <label for="background">Market background</label>
-                    <div class="input-group">
-                      <input class="form-control" type="text" disabled>
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary">Select file</button>
-                      </span>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Hide image border
+                      </label>
                     </div>
                   </div>
-                </div>
-                <div class="card__group">
-                  <div class="card__group__heading card__group__heading--danger">Danger zone</div>
-                  <button class="btn btn-danger">Delete market</button>
+                  <p class="help-block">Recommended dimensions: 190x165</p>
                 </div>
               </div>
             </div>
