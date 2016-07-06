@@ -134,6 +134,14 @@
 .auth__action--primary {
   background: $brand-primary;
   color: #fff;
+  &:hover {
+    background: $brand-primary;
+    color: #fff;
+  }
+  &:focus {
+    background: darken($brand-primary, 10%);
+    color: #fff;
+  }
 }
 
 .auth__action--single {
@@ -161,4 +169,12 @@
 .auth__action--secondary {
   background: #E8E9EC;
   color: #848C9D;
+  &:hover {
+    background: #E8E9EC;
+    color: #848C9D;
+  }
+  &:focus {
+    background: darken(#E8E9EC, 10%);
+    color: #848C9D;
+  }
 }

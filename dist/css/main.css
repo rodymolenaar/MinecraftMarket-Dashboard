@@ -13258,6 +13258,12 @@ input[type="checkbox"],
 .auth__action--primary {
   background: #FF6C13;
   color: #fff; }
+  .auth__action--primary:hover {
+    background: #FF6C13;
+    color: #fff; }
+  .auth__action--primary:focus {
+    background: #df5400;
+    color: #fff; }
 
 .auth__action--single {
   display: block;
@@ -13280,5 +13286,11 @@ input[type="checkbox"],
 .auth__action--secondary {
   background: #E8E9EC;
   color: #848C9D; }
+  .auth__action--secondary:hover {
+    background: #E8E9EC;
+    color: #848C9D; }
+  .auth__action--secondary:focus {
+    background: #ccced5;
+    color: #848C9D; }
 
 /*# sourceMappingURL=main.css.map */
