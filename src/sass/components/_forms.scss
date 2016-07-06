@@ -279,3 +279,25 @@ input[type="checkbox"],
     line-height: 1.5;
   }
 }
+
+.form-control--error {
+  box-shadow: inset 0 -2px 0 $brand-danger !important;
+}
+
+.form-control__error-message {
+  display: block;
+  margin-top: -20px;
+  color: $brand-danger;
+  font-size: 14px;
+}
+
+.form-control--warning {
+  box-shadow: inset 0 -2px 0 $brand-warning !important;
+}
+
+.form-control__warning-message {
+  display: block;
+  margin-top: -20px;
+  color: $brand-warning;
+  font-size: 14px;
+}
