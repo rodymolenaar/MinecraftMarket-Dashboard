@@ -1,0 +1,134 @@
+.plans {
+  @media(min-width: $container-lg) {
+    display: flex;
+  }
+}
+
+.plan {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  @media(min-width: $container-lg) {
+    flex: 1;
+  }
+}
+
+.plan__heading {
+  display: block;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+  color: $brand-primary;
+  padding: 50px;
+}
+
+.plan__heading__last {
+  font-weight: 300;
+}
+
+.plan__body {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.plan__item {
+  display: block;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  color: #aaa;
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+.plan__price {
+  display: block;
+  position: relative;
+  padding: 50px;
+  text-align: center;
+}
+
+.plan__price__currency {
+  display: inline-block;
+  vertical-align: top;
+  color: $brand-primary;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.plan__price__big {
+  display: inline-block;
+  vertical-align: top;
+  color: $brand-primary;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.plan__price__small {
+  display: inline-block;
+  vertical-align: middle;
+  color: lighten($brand-primary, 10%);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.plan__action {
+  display: block;
+  padding: 20px 50px;
+  background: $brand-primary;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  border: 0;
+  text-align: center;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+  &:hover {
+    background: $brand-primary;
+    color: #fff;
+  }
+  &:focus {
+    background: darken($brand-primary, 10%);
+    color: #fff;
+  }
+}
+
+.plan__action--disabled {
+  display: block;
+  cursor: default;
+  padding: 20px 50px;
+  background: #E8E9EC;
+  color: #848C9D;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  border: 0;
+  text-align: center;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    background: #E8E9EC;
+    color: #848C9D;
+  }
+}
+
+.plan__bottom {
+  display: block;
+  @media(min-width: $container-lg) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}

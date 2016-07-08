@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff6c13">
+  <title>MinecraftMarket</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+  <link href="dist/css/main.css" rel="stylesheet">
+  <link id="favicon" rel="shortcut icon" href="dist/img/icons/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png" />
+
+  <link rel="icon" href="dist/img/icons/app-256.png" sizes="256x256" type="image/png" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="dist/img/icons/ios-152.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="dist/img/icons/ios-144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="dist/img/icons/ios-120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="dist/img/icons/ios-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="dist/img/icons/ios-72.png" />
+  <link rel="apple-touch-icon-precomposed" href="dist/ios-57.png" />
+
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="dist/img/icons/app-144.png" />
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-ellipsis-v"></i>
+      </button>
+      <a class="navbar-brand menu-toggle" href="#">
+        <div class="navbar-hamburger">
+          <i class="fa fa-bars"></i>
+        </div>
+        <img class="navbar-logo" src="dist/img/logo.svg">
+        <div class="navbar-name">MinecraftMarket</div>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">View market</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">rodymol123 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Change market</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Billing</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="page-wrapper">
+
+    <div class="sidebar">
+
+      <div class="sidebar__top">
+  <div class="sidebar__top__plan">
+    
+    <div class="sidebar__top__plan_details">
+      <div class="sidebar__top__plan__plan_name">
+        Premium
+      </div>
+      <div class="sidebar__top__plan__plan_duration">
+        Lifetime
+      </div>
+    </div><!-- /.sidebar__top__plan_details -->
+
+    <div class="sidebar__top__plan_actions">
+      <a href="#" class="sidebar__top__plan__action">
+        Plans
+      </a>
+    </div><!-- /.sidebar__top__plan_actions -->
+
+  </div><!-- /.sidebar__top__plan -->
+</div><!-- /.sidebar__top -->
+
+
+      <div class="sidebar__nav">
+
+        <div class="sidebar__nav__group">
+          <a href="index.html" class="sidebar__nav__item">
+            Dashboard
+          </a>
+          <a href="statistics.html" class="sidebar__nav__item">
+            Statistics
+          </a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">settings</div>
+          <a href="general.html" class="sidebar__nav__item">General</a>
+          <div class="dropdown">
+            <a class="sidebar__nav__item" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
+            <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
+              <a href="transactions.html" class="sidebar__nav__dropdown-menu__item">Transactions</a>
+              <a href="#" class="sidebar__nav__dropdown-menu__item">Gateways</a>
+            </div>
+          </div>
+          <a href="#" class="sidebar__nav__item">Servers</a>
+          <a href="#" class="sidebar__nav__item">Design</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">content</div>
+          <a href="content.html" class="sidebar__nav__item">Categories & items</a>
+          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="#" class="sidebar__nav__item">Variables</a>
+          <a href="#" class="sidebar__nav__item">Bans</a>
+          <a href="#" class="sidebar__nav__item">Discount codes</a>
+          <a href="#" class="sidebar__nav__item">Sales</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">support</div>
+          <a href="#" class="sidebar__nav__item">Knowledge base</a>
+          <a href="#" class="sidebar__nav__item">Tickets</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content">
+      <div id="drawer-backdrop" class="menu-toggle drawer-backdrop"></div>
+      <div class="featurebar">
+        <div class="featurebar__heading">Plans</div>
+      </div>
+      <div class="content-inner">
+        <div class="plans">
+
+          <div class="plan">
+            <div class="plan__heading">
+              Free <span class="plan__heading__last">Plan</span>
+            </div>
+            <div class="plan__body">
+              <div class="plan__item">Unlimited Items</div>
+              <div class="plan__item">Unlimited Categories</div>
+              <div class="plan__item">Unlimited Servers</div>
+              <div class="plan__item">Unlimited Payment Gateways</div>
+              <div class="plan__item">Custom Domain Name</div>
+              <div class="plan__item">Website Integration</div>
+              <div class="plan__item">Global Commands</div>
+              <div class="plan__item">Discount Codes</div>
+              <div class="plan__item">Payment Statistics</div>
+              <div class="plan__item">Market Modules</div>
+              <div class="plan__item">Advertisements</div>
+            </div>
+            <div class="plan__bottom">
+              <a href="#" class="plan__action plan__action--disabled">Your current plan</a>
+            </div>
+          </div>
+
+          <div class="plan">
+            <div class="plan__heading">
+              Premium <span class="plan__heading__last">Plan</span>
+            </div>
+            <div class="plan__body">
+              <div class="plan__item">All Free features</div>
+              <div class="plan__item">No Advertisements</div>
+              <div class="plan__item">Custom Themes</div>
+              <div class="plan__item">HTML Template Editor</div>
+              <div class="plan__item">Custom Command Variables</div>
+              <div class="plan__item">Market Sales</div>
+            </div>
+            <div class="plan__bottom">
+              <div class="plan__price">
+                <div class="plan__price__currency">&pound;</div>
+                <div class="plan__price__big">3</div>
+                <div class="plan__price__small">99</div>
+              </div>
+              <a href="#" class="plan__action">Upgrade</a>
+            </div>
+          </div>
+
+          <div class="plan">
+            <div class="plan__heading">
+              Enterprise <span class="plan__heading__last">Plan</span>
+            </div>
+            <div class="plan__body">
+              <div class="plan__item">All Premium features</div>
+              <div class="plan__item">Self hosted stores</div>
+            </div>
+            <div class="plan__bottom">
+              <div class="plan__price">
+                <div class="plan__price__currency">&pound;</div>
+                <div class="plan__price__big">24</div>
+                <div class="plan__price__small">99</div>
+              </div>
+              <a href="#" class="plan__action">Upgrade</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="dist/js/main.js?v=0.0.2"></script>
+
+</body>
+</html>

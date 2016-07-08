@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/_head.html')
+<body>
+  @@include('./components/_navbar.html')
+  <div class="page-wrapper">
+
+    <div class="sidebar">
+
+      @@include('./components/sidebar/_sidebar__top.html')
+
+      <div class="sidebar__nav">
+
+        <div class="sidebar__nav__group">
+          <a href="index.html" class="sidebar__nav__item">
+            Dashboard
+          </a>
+          <a href="statistics.html" class="sidebar__nav__item">
+            Statistics
+          </a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">settings</div>
+          <a href="general.html" class="sidebar__nav__item">General</a>
+          <div class="dropdown">
+            <a class="sidebar__nav__item" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
+            <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
+              <a href="transactions.html" class="sidebar__nav__dropdown-menu__item">Transactions</a>
+              <a href="#" class="sidebar__nav__dropdown-menu__item">Gateways</a>
+            </div>
+          </div>
+          <a href="#" class="sidebar__nav__item">Servers</a>
+          <a href="#" class="sidebar__nav__item">Design</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">content</div>
+          <a href="content.html" class="sidebar__nav__item">Categories & items</a>
+          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="#" class="sidebar__nav__item">Variables</a>
+          <a href="#" class="sidebar__nav__item">Bans</a>
+          <a href="#" class="sidebar__nav__item">Discount codes</a>
+          <a href="#" class="sidebar__nav__item">Sales</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">support</div>
+          <a href="#" class="sidebar__nav__item">Knowledge base</a>
+          <a href="#" class="sidebar__nav__item">Tickets</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content">
+      <div id="drawer-backdrop" class="menu-toggle drawer-backdrop"></div>
+      <div class="featurebar">
+        <div class="featurebar__heading">Plans</div>
+      </div>
+      <div class="content-inner">
+        <div class="plans">
+
+          <div class="plan">
+            <div class="plan__heading">
+              Free <span class="plan__heading__last">Plan</span>
+            </div>
+            <div class="plan__body">
+              <div class="plan__item">Unlimited Items</div>
+              <div class="plan__item">Unlimited Categories</div>
+              <div class="plan__item">Unlimited Servers</div>
+              <div class="plan__item">Unlimited Payment Gateways</div>
+              <div class="plan__item">Custom Domain Name</div>
+              <div class="plan__item">Website Integration</div>
+              <div class="plan__item">Global Commands</div>
+              <div class="plan__item">Discount Codes</div>
+              <div class="plan__item">Payment Statistics</div>
+              <div class="plan__item">Market Modules</div>
+              <div class="plan__item">Advertisements</div>
+            </div>
+            <div class="plan__bottom">
+              <a href="#" class="plan__action plan__action--disabled">Your current plan</a>
+            </div>
+          </div>
+
+          <div class="plan">
+            <div class="plan__heading">
+              Premium <span class="plan__heading__last">Plan</span>
+            </div>
+            <div class="plan__body">
+              <div class="plan__item">All Free features</div>
+              <div class="plan__item">No Advertisements</div>
+              <div class="plan__item">Custom Themes</div>
+              <div class="plan__item">HTML Template Editor</div>
+              <div class="plan__item">Custom Command Variables</div>
+              <div class="plan__item">Market Sales</div>
+            </div>
+            <div class="plan__bottom">
+              <div class="plan__price">
+                <div class="plan__price__currency">&pound;</div>
+                <div class="plan__price__big">3</div>
+                <div class="plan__price__small">99</div>
+              </div>
+              <a href="#" class="plan__action">Upgrade</a>
+            </div>
+          </div>
+
+          <div class="plan">
+            <div class="plan__heading">
+              Enterprise <span class="plan__heading__last">Plan</span>
+            </div>
+            <div class="plan__body">
+              <div class="plan__item">All Premium features</div>
+              <div class="plan__item">Self hosted stores</div>
+            </div>
+            <div class="plan__bottom">
+              <div class="plan__price">
+                <div class="plan__price__currency">&pound;</div>
+                <div class="plan__price__big">24</div>
+                <div class="plan__price__small">99</div>
+              </div>
+              <a href="#" class="plan__action">Upgrade</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+@@include('./components/_footer.html')
+</body>
+</html>
