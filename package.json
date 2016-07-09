@@ -5,6 +5,7 @@
   "main": "src/js/main.js",
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
+    "bootstrap-select": "^1.10.0",
     "font-awesome": "^4.6.1",
     "jquery": "^2.2.4",
     "jquery-browserify": "^1.8.1",

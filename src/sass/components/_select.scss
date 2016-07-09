@@ -1,0 +1,43 @@
+.bootstrap-select {
+  display: block !important;
+
+  .dropdown-menu {
+    margin-top: -2px;
+    margin-left: -1px;
+    width: 102%;
+  }
+}
+
+.btn-select {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: inset 0 -1px 0 #ddd !important;
+  color: $input-color-placeholder;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -1px 0 #ddd !important;
+    color: $input-color-placeholder;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -2px 0 #FF6C13 !important;
+  }
+}
+
+.btn-select--lg {
+  padding-left: 0;
+  padding-right: 0;
+  height: 49px;
+  font-size: 20px;
+}
+
+.check-mark {
+  margin: 0 !important;
+}
