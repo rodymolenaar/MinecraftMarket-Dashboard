@@ -15154,7 +15154,8 @@ $(document).ready(function () {
     iconBase: 'fa',
     tickIcon: 'fa-check',
     style: 'btn-select',
-    width: 'fit'
+    width: 'fit',
+    size: '7'
   });
 });
 
@@ -15163,7 +15164,8 @@ $(document).ready(function () {
     iconBase: 'fa',
     tickIcon: 'fa-check',
     style: 'btn-select btn-select--lg',
-    width: 'fit'
+    width: 'fit',
+    size: '7'
   });
 });
 
