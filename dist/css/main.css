@@ -12739,6 +12739,9 @@ input[type="checkbox"],
     margin-top: -2px;
     margin-left: -1px;
     width: 102%; }
+    .bootstrap-select .dropdown-menu .selected > a, .bootstrap-select .dropdown-menu .selected > a:hover, .bootstrap-select .dropdown-menu .selected > a:focus, .bootstrap-select .dropdown-menu .selected > a:active {
+      background: #FF6C13 !important;
+      color: #fff !important; }
 
 .btn-select {
   display: block;
@@ -12752,8 +12755,6 @@ input[type="checkbox"],
   .btn-select:hover, .btn-select:focus, .btn-select:active {
     box-shadow: inset 0 -1px 0 #ddd !important;
     color: #999; }
-  .btn-select:focus, .btn-select:active {
-    box-shadow: inset 0 -2px 0 #FF6C13 !important; }
 
 .btn-select--lg {
   padding-left: 0;

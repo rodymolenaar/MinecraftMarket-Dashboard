@@ -1,10 +1,22 @@
 .bootstrap-select {
   display: block !important;
 
-  .dropdown-menu {
+  & .dropdown-menu {
     margin-top: -2px;
     margin-left: -1px;
     width: 102%;
+
+    & .selected {
+      > a {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+          background: $brand-primary !important;
+          color: #fff !important;
+        }
+      }
+    }
   }
 }
 
@@ -23,11 +35,6 @@
   &:active {
     box-shadow: inset 0 -1px 0 #ddd !important;
     color: $input-color-placeholder;
-  }
-
-  &:focus,
-  &:active {
-    box-shadow: inset 0 -2px 0 #FF6C13 !important;
   }
 }
 
