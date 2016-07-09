@@ -1,3 +1,5 @@
-require('bootstrap-sass/assets/javascripts/bootstrap.js');
-require('justgage/justgage.js');
+var $ = require('jquery')(window);
+global.jQuery = require("jquery");
+require('bootstrap-sass');
+require('justgage');
 require('./sidebar.js');

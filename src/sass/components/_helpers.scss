@@ -34,13 +34,6 @@
   float: right;
 }
 
-.form-control--uppercase {
-  letter-spacing: 1.25px;
-  padding: 15px 0px 15px 0px;
-  margin-bottom: 25px;
-  @include placeholder($input-color-placeholder, uppercase);
-}
-
 .bg-body {
   background: url('../img/bg.jpg');
   background-repeat: no-repeat;
@@ -53,21 +46,4 @@
   @media(max-width: $container-sm) {
     display: block !important;
   }
-}
-
-.input-group {
-  width: 100%;
-}
-
-@media(min-width: $container-md) {
-
-  .input-group-select-input {
-    width: 30% !important;
-  }
-
-  .input-group-select {
-    width: 67% !important;
-    margin-left: 3% !important;
-  }
-
 }

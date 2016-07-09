@@ -11659,21 +11659,6 @@ button.close {
 .login-form__label-link {
   float: right; }
 
-.form-control--uppercase {
-  letter-spacing: 1.25px;
-  padding: 15px 0px 15px 0px;
-  margin-bottom: 25px; }
-  .form-control--uppercase::-moz-placeholder {
-    color: #999;
-    text-transform: uppercase;
-    opacity: 1; }
-  .form-control--uppercase:-ms-input-placeholder {
-    color: #999;
-    text-transform: uppercase; }
-  .form-control--uppercase::-webkit-input-placeholder {
-    color: #999;
-    text-transform: uppercase; }
-
 .bg-body {
   background: url("../img/bg.jpg");
   background-repeat: no-repeat;
@@ -11684,16 +11669,6 @@ button.close {
 @media (max-width: 750px) {
   .subdomain {
     display: block !important; } }
-
-.input-group {
-  width: 100%; }
-
-@media (min-width: 970px) {
-  .input-group-select-input {
-    width: 30% !important; }
-  .input-group-select {
-    width: 67% !important;
-    margin-left: 3% !important; } }
 
 /* Switch
    ========================================================================== */
@@ -11769,7 +11744,7 @@ label {
   background: transparent; }
 
 .help-block {
-  font-size: 12px; }
+  font-size: 14px; }
 
 textarea,
 textarea.form-control,
@@ -12134,20 +12109,40 @@ input[type="checkbox"],
 .form-control--error {
   box-shadow: inset 0 -2px 0 #d9534f !important; }
 
-.form-control__error-message {
-  display: block;
-  margin-top: -20px;
-  color: #d9534f;
-  font-size: 14px; }
+.help-block--error {
+  color: #d9534f; }
 
 .form-control--warning {
   box-shadow: inset 0 -2px 0 #f0ad4e !important; }
 
-.form-control__warning-message {
-  display: block;
-  margin-top: -20px;
-  color: #f0ad4e;
-  font-size: 14px; }
+.help-block--warning {
+  color: #f0ad4e; }
+
+.form-group--uppercase {
+  margin-bottom: 25px; }
+  .form-group--uppercase .form-control {
+    letter-spacing: 1.25px;
+    padding: 15px 0px 15px 0px; }
+    .form-group--uppercase .form-control::-moz-placeholder {
+      color: #999;
+      text-transform: uppercase;
+      opacity: 1; }
+    .form-group--uppercase .form-control:-ms-input-placeholder {
+      color: #999;
+      text-transform: uppercase; }
+    .form-group--uppercase .form-control::-webkit-input-placeholder {
+      color: #999;
+      text-transform: uppercase; }
+
+.input-group {
+  width: 100%; }
+
+@media (min-width: 970px) {
+  .input-group-select-input {
+    width: 30% !important; }
+  .input-group-select {
+    width: 67% !important;
+    margin-left: 3% !important; } }
 
 .btn {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
