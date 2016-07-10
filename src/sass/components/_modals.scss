@@ -1,0 +1,33 @@
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-header, .modal-footer {
+  padding: 20px;
+  border: 0;
+}
+
+.modal-header {
+  padding-bottom: 10px;
+  & h4 {
+    color: #212121;
+    font-weight: 500;
+  }
+}
+
+.modal-footer {
+  padding-top: 0;
+}
+
+
+.modal-body {
+  padding: 20px;
+  padding-top: 0;
+  color: #858585;
+}
+
+.modal-md {
+  @media(min-width: $container-md) {
+    width: 420px;
+  }
+}

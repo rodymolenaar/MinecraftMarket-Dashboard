@@ -4,7 +4,8 @@
   & .dropdown-menu {
     margin-top: -2px;
     margin-left: -1px;
-    width: 102%;
+    min-width: 300px;
+    width: auto;
 
     & .selected {
       > a {
@@ -22,19 +23,18 @@
 
 .btn-select {
   display: block;
+  margin-bottom: 10px;
   padding-left: 0;
   padding-right: 0;
   background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: inset 0 -1px 0 #ddd !important;
-  color: $input-color-placeholder;
 
   &:hover,
   &:focus,
   &:active {
     box-shadow: inset 0 -1px 0 #ddd !important;
-    color: $input-color-placeholder;
   }
 }
 
