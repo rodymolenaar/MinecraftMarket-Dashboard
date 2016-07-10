@@ -13712,21 +13712,21 @@ input[type="checkbox"],
   border-radius: 0; }
 
 .modal-header, .modal-footer {
-  padding: 20px;
   border: 0; }
 
 .modal-header {
+  padding: 20px 34px;
   padding-bottom: 10px; }
   .modal-header h4 {
     color: #212121;
     font-weight: 500; }
 
 .modal-footer {
-  padding-top: 0; }
+  padding: 9.5px; }
 
 .modal-body {
-  padding: 20px;
-  padding-top: 0;
+  padding: 5px 34px;
+  padding-bottom: 15px;
   color: #858585; }
 
 @media (min-width: 970px) {
