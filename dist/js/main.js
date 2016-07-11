@@ -15880,18 +15880,12 @@ $(document).ready(function () {
     width: 'fit',
     size: '7'
   });
-});
-
-$('#deleteModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget);
-  var data = {
-    'type': button.data('type'),
-    'action': button.data('action')
-  };
-  var modal = $(this);
-  modal.find('.modal-title').text('Delete ' + data.type);
-  modal.find('.modal-body').text('Are you sure you want to delete this ' + data.type + '?');
-  modal.find('.modal-footer').html('\n    <button type="button" class="btn btn-primary-inverted" data-dismiss="modal">Close</button>\n    <a href="' + data.action + '" class="btn btn-danger-inverted">Delete</a>\n    ');
+  $('.modalToggle').on('click', function (e) {
+    var remote = $(this).data('remote');
+    $('#mainModal').load(remote);
+    $('#mainModal').modal('show');
+    e.preventDefault();
+  });
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})

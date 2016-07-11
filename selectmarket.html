@@ -81,7 +81,7 @@
                     <a href="#" type="button" class="btn btn-success-inverted">Login</a>
                     <a href="#" target="_blank" type="button" class="btn btn-warning-inverted">View market</a>
 
-                    <button type="button" class="btn btn-danger-inverted" data-toggle="modal" data-target="#deleteModal" data-type="market" data-action="/controlpanel/market/delete/11875/">Delete</button>
+                    <button type="button" class="btn btn-danger-inverted modalToggle" data-remote="deleteMarketModal.html">Delete</button>
                   </div>
                 </div>
               </div>
@@ -93,19 +93,9 @@
     </div>
   </div>
 
-  <div class="modal fade in" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="false">
-    <div class="modal-dialog modal-md" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="deleteModalLabel"></h4>
-        </div>
-        <div class="modal-body"></div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
+  <div class="modal" id="mainModal" tabindex="-1" role="dialog"></div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="dist/js/main.js?v=0.0.2"></script>
 
 </body>

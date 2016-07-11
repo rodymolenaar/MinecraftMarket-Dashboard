@@ -36,7 +36,7 @@
     box-shadow: none;
 
     @if ($class == "default") {
-      color: #333;
+      color: #4285F4;
     }
 
     &:focus {
@@ -46,7 +46,7 @@
       box-shadow: none;
       outline: 0;
       @if ($class == "default") {
-        color: #333;
+        color: #4285F4;
       }
     }
 
@@ -56,7 +56,7 @@
       border-color: transparent;
       color: darken($bg, 5%);
       @if ($class == "default") {
-        color: #333;
+        color: #4285F4;
       }
       box-shadow: none;
       outline: 0;
@@ -67,7 +67,7 @@
       border-color: transparent;
       color: darken($bg, 5%);
       @if ($class == "default") {
-        color: #333;
+        color: #4285F4;
       }
       background-size: 1000%;
       box-shadow: none;

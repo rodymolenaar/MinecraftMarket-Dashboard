@@ -12722,26 +12722,26 @@ input[type="checkbox"],
   text-transform: uppercase;
   font-weight: 500;
   box-shadow: none;
-  color: #333; }
+  color: #4285F4; }
   .btn-default-inverted:focus {
     background-color: none;
     border-color: none;
     color: #f2f2f2;
     box-shadow: none;
     outline: 0;
-    color: #333; }
+    color: #4285F4; }
   .btn-default-inverted:hover, .btn-default-inverted:active:hover {
     background-color: transparent;
     border-color: transparent;
     color: #f2f2f2;
-    color: #333;
+    color: #4285F4;
     box-shadow: none;
     outline: 0; }
   .btn-default-inverted:active {
     background-color: transparent;
     border-color: transparent;
     color: #f2f2f2;
-    color: #333;
+    color: #4285F4;
     background-size: 1000%;
     box-shadow: none;
     outline: 0; }
