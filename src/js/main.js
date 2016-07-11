@@ -7,6 +7,7 @@ require('justgage');
 require('./sidebar.js');
 
 $(document).ready( function () {
+
   $('.selectpicker').selectpicker({
     iconBase: 'fa',
     tickIcon: 'fa-check',
@@ -14,6 +15,7 @@ $(document).ready( function () {
     width: 'fit',
     size: '7'
   });
+
   $('.selectpicker-lg').selectpicker({
     iconBase: 'fa',
     tickIcon: 'fa-check',
@@ -21,10 +23,12 @@ $(document).ready( function () {
     width: 'fit',
     size: '7'
   });
+
   $('.modalToggle').on('click', function(e) {
     let remote = $(this).data('remote');
     $('#mainModal').load(remote);
     $('#mainModal').modal('show');
     e.preventDefault();
   });
+  
 });
