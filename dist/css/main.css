@@ -13484,6 +13484,7 @@ input[type="checkbox"],
     padding: 0 12px; } }
 
 .category > .category {
+  margin-top: 20px;
   padding-left: 35px; }
 
 .category__heading {
@@ -13492,6 +13493,16 @@ input[type="checkbox"],
   font-weight: 500;
   color: #FF6C13;
   margin-bottom: 15px; }
+  .category__heading .truncate, .category__heading .item__name {
+    display: inline-block;
+    width: 50%; }
+  @media (max-width: 970px) {
+    .category__heading {
+      font-size: 16px; }
+      .category__heading .truncate, .category__heading .item__name {
+        width: 30%; }
+      .category__heading .pull-right {
+        margin-top: -5px; } }
 
 .item {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
