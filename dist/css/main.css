@@ -13565,7 +13565,7 @@ input[type="checkbox"],
   float: left;
   min-height: 77px;
   background: #eee;
-  color: #333; }
+  color: rgba(0, 0, 0, 0.55); }
   @media only screen and (max-width: 970px) {
     .item__actions__action {
       min-height: 50px;

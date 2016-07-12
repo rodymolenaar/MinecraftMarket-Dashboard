@@ -113,7 +113,7 @@
   float: left;
   min-height: 77px;
   background: #eee;
-  color: #333;
+  color: rgba(#000, 0.55);
 
   @media only screen and (max-width: $container-md) {
     min-height: 50px;
