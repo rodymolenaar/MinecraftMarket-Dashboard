@@ -13137,6 +13137,11 @@ input[type="checkbox"],
   display: block;
   padding: 19px; }
 
+.card__footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+  text-align: right;
+  padding: 10px 19px; }
+
 .card__group {
   display: block; }
 
