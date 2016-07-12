@@ -6,6 +6,8 @@
 
   & .category__content {
     display: block;
+
+    transition: .2s;
   }
 
   & .category__state-indicator {
@@ -60,6 +62,7 @@
 
 .item--disabled {
   opacity: .7;
+  background: darken(#fff, 2%);
 }
 
 .item__details {

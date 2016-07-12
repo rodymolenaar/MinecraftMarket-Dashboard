@@ -13488,7 +13488,9 @@ input[type="checkbox"],
   padding-left: 35px; }
 
 .category .category__content {
-  display: block; }
+  display: block;
+  -webkit-transition: .2s;
+  transition: .2s; }
 
 .category--closed .category__content {
   display: none; }
@@ -13516,7 +13518,8 @@ input[type="checkbox"],
   margin-bottom: 15px; }
 
 .item--disabled {
-  opacity: .7; }
+  opacity: .7;
+  background: #fafafa; }
 
 .item__details {
   display: inline-block;
