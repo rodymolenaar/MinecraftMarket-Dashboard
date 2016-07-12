@@ -66,60 +66,107 @@
         </div>
       </div>
       <div class="content-inner">
-        <div class="category">
+        <div class="category category--closed" id="examplecategory1">
           <div class="category__heading">
             <span class="truncate">Example category 1</span>
             <div class="pull-right">
               <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
               <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
-              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></a>
-              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-minus-circle-outline"></i></a>
+              <button class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></button>
+              <button class="btn btn-primary-inverted categoryToggle" data-target="#examplecategory1" data-action="/controlpanel/category/25221/toggle"><i class="category__state-indicator"></i></button>
             </div>
           </div>
-          <div class="item">
-            <div class="item__details">
-              <div class="item__name">
-                Example Item 1
+          <div class="category__content">
+            <div class="item">
+              <div class="item__details">
+                <div class="item__name">
+                  Example Item 1
+                </div>
+                <div class="item__price">
+                  5.00 EUR
+                </div>
               </div>
-              <div class="item__price">
-                5.00 EUR
-              </div>
-            </div>
-            <div class="item__actions">
-              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
-              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
-              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__details">
-              <div class="item__name">
-                Example Item 2
-              </div>
-              <div class="item__price">
-                5.00 EUR
-              </div>
-            </div>
-            <div class="item__actions">
-              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
-              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
-              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
-            </div>
-          </div>
-          <div class="category">
-            <div class="category__heading">
-              <span class="truncate">Example category 2</span>
-              <div class="pull-right">
-                <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
-                <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
-                <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></a>
-                <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-minus-circle-outline"></i></a>
+              <div class="item__actions">
+                <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+                <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+                <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
               </div>
             </div>
             <div class="item">
               <div class="item__details">
                 <div class="item__name">
-                  Example Item 3
+                  Example Item 2
+                </div>
+                <div class="item__price">
+                  5.00 EUR
+                </div>
+              </div>
+              <div class="item__actions">
+                <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+                <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+                <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+              </div>
+            </div>
+            <div class="category" id="examplecategory2">
+              <div class="category__heading">
+                <span class="truncate">Example category 2</span>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
+                  <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
+                  <button class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></button>
+                  <button class="btn btn-primary-inverted categoryToggle" data-target="#examplecategory2" data-action="/controlpanel/category/25221/toggle"><i class="category__state-indicator"></i></button>
+                </div>
+              </div>
+              <div class="category__content">
+                <div class="item">
+                  <div class="item__details">
+                    <div class="item__name">
+                      Example Item 3
+                    </div>
+                    <div class="item__price">
+                      5.00 EUR
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+                    <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+                    <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+                  </div>
+                </div>
+                <div class="item item--disabled">
+                  <div class="item__details">
+                    <div class="item__name">
+                      Example Item 4
+                    </div>
+                    <div class="item__price">
+                      5.00 EUR
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
+                    <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
+                    <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category" id="examplecategory3">
+          <div class="category__heading">
+            <span class="truncate">Example category 3</span>
+            <div class="pull-right">
+              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
+              <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
+              <button class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></button>
+              <button class="btn btn-primary-inverted categoryToggle" data-target="#examplecategory3" data-action="/controlpanel/category/25221/toggle"><i class="category__state-indicator"></i></button>
+            </div>
+          </div>
+          <div class="category__content">
+            <div class="item">
+              <div class="item__details">
+                <div class="item__name">
+                  Example Item 5
                 </div>
                 <div class="item__price">
                   5.00 EUR
@@ -134,7 +181,7 @@
             <div class="item item--disabled">
               <div class="item__details">
                 <div class="item__name">
-                  Example Item 4
+                  Example Item 6
                 </div>
                 <div class="item__price">
                   5.00 EUR
@@ -145,47 +192,6 @@
                 <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
                 <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="category">
-          <div class="category__heading">
-            <span class="truncate">Example category 3</span>
-            <div class="pull-right">
-              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-edit"></i><span class="hidden-xs"> Edit</span></a>
-              <a href="#" class="btn btn-danger-inverted"><i class="zmdi zmdi-delete"></i><span class="hidden-xs"> Delete</span></a>
-              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-arrows"></i></a>
-              <a href="#" class="btn btn-primary-inverted"><i class="zmdi zmdi-minus-circle-outline"></i></a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__details">
-              <div class="item__name">
-                Example Item 5
-              </div>
-              <div class="item__price">
-                5.00 EUR
-              </div>
-            </div>
-            <div class="item__actions">
-              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
-              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
-              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
-            </div>
-          </div>
-          <div class="item item--disabled">
-            <div class="item__details">
-              <div class="item__name">
-                Example Item 6
-              </div>
-              <div class="item__price">
-                5.00 EUR
-              </div>
-            </div>
-            <div class="item__actions">
-              <button class="item__actions__action item__actions__action"><i class="zmdi zmdi-arrows"></i></button>
-              <button class="item__actions__action item__actions__action--primary"><i class="zmdi zmdi-edit"></i> <i class="zmdi zmdi-caret-down"></i></button>
-              <button class="item__actions__action item__actions__action--red"><i class="zmdi zmdi-delete"></i></button>
             </div>
           </div>
         </div>

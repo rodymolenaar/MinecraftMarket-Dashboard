@@ -1,3 +1,5 @@
+var $ = global.jQuery;
+
 $(".menu-toggle").click(function(e) {
   e.preventDefault();
   $("#drawer-backdrop").toggleClass("drawer-backdrop-open");

@@ -15882,18 +15882,55 @@ $(document).ready(function () {
     width: 'fit',
     size: '7'
   });
+});
 
-  $('.modalToggle').on('click', function (e) {
-    var remote = $(this).data('remote');
-    $('#mainModal').load(remote);
-    $('#mainModal').modal('show');
-    e.preventDefault();
+function getCookie(name) {
+  var cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = jQuery.trim(cookies[i]);
+      // Does this cookie string begin with the name we want?
+      if (cookie.substring(0, name.length + 1) === name + '=') {
+        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+        break;
+      }
+    }
+  }
+  return cookieValue;
+}
+
+function toggleCategory(action) {
+  $.ajax({
+    type: 'POST',
+    url: action,
+    headers: { 'HTTP_X_CSRFTOKEN': getCookie('csrftoken') }
   });
+}
+
+$('.modalToggle').on('click', function (e) {
+  var remote = $(this).data('remote');
+  $('#mainModal').load(remote);
+  $('#mainModal').modal('show');
+  e.preventDefault();
+});
+
+$('.categoryToggle').on('click', function (e) {
+  var target = $($(this).data('target'));
+  var categoryId = $(this).data('categoryId');
+
+  toggleCategory(categoryId);
+  target.toggleClass('category--closed');
+
+  e.preventDefault();
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./sidebar.js":7,"bootstrap-sass":1,"bootstrap-select":2,"jquery":4,"jquery-ui":3,"justgage":5}],7:[function(require,module,exports){
+(function (global){
 "use strict";
+
+var $ = global.jQuery;
 
 $(".menu-toggle").click(function (e) {
   e.preventDefault();
@@ -15903,6 +15940,7 @@ $(".menu-toggle").click(function (e) {
   $(".sidebar").toggleClass("sidebar-open");
 });
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}]},{},[6]);
 
 //# sourceMappingURL=main.js.map

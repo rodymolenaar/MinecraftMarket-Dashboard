@@ -1,7 +1,28 @@
 .category {
-  > .category {
+  & .category {
     margin-top: 20px;
     padding-left: 35px;
+  }
+
+  & .category__content {
+    display: block;
+  }
+
+  & .category__state-indicator {
+    @extend .zmdi;
+    @extend .zmdi-minus-circle-outline;
+  }
+}
+
+.category--closed {
+
+  & .category__content {
+    display: none;
+  }
+
+  & .category__state-indicator {
+    @extend .zmdi;
+    @extend .zmdi-plus-circle-o;
   }
 }
 
