@@ -239,78 +239,45 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">Total monthly expenses</div>
-              <div class="card__body">
-                <div class="form-group">
-                  <div class="input-group">
-                    <input class="form-control">
-                    <span class="input-group-addon">EUR</span>
-                    <span class="input-group-btn">
-                      <button type="submit" class="btn btn-primary-inverted">Update</button>
-                    </span>
-                  </div>
-                </div>
+        <div class="card text-center">
+          <div class="card__body">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">Total monthly expenses</h4>
+                <h3>0.00 EUR <button class="btn btn-primary-inverted modalToggle" data-remote="editMonthlyExpensesModal.html"><i class="zmdi zmdi-edit"></i></button></h3>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">Profit this month</div>
-              <div class="card__body">
-                <h3>-5.00 EUR</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">Average monthly profit</div>
-              <div class="card__body">
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">Profit this month</h4>
                 <h3>0.00 EUR</h3>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">Total</div>
-              <div class="card__body">
-                <h3>20.00 EUR</h3>
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">Average monthly profit</h4>
+                <h3>0.00 EUR</h3>
+              </div>
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">Total profit</h4>
+                <h3>0.00 EUR</h3>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">This year</div>
-              <div class="card__body">
+        <div class="card text-center">
+          <div class="card__body">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">Today</h4>
                 <h3>0.00 EUR</h3>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">This month</div>
-              <div class="card__body">
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">This week</h4>
                 <h3>0.00 EUR</h3>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">This week</div>
-              <div class="card__body">
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">This month</h4>
                 <h3>0.00 EUR</h3>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center">
-              <div class="card__heading">Today</div>
-              <div class="card__body">
+              <div class="col-md-3">
+                <h4 class="h--bold h--dark">This year</h4>
                 <h3>0.00 EUR</h3>
               </div>
             </div>
@@ -318,14 +285,10 @@
         </div>
       </div>
     </div>
-
   </div>
 
-</div>
-</div>
-</div>
 
-<div class="modal" id="mainModal" tabindex="-1" role="dialog"></div>
+  <div class="modal" id="mainModal" tabindex="-1" role="dialog"></div>
 
 <script src="dist/js/main.js?v=0.0.4"></script>
 
