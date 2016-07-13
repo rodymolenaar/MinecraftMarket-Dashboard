@@ -74,3 +74,12 @@
     background-color: rgba(158,158,158,0.2);
   }
 }
+
+.sidebar__nav__dropdown-menu__item--active {
+  color: $brand-primary;
+
+  &:hover,
+  &:focus {
+    color: $brand-primary;
+  }
+}
