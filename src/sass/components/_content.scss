@@ -1,3 +1,10 @@
+.categories {
+  @media(max-width: $container-md) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 .category {
   & .category {
     margin-top: 20px;
@@ -38,14 +45,16 @@
   & .truncate {
     display: inline-block;
     width: 50%;
+    @media(max-width: $container-md) {
+      width: 40%;
+    }
+    @media(max-width: $container-sm) {
+      width: 30%;
+    }
   }
 
   @media(max-width: $container-md) {
     font-size: 16px;
-
-    & .truncate {
-      width: 30%;
-    }
 
     & .pull-right {
       margin-top: -5px;
@@ -70,6 +79,9 @@
   padding: 15px;
   @media only screen and (max-width: $container-md) {
     width: 40%;
+  }
+  @media only screen and (max-width: $container-sm) {
+    width: 30%;
   }
 }
 

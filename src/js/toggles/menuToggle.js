@@ -1,6 +1,6 @@
-var $ = global.jQuery;
+import $ from 'jquery';
 
-$(".menu-toggle").click(function(e) {
+$(".menuToggle").click(function(e) {
   e.preventDefault();
   $("#drawer-backdrop").toggleClass("drawer-backdrop-open");
   $(".content").toggleClass("no-scroll");
