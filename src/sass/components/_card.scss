@@ -50,6 +50,8 @@
 }
 
 .card__footer {
+  display: block;
+  background: lighten(#F1F1F1, 1%);
   border-top: 1px solid rgba(0, 0, 0, 0.075);
   text-align: right;
   padding: 10px 19px;
