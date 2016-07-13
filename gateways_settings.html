@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff6c13">
+  <title>MinecraftMarket</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+  <link href="dist/css/main.css" rel="stylesheet">
+  <link id="favicon" rel="shortcut icon" href="dist/img/icons/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png" />
+
+  <link rel="icon" href="dist/img/icons/app-256.png" sizes="256x256" type="image/png" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="dist/img/icons/ios-152.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="dist/img/icons/ios-144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="dist/img/icons/ios-120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="dist/img/icons/ios-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="dist/img/icons/ios-72.png" />
+  <link rel="apple-touch-icon-precomposed" href="dist/ios-57.png" />
+
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="dist/img/icons/app-144.png" />
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-ellipsis-v"></i>
+        </button>
+        <a class="navbar-brand menuToggle" href="#">
+          <div class="navbar-hamburger">
+            <i class="fa fa-bars"></i>
+          </div>
+          <img class="navbar-logo" src="dist/img/logo.svg">
+          <div class="navbar-name">MinecraftMarket</div>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">View market</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">rodymol123 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Change market</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Billing</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="sidebar">
+
+      <div class="sidebar__top">
+        <div class="sidebar__top__plan">
+
+          <div class="sidebar__top__plan_details">
+            <div class="sidebar__top__plan__plan_name">
+              Minecraft Server
+            </div>
+            <div class="sidebar__top__plan__plan_duration">
+              Premium Lifetime
+            </div>
+          </div><!-- /.sidebar__top__plan_details -->
+
+          <div class="sidebar__top__plan_actions">
+            <a href="plans.html" class="sidebar__top__plan__action">
+              Plans
+            </a>
+          </div><!-- /.sidebar__top__plan_actions -->
+
+        </div><!-- /.sidebar__top__plan -->
+      </div><!-- /.sidebar__top -->
+
+
+      <div class="sidebar__nav">
+
+        <div class="sidebar__nav__group">
+          <a href="index.html" class="sidebar__nav__item">
+            Dashboard
+          </a>
+          <a href="statistics.html" class="sidebar__nav__item">
+            Statistics
+          </a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">settings</div>
+          <a href="general.html" class="sidebar__nav__item">General</a>
+          <div class="dropdown">
+            <a class="sidebar__nav__item sidebar__nav__item--active" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
+            <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
+              <a href="transactions.html" class="sidebar__nav__dropdown-menu__item">Transactions</a>
+              <a href="#" class="sidebar__nav__dropdown-menu__item sidebar__nav__dropdown-menu__item--active">Gateways</a>
+            </div>
+          </div>
+          <a href="#" class="sidebar__nav__item">Servers</a>
+          <a href="#" class="sidebar__nav__item">Design</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">content</div>
+          <a href="content.html" class="sidebar__nav__item">Categories & items</a>
+          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="#" class="sidebar__nav__item">Variables</a>
+          <a href="#" class="sidebar__nav__item">Bans</a>
+          <a href="#" class="sidebar__nav__item">Discount codes</a>
+          <a href="#" class="sidebar__nav__item">Sales</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">support</div>
+          <a href="#" class="sidebar__nav__item">Knowledge base</a>
+          <a href="#" class="sidebar__nav__item">Tickets</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content">
+      <div id="drawer-backdrop" class="menuToggle drawer-backdrop"></div>
+      <div class="featurebar">
+        <div class="featurebar__heading">Gateways</div>
+        <div class="featurebar__responsive">
+          <div class="featurebar__nav">
+            <a href="#" class="featurebar__nav__item">Gateways</a>
+            <a href="#" class="featurebar__nav__item featurebar__nav__item--active">Payment settings</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-inner">
+        <div class="card">
+          <div class="card__body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Minimum cart value:
+                    <a href="#" data-toggle="popover" data-content="The minimum amount that must be met before being able to proceed to checkout." data-original-title="" title="">(?)</a>
+
+                  </label>
+                  <div class="input-group">
+                    <input class="form-control" id="id_minbasket" name="minbasket" type="text" value="0.00">
+                    <span class="input-group-addon">EUR</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Coupon limit:
+                    <a href="#" data-toggle="popover" data-content="The max amount of coupons allowed to be redeemed on each cart." data-original-title="" title="">(?)</a>
+                  </label>
+                  <input class="form-control" id="id_couponlimit" name="couponlimit" type="text" value="0">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Spending limit:
+                    <a href="#" data-toggle="popover" data-content="The maximum amount a player can spend during a set period." data-original-title="" title="">(?)</a>
+                  </label>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <div class="input-group">
+                        <input class="form-control" id="id_spendinglimit" name="spendinglimit" type="text" value="0.00">
+                        <span class="input-group-addon">EUR</span>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <select class="selectpicker" id="id_spendingperiod" name="spendingperiod">
+                        <option value="1">Every minute</option>
+                        <option value="2">Hourly</option>
+                        <option value="3" selected="selected">Daily</option>
+                        <option value="4">Weekly</option>
+                        <option value="5">Monthly</option>
+                        <option value="6">Yearly</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Free cart limit:
+                    <a href="#" data-toggle="popover" data-content="The amount of hours a player has to wait before being able to claim another free cart, set 0 for unlimited." data-original-title="" title="">(?)</a>
+                  </label>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <input class="form-control" id="id_freebasket" name="freebasket" type="text" value="0">
+                    </div>
+                    <div class="col-md-5">
+                      <select class="selectpicker" id="id_freebasketperiod" name="freebasketperiod">
+                        <option value="1">Every minute</option>
+                        <option value="2">Hourly</option>
+                        <option value="3" selected="selected">Daily</option>
+                        <option value="4">Weekly</option>
+                        <option value="5">Monthly</option>
+                        <option value="6">Yearly</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Allow users to bypass the checkout if cart value is 0.00
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Deny users who have chargedbacked on other markets within MinecraftMarket
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Allow only genuine premium Minecraft accounts to login to your market
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Require user to provide name, email and billing address before checkout
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="radio">
+                <label for="id_chargebackcmd_0"><input checked="checked" id="id_chargebackcmd_0" name="chargebackcmd" type="radio" value="1"> Delete pending commands upon a chargeback/refund.</label>
+              </div>
+              <div class="radio">
+                <label for="id_chargebackcmd_1"><input id="id_chargebackcmd_1" name="chargebackcmd" type="radio" value="2"> Set all pending commands to execute immediately upon a chargeback/refund.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__footer">
+          <button type="button" class="btn btn-danger-inverted">Cancel</button>
+          <button type="submit" class="btn btn-default-inverted">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="mainModal" tabindex="-1" role="dialog"></div>
+
+<script src="dist/js/main.js?v=0.0.4"></script>
+
+</body>
+</html>

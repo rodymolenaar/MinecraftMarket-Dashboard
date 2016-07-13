@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/_head.html')
+<body>
+  @@include('./components/_navbar.html')
+  <div class="page-wrapper">
+
+    <div class="sidebar">
+
+      @@include('./components/sidebar/_sidebar__top.html')
+
+      <div class="sidebar__nav">
+
+        <div class="sidebar__nav__group">
+          <a href="index.html" class="sidebar__nav__item">
+            Dashboard
+          </a>
+          <a href="statistics.html" class="sidebar__nav__item">
+            Statistics
+          </a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">settings</div>
+          <a href="general.html" class="sidebar__nav__item">General</a>
+          <div class="dropdown">
+            <a class="sidebar__nav__item sidebar__nav__item--active" role="button" data-toggle="collapse" href="#dropdownPayments" aria-expanded="false" aria-controls="dropdownPayments">Payments <i class="caret"></i></a>
+            <div class="sidebar__nav__dropdown-menu collapse" id="dropdownPayments">
+              <a href="transactions.html" class="sidebar__nav__dropdown-menu__item">Transactions</a>
+              <a href="#" class="sidebar__nav__dropdown-menu__item sidebar__nav__dropdown-menu__item--active">Gateways</a>
+            </div>
+          </div>
+          <a href="#" class="sidebar__nav__item">Servers</a>
+          <a href="#" class="sidebar__nav__item">Design</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">content</div>
+          <a href="content.html" class="sidebar__nav__item">Categories & items</a>
+          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="#" class="sidebar__nav__item">Variables</a>
+          <a href="#" class="sidebar__nav__item">Bans</a>
+          <a href="#" class="sidebar__nav__item">Discount codes</a>
+          <a href="#" class="sidebar__nav__item">Sales</a>
+        </div>
+
+        <div class="sidebar__nav__group">
+          <div class="sidebar__nav__heading">support</div>
+          <a href="#" class="sidebar__nav__item">Knowledge base</a>
+          <a href="#" class="sidebar__nav__item">Tickets</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="content">
+      <div id="drawer-backdrop" class="menuToggle drawer-backdrop"></div>
+      <div class="featurebar">
+        <div class="featurebar__heading">Gateways</div>
+        <div class="featurebar__responsive">
+          <div class="featurebar__nav">
+            <a href="#" class="featurebar__nav__item">Gateways</a>
+            <a href="#" class="featurebar__nav__item featurebar__nav__item--active">Payment settings</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-inner">
+        <div class="card">
+          <div class="card__body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Minimum cart value:
+                    <a href="#" data-toggle="popover" data-content="The minimum amount that must be met before being able to proceed to checkout." data-original-title="" title="">(?)</a>
+
+                  </label>
+                  <div class="input-group">
+                    <input class="form-control" id="id_minbasket" name="minbasket" type="text" value="0.00">
+                    <span class="input-group-addon">EUR</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Coupon limit:
+                    <a href="#" data-toggle="popover" data-content="The max amount of coupons allowed to be redeemed on each cart." data-original-title="" title="">(?)</a>
+                  </label>
+                  <input class="form-control" id="id_couponlimit" name="couponlimit" type="text" value="0">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Spending limit:
+                    <a href="#" data-toggle="popover" data-content="The maximum amount a player can spend during a set period." data-original-title="" title="">(?)</a>
+                  </label>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <div class="input-group">
+                        <input class="form-control" id="id_spendinglimit" name="spendinglimit" type="text" value="0.00">
+                        <span class="input-group-addon">EUR</span>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <select class="selectpicker" id="id_spendingperiod" name="spendingperiod">
+                        <option value="1">Every minute</option>
+                        <option value="2">Hourly</option>
+                        <option value="3" selected="selected">Daily</option>
+                        <option value="4">Weekly</option>
+                        <option value="5">Monthly</option>
+                        <option value="6">Yearly</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Free cart limit:
+                    <a href="#" data-toggle="popover" data-content="The amount of hours a player has to wait before being able to claim another free cart, set 0 for unlimited." data-original-title="" title="">(?)</a>
+                  </label>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <input class="form-control" id="id_freebasket" name="freebasket" type="text" value="0">
+                    </div>
+                    <div class="col-md-5">
+                      <select class="selectpicker" id="id_freebasketperiod" name="freebasketperiod">
+                        <option value="1">Every minute</option>
+                        <option value="2">Hourly</option>
+                        <option value="3" selected="selected">Daily</option>
+                        <option value="4">Weekly</option>
+                        <option value="5">Monthly</option>
+                        <option value="6">Yearly</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Allow users to bypass the checkout if cart value is 0.00
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Deny users who have chargedbacked on other markets within MinecraftMarket
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Allow only genuine premium Minecraft accounts to login to your market
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <div class="lever"></div>
+                  Require user to provide name, email and billing address before checkout
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="radio">
+                <label for="id_chargebackcmd_0"><input checked="checked" id="id_chargebackcmd_0" name="chargebackcmd" type="radio" value="1"> Delete pending commands upon a chargeback/refund.</label>
+              </div>
+              <div class="radio">
+                <label for="id_chargebackcmd_1"><input id="id_chargebackcmd_1" name="chargebackcmd" type="radio" value="2"> Set all pending commands to execute immediately upon a chargeback/refund.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__footer">
+          <button type="button" class="btn btn-danger-inverted">Cancel</button>
+          <button type="submit" class="btn btn-default-inverted">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+@@include('./components/_footer.html')
+</body>
+</html>
