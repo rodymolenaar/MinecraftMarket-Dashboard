@@ -5,6 +5,11 @@
   @include md-shadow(1);
 }
 
+.card--disabled {
+  opacity: .8;
+  background: darken(#fff, 2%);
+}
+
 .card__heading {
   display: block;
   padding: 19px;
