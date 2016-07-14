@@ -12219,6 +12219,10 @@ button.close {
 .h--dark {
   color: #333; }
 
+.spaced-content {
+  display: block;
+  margin-bottom: 25px; }
+
 /* Switch
    ========================================================================== */
 .switch,
