@@ -138,346 +138,57 @@
       <div id="drawer-backdrop" class="menuToggle drawer-backdrop"></div>
       <div class="featurebar">
         <div class="featurebar__heading">Modules</div>
-        <div class="featurebar__responsive">
-          <div class="featurebar__nav">
-            <a href="#" class="featurebar__nav__item">Add module</a>
-          </div>
-        </div>
       </div>
       <div class="content-inner">
-
-        <div class="row">
-
-          <div class="col-md-8">
-
-
-            <div class="card">
-              <div class="card__heading">Payment settings
-                <div class="pull-right"><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#choosegateway"><i class="fa fa-plus"></i> Add gateway</button></div>
-              </div>
-              <div class="card__body">
-
-                <div id="gateways" class="ui-sortable">
-
-                  <div id="gateway_10821" class="card gateway">
-                    <div class="card__heading">
-                      <b>Paypal</b>
-                      <div class="btn-group pull-right">
-                        <span class="label label-success">Enabled</span>
-                        <a href="/controlpanel/gateway/10821/edit/"><button class="btn btn-warning btn-xs" type="button"><i class="fa fa-pencil"></i> Edit</button></a>
-                        <a href="#" data-toggle="modal" data-target="#m10821"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</button></a>
-                        <a href="#"><button type="button" class="btn btn-default btn-xs gatewayhandle"><i class="fa fa-arrows"></i></button></a>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal fade" id="m10821" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                          <h4 class="modal-title" id="myModalLabel">Confirm delete</h4>
-                        </div>
-                        <div class="modal-body">
-                          Are you sure you want to delete this gateway?
-                        </div>
-                        <div class="modal-footer">
-                          <a href="/controlpanel/gateway/10821/delete/"><button type="button" class="btn btn-primary">Delete</button></a>
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                        </div>
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                  </div><!-- /.modal -->
-
-                </div>
-
-                <div class="modal fade" id="choosegateway" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="myModalLabel">Choose a gateway</h4>
-                      </div>
-                      <div class="modal-body">
-                        <div class="well">
-                          <div class="row">
-                            <div class="col-lg-8">
-                              <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" border="0" alt="PayPal Logo">
-                            </div>
-                            <div class="col-lg-4">
-
-
-
-                              <a href="/controlpanel/gateway/1/new/" class="btn btn-warning btn-block disabled">Added</a>
-
-
-                            </div>
-                          </div>
-                        </div>
-                        <div class="well">
-                          <div class="row">
-                            <div class="col-lg-8">
-                              <img src="http://www.paymentwall.com/images/buttons/logo2_big.png" width="150" border="0" alt="Paymentwall Logo">
-                            </div>
-                            <div class="col-lg-4">
-
-
-
-                              <a href="/controlpanel/gateway/2/new/" class="btn btn-success btn-block"><i class="fa fa-plus"></i> Add</a>
-
-
-                            </div>
-                          </div>
-                        </div>
-                        <div class="well">
-                          <div class="row">
-                            <div class="col-lg-8">
-                              <img src="https://secure.paygol.com/images/paygol_logo.png" width="150" border="0" alt="PayGol Logo">
-                            </div>
-                            <div class="col-lg-4">
-
-
-
-                              <a href="/controlpanel/gateway/3/new/" class="btn btn-success btn-block"><i class="fa fa-plus"></i> Add</a>
-
-
-                            </div>
-                          </div>
-                        </div>
-                        <div class="well">
-                          <div class="row">
-                            <div class="col-lg-8">
-                              <img src="https://developers.google.com/wallet/images/branding/gwall_logo_hrz_fc_rgb_gry_pos.png" width="150" border="0" alt="PayGol Logo">
-                            </div>
-                            <div class="col-lg-4">
-
-
-
-                              <a href="/controlpanel/gateway/4/new/" class="btn btn-success btn-block"><i class="fa fa-plus"></i> Add</a>
-
-
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
+        <div class="spaced-content">
+          <a href="#" class="btn btn-primary">Add module</a>
+        </div>
+        <div id="modules">
+          <div class="card">
+            <div class="card__heading">
+              Welcome
+              <div class="pull-right">
+                <a href="/controlpanel/gateway/10821/edit/" class="btn btn-warning-inverted btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                <button class="btn btn-danger-inverted btn-xs"><i class="fa fa-trash-o"></i> Delete</button>
+                <button type="button" class="btn btn-default-inverted btn-xs gatewayhandle"><i class="fa fa-arrows"></i></button>
               </div>
             </div>
-            <form method="post" enctype="multipart/form-data" lpformnum="1" _lpchecked="1">
-              <input type="hidden" name="csrfmiddlewaretoken" value="esv3ZcQhrwvDlFxUWBWGA1fCNNvqPltW">
-              <div class="card">
-                <div class="card__heading">Payment settings</div>
-                <div class="card__body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Minimum cart value:
-                          <a href="#" data-toggle="popover" data-content="The minimum amount that must be met before being able to proceed to checkout." data-original-title="" title="">(?)</a>
-
-                        </label>
-                        <div class="input-group">
-                          <input class="form-control" id="id_minbasket" name="minbasket" type="text" value="0.00" style="cursor: pointer; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
-                          <span class="input-group-addon">EUR</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Coupon limit:
-                          <a href="#" data-toggle="popover" data-content="The max amount of coupons allowed to be redeemed on each cart." data-original-title="" title="">(?)</a>
-
-                        </label>
-                        <input class="form-control" id="id_couponlimit" name="couponlimit" type="text" value="0">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <label>Spending limit:
-                        <a href="#" data-toggle="popover" data-content="The maximum amount a player can spend during a set period." data-original-title="" title="">(?)</a>
-
-                      </label>
-                      <div class="input-group">
-                        <input class="form-control" id="id_spendinglimit" name="spendinglimit" type="text" value="0.00">
-                        <span class="input-group-addon">EUR</span>
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="custom-addon">
-                        <select class="form-control selectpicker" id="id_spendingperiod" name="spendingperiod" style="display: none;">
-                          <option value="1">Minutes</option>
-                          <option value="2">Hours</option>
-                          <option value="3" selected="selected">Days</option>
-                          <option value="4">Weeks</option>
-                          <option value="5">Months</option>
-                          <option value="6">Years</option>
-                        </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_spendingperiod" title="Days"><span class="filter-option pull-left">Days</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0"><a tabindex="0" class="" style=""><span class="text">Minutes</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Hours</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2" class="selected"><a tabindex="0" class="" style=""><span class="text">Days</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">Weeks</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">Months</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">Years</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <div class="form-group">
-                        <label>Free cart limit:
-                          <a href="#" data-toggle="popover" data-content="The amount of hours a player has to wait before being able to claim another free cart, set 0 for unlimited." data-original-title="" title="">(?)</a>
-                        </label>
-                        <input class="form-control" id="id_freebasket" name="freebasket" type="text" value="0">
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="custom-addon">
-                        <select class="form-control selectpicker" id="id_freebasketperiod" name="freebasketperiod" style="display: none;">
-                          <option value="1">Minutes</option>
-                          <option value="2">Hours</option>
-                          <option value="3" selected="selected">Days</option>
-                          <option value="4">Weeks</option>
-                          <option value="5">Months</option>
-                          <option value="6">Years</option>
-                        </select><div class="btn-group bootstrap-select form-control dropup"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_freebasketperiod" title="Days"><span class="filter-option pull-left">Days</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open" style="max-height: 474px; overflow: hidden; min-height: 95px;"><ul class="dropdown-menu inner selectpicker" role="menu" style="max-height: 462px; overflow-y: auto; min-height: 83px;"><li rel="0"><a tabindex="0" class="" style=""><span class="text">Minutes</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Hours</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2" class="selected"><a tabindex="0" class="" style=""><span class="text">Days</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">Weeks</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">Months</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">Years</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                      <div class="checkbox">
-                        <label>
-                          <input checked="checked" id="id_freecart" name="freecart" type="checkbox"> Allow users to bypass the checkout if cart value is 0.00.
-                        </label>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input checked="checked" id="id_chargeback" name="chargeback" type="checkbox"> Deny users who have chargedbacked on other markets within MinecraftMarket.
-                        </label>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input checked="checked" id="id_premiumuser" name="premiumuser" type="checkbox"> Allow only genuine premium Minecraft accounts to login to your market.
-                        </label>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input id="id_paymentdetails" name="paymentdetails" type="checkbox"> Require user to provide name, email and billing address before checkout.
-                        </label>
-                      </div>
-
-                      <div class="radio">
-                        <label for="id_chargebackcmd_0"><input checked="checked" id="id_chargebackcmd_0" name="chargebackcmd" type="radio" value="1"> Delete pending commands upon a chargeback/refund.</label>
-                      </div>
-
-                      <div class="radio">
-                        <label for="id_chargebackcmd_1"><input id="id_chargebackcmd_1" name="chargebackcmd" type="radio" value="2"> Set all pending commands to execute immediately upon a chargeback/refund.</label>
-                      </div>
-
-
-                    </div>
-                  </div>
-
-                </div>
-                <div class="panel-footer">
-                  <button class="btn btn-success" name="paymentsettings" type="submit">Update</button>
-                </div>
-              </div>
-            </form>
-
-            <form method="post" enctype="multipart/form-data" lpformnum="2">
-              <input type="hidden" name="csrfmiddlewaretoken" value="esv3ZcQhrwvDlFxUWBWGA1fCNNvqPltW">
-              <div class="card">
-                <div class="card__heading">Resend commands</div>
-                <div class="card__body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Purchased after:
-
-                        </label>
-                        <div class="input-group">
-
-                          <input class="form-control datepicker" id="id_purchasedafter" name="purchasedafter" type="text" value="2016-07-04">
-                          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Purchased before:</label>
-                        <div class="input-group">
-
-                          <input class="form-control datepicker" id="id_purchasedbefore" name="purchasedbefore" type="text" value="2016-07-04">
-                          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-footer">
-                  <button class="btn btn-primary" name="resendcommands" type="submit"><i class="fa fa-retweet"></i> Resend</button>
-                </div>
-              </div>
-            </form>
-            <form method="post" enctype="multipart/form-data" lpformnum="3">
-              <input type="hidden" name="csrfmiddlewaretoken" value="esv3ZcQhrwvDlFxUWBWGA1fCNNvqPltW">
-              <div class="card">
-                <div class="card__heading">Extend pending commands</div>
-                <div class="card__body">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <div class="form-group">
-                        <label>Additional time:
-                          <a href="#" data-toggle="popover" data-content="The amount of time that should be added to the commands between the purchase dates." data-original-title="" title="">(?)</a>
-                        </label>
-                        <input class="form-control selectpicker" id="id_extension" name="extension" type="text" value="0" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="custom-addon">
-                        <select class="form-control" id="id_extensionperiod" name="extensionperiod" style="display: none;">
-                          <option value="1">Minutes</option>
-                          <option value="2">Hours</option>
-                          <option value="3">Days</option>
-                          <option value="4">Weeks</option>
-                          <option value="5">Months</option>
-                          <option value="6">Years</option>
-                        </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-custom" data-toggle="dropdown" data-id="id_extensionperiod" title="Minutes"><span class="filter-option pull-left">Minutes</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Minutes</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">Hours</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">Days</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style=""><span class="text">Weeks</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style=""><span class="text">Months</span><i class="fa fa-check icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="0" class="" style=""><span class="text">Years</span><i class="fa fa-check icon-ok check-mark"></i></a></li></ul></div></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Purchased after:</label>
-                        <div class="input-group">
-                          <input class="form-control datepicker" id="id_purchasedafter" name="purchasedafter" type="text" value="2016-07-04">
-                          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Purchased before:</label>
-                        <div class="input-group">
-                          <input class="form-control datepicker" id="id_purchasedbefore" name="purchasedbefore" type="text" value="2016-07-04">
-                          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-footer">
-                  <button class="btn btn-primary" name="extendcommands" type="submit"><i class="fa fa-clock-o"></i> Extend</button>
-                </div>
-              </div>
-            </form>
-
           </div>
-
+          <div class="card">
+            <div class="card__heading">
+              Best customer
+              <div class="pull-right">
+                <a href="/controlpanel/gateway/10821/edit/" class="btn btn-warning-inverted btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                <button class="btn btn-danger-inverted btn-xs"><i class="fa fa-trash-o"></i> Delete</button>
+                <button type="button" class="btn btn-default-inverted btn-xs gatewayhandle"><i class="fa fa-arrows"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__heading">
+              Monthly goal
+              <div class="pull-right">
+                <a href="/controlpanel/gateway/10821/edit/" class="btn btn-warning-inverted btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                <button class="btn btn-danger-inverted btn-xs"><i class="fa fa-trash-o"></i> Delete</button>
+                <button type="button" class="btn btn-default-inverted btn-xs gatewayhandle"><i class="fa fa-arrows"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__heading">
+              Recent purchases
+              <div class="pull-right">
+                <a href="/controlpanel/gateway/10821/edit/" class="btn btn-warning-inverted btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                <button class="btn btn-danger-inverted btn-xs"><i class="fa fa-trash-o"></i> Delete</button>
+                <button type="button" class="btn btn-default-inverted btn-xs gatewayhandle"><i class="fa fa-arrows"></i></button>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
   </div>
+
 
   <div class="modal" id="mainModal" tabindex="-1" role="dialog"></div>
 
