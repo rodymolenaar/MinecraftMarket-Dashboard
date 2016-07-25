@@ -15857,6 +15857,7 @@ function extend(out) {
 "use strict";
 
 },{}],7:[function(require,module,exports){
+(function (global){
 'use strict';
 
 require('bootstrap-select');
@@ -15874,12 +15875,16 @@ require('./toggles/modalToggle');
 require('./toggles/categoryToggle');
 
 // Non-ES6 supported
+
+global.jQuery = require("jquery");
+var $ = global.jQuery;
 require('jquery-ui');
 require('bootstrap-sass');
 
 // ES6 supported
 
-},{"./datetimepicker":6,"./selectpicker":8,"./toggles/categoryToggle":9,"./toggles/menuToggle":10,"./toggles/modalToggle":11,"bootstrap-sass":1,"bootstrap-select":2,"jquery-ui":3,"justgage":5}],8:[function(require,module,exports){
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./datetimepicker":6,"./selectpicker":8,"./toggles/categoryToggle":9,"./toggles/menuToggle":10,"./toggles/modalToggle":11,"bootstrap-sass":1,"bootstrap-select":2,"jquery":4,"jquery-ui":3,"justgage":5}],8:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');

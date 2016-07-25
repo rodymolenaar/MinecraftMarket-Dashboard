@@ -1,4 +1,7 @@
 // Non-ES6 supported
+
+global.jQuery = require("jquery");
+var $ = global.jQuery;
 require('jquery-ui');
 require('bootstrap-sass');
 
