@@ -15854,7 +15854,9 @@ function extend(out) {
 };
 
 },{}],6:[function(require,module,exports){
-(function (global){
+"use strict";
+
+},{}],7:[function(require,module,exports){
 'use strict';
 
 require('bootstrap-select');
@@ -15863,6 +15865,8 @@ require('justgage');
 
 require('./selectpicker');
 
+require('./datetimepicker');
+
 require('./toggles/menuToggle');
 
 require('./toggles/modalToggle');
@@ -15870,16 +15874,12 @@ require('./toggles/modalToggle');
 require('./toggles/categoryToggle');
 
 // Non-ES6 supported
-
-global.jQuery = require("jquery");
-var $ = global.jQuery;
 require('jquery-ui');
 require('bootstrap-sass');
 
 // ES6 supported
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./selectpicker":7,"./toggles/categoryToggle":8,"./toggles/menuToggle":9,"./toggles/modalToggle":10,"bootstrap-sass":1,"bootstrap-select":2,"jquery":4,"jquery-ui":3,"justgage":5}],7:[function(require,module,exports){
+},{"./datetimepicker":6,"./selectpicker":8,"./toggles/categoryToggle":9,"./toggles/menuToggle":10,"./toggles/modalToggle":11,"bootstrap-sass":1,"bootstrap-select":2,"jquery-ui":3,"justgage":5}],8:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -15907,7 +15907,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   });
 });
 
-},{"jquery":4}],8:[function(require,module,exports){
+},{"jquery":4}],9:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -15938,7 +15938,7 @@ function toggleCategory(action) {
   e.preventDefault();
 });
 
-},{"./../utils/getCookie":11,"jquery":4}],9:[function(require,module,exports){
+},{"./../utils/getCookie":12,"jquery":4}],10:[function(require,module,exports){
 "use strict";
 
 var _jquery = require("jquery");
@@ -15955,7 +15955,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   (0, _jquery2.default)(".sidebar").toggleClass("sidebar-open");
 });
 
-},{"jquery":4}],10:[function(require,module,exports){
+},{"jquery":4}],11:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -15971,7 +15971,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   e.preventDefault();
 });
 
-},{"jquery":4}],11:[function(require,module,exports){
+},{"jquery":4}],12:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -15994,6 +15994,6 @@ function getCookie(name) {
   return cookieValue;
 }
 
-},{}]},{},[6]);
+},{}]},{},[7]);
 
 //# sourceMappingURL=main.js.map

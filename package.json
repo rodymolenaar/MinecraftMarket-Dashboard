@@ -11,7 +11,11 @@
     "jquery-browserify": "^1.8.1",
     "jquery-ui": "^1.12.0",
     "justgage": "^1.2.2",
-    "material-design-iconic-font": "^2.2.0"
+    "lodash": "^4.13.1",
+    "material-datetime-picker": "^1.0.1",
+    "material-design-iconic-font": "^2.2.0",
+    "moment": "^2.14.1",
+    "rome": "^2.1.22"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

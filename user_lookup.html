@@ -117,8 +117,8 @@
 
         <div class="sidebar__nav__group">
           <div class="sidebar__nav__heading">content</div>
-          <a href="content.html" class="sidebar__nav__item  sidebar__nav__item--active">Categories & items</a>
-          <a href="#" class="sidebar__nav__item">Modules</a>
+          <a href="content.html" class="sidebar__nav__item">Categories & items</a>
+          <a href="#" class="sidebar__nav__item sidebar__nav__item--active">Modules</a>
           <a href="#" class="sidebar__nav__item">Variables</a>
           <a href="#" class="sidebar__nav__item">Bans</a>
           <a href="#" class="sidebar__nav__item">Discount codes</a>
@@ -138,117 +138,42 @@
     <div class="content">
       <div id="drawer-backdrop" class="menuToggle drawer-backdrop"></div>
       <div class="featurebar">
-        <div class="featurebar__heading">Edit category</div>
+        <div class="featurebar__heading">User lookup</div>
       </div>
       <div class="content-inner">
-
-        <div class="row">
-
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card__body">
-                <form>
-                  <div class="card__group">
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Example category 1" value="Example  category 1">
-                    </div>
-
-                    <div>
-                      <ul class="nav nav-tabs nav-justified" role="tablist">
-                        <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
-                        <li role="presentation"><a href="#ingamedescription" aria-controls="ingamedescription" role="tab" data-toggle="tab">In-game-description</a></li>
-                      </ul>
-                      <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="description">
-                          <div class="form-group">
-                            <textarea class="form-control"></textarea>
-                          </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="ingamedescription">
-                          <div class="form-group">
-                            <textarea class="form-control"></textarea>
-                          </div>
-                        </div>
+        <div class="card">
+          <div class="card__heading">
+            rodymol123
+          </div>
+          <div class="card__body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Identifier</th>
+                    <th colspan="2">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>balance</td>
+                    <td>Dropdown</td>
+                    <td>
+                      <div class="pull-right">
+                        <a href="#" class="btn btn-warning-inverted btn-xs">Edit</a>
+                        <button class="btn btn-danger-inverted btn-xs modalToggle" data-remote="deleteMarketModal.html">Delete</button>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="card__group">
-                    <div class="card__group__heading">Settings</div>
-
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Display type</label>
-                          <select class="form-control">
-                            <option value="1">Display items in a list with no images</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <label>Purchase limit</label>
-                          <input type="text" class="form-control" value="0">
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <label>GUI icon ID</label>
-                          <input type="text" class="form-control" placeholder="46 TNT icon in GUI">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="switch">
-                      <label>
-                        <input type="checkbox">
-                        <div class="lever"></div>
-                         Cumulate item purchases inside this category
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="switch">
-                      <label>
-                        <input type="checkbox">
-                        <div class="lever"></div>
-                        Delete pending expiry commands of other items in this category upon a new purchase
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="switch">
-                      <label>
-                        <input type="checkbox">
-                        <div class="lever"></div>
-                        Do not display this category in the subcategory drop down menu
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="switch">
-                      <label>
-                        <input type="checkbox">
-                        <div class="lever"></div>
-                        Enable this category.
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                </form>
-              </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   </div>
+
 
   <div class="modal" id="mainModal" tabindex="-1" role="dialog"></div>
 
