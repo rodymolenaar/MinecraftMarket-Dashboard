@@ -4,18 +4,17 @@
   "description": "",
   "main": "src/js/main.js",
   "dependencies": {
+    "bootstrap-datetimepicker": "0.0.7",
     "bootstrap-sass": "^3.3.6",
     "bootstrap-select": "^1.10.0",
     "font-awesome": "^4.6.1",
     "jquery": "^2.2.4",
-    "jquery-browserify": "^1.8.1",
     "jquery-ui": "^1.12.0",
+    "js-cookie": "^2.1.2",
     "justgage": "^1.2.2",
-    "lodash": "^4.13.1",
-    "material-datetime-picker": "^1.0.1",
+    "lodash": "^4.14.1",
     "material-design-iconic-font": "^2.2.0",
-    "moment": "^2.14.1",
-    "rome": "^2.1.22"
+    "moment": "^2.14.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

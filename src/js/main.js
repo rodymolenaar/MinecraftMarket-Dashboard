@@ -1,16 +1,17 @@
-// Non-ES6 supported
 
-global.jQuery = require("jquery");
-var $ = global.jQuery;
-require('jquery-ui');
-require('bootstrap-sass');
+/**
+ * First we will load all of this project's JavaScript dependencies.
+ */
 
-// ES6 supported
+require('./bootstrap');
 
-import 'bootstrap-select';
-import 'justgage';
-import './selectpicker';
-import './datetimepicker';
-import './toggles/menuToggle';
-import './toggles/modalToggle';
-import './toggles/categoryToggle';
+/**
+ * Then we will load all of this project's JavaScript components.
+ */
+
+require('./bootstrap-datetimepicker');
+require('./components/datetimepicker');
+require('./components/selectpicker');
+require('./components/toggles/menuToggle');
+require('./components/toggles/modalToggle');
+require('./components/toggles/categoryToggle');
