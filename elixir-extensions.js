@@ -13,7 +13,7 @@ Elixir.extend('fileinclude', function() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('./upload'))
+    .pipe(gulp.dest('./build'))
   })
   .watch(['./src/pages/**/*.html']);
 
