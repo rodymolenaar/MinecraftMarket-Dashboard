@@ -1,6 +1,6 @@
 var elixir = require('laravel-elixir');
 
-require('laravel-elixir-webpack-official');
+require('laravel-elixir-browserify-official');
 require('./elixir-extensions')
 
 /*
@@ -36,5 +36,5 @@ elixir(function(mix) {
        .copy(paths.fontawesome + 'fonts/**', 'build/dist/fonts/font-awesome')
        .copy(paths.mdif + 'dist/fonts/**', 'build/dist/fonts/material-design-iconic-font')
        .copy(paths.bootstrap + 'fonts/bootstrap/**', 'build/dist/fonts/bootstrap')
-       .webpack('main.js', 'build/dist/js/main.js');
+       .browserify('main.js', 'build/dist/js/main.js');
 });
