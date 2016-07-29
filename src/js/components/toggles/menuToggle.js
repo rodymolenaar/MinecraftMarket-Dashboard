@@ -1,4 +1,3 @@
-import $ from 'jquery';
 
 $(".menuToggle").click(function(e) {
   e.preventDefault();

@@ -1,11 +1,9 @@
-import $ from 'jquery';
-import getCookie from './../utils/getCookie';
 
 function toggleCategory(action) {
   $.ajax({
     type: 'POST',
     url: action,
-    headers: { 'HTTP_X_CSRFTOKEN': getCookie('csrftoken') }
+    headers: { 'HTTP_X_CSRFTOKEN': Cookies.get('csrftoken') }
   });
 }
 
