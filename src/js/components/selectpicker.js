@@ -1,20 +1,24 @@
 
 $(document).ready( function () {
 
-  $('.selectpicker').selectpicker({
-    iconBase: 'fa',
-    tickIcon: 'fa-check',
+  // console.log('Selectpickers initiating...');
+
+  $('.mm-selectpicker').selectpicker({
+    iconBase: 'zmdi',
+    tickIcon: 'zmdi-check',
     style: 'btn-select',
     width: 'fit',
     size: '7'
   });
 
-  $('.selectpicker-lg').selectpicker({
-    iconBase: 'fa',
-    tickIcon: 'fa-check',
+  $('.mm-selectpicker-lg').selectpicker({
+    iconBase: 'zmdi',
+    tickIcon: 'zmdi-check',
     style: 'btn-select btn-select--lg',
     width: 'fit',
     size: '7'
   });
+
+  // console.log('Selectpickers initiated!');
 
 });
