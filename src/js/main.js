@@ -21,5 +21,5 @@ require('./components/toggles/categoryToggle');
  * to ensure backwards compatibility for the meanwhile.
  */
 
- require('./old/admin.js');
- require('./old/dynamicforms.js');
+ require('./old/admin');
+ require('./old/dynamicforms');

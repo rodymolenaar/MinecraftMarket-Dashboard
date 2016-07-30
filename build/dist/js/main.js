@@ -37121,10 +37121,10 @@ require('./components/toggles/categoryToggle');
  * to ensure backwards compatibility for the meanwhile.
  */
 
-require('./old/admin.js');
-require('./old/dynamicforms.js');
+require('./old/admin');
+require('./old/dynamicforms');
 
-},{"./bootstrap":10,"./bootstrap-datetimepicker":9,"./components/datetimepicker":11,"./components/selectpicker":12,"./components/toggles/categoryToggle":13,"./components/toggles/menuToggle":14,"./components/toggles/modalToggle":15,"./old/admin.js":17,"./old/dynamicforms.js":18}],17:[function(require,module,exports){
+},{"./bootstrap":10,"./bootstrap-datetimepicker":9,"./components/datetimepicker":11,"./components/selectpicker":12,"./components/toggles/categoryToggle":13,"./components/toggles/menuToggle":14,"./components/toggles/modalToggle":15,"./old/admin":17,"./old/dynamicforms":18}],17:[function(require,module,exports){
 'use strict';
 
 $(document).ready(function () {
