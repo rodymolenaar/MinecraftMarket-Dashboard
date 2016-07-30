@@ -1,8 +1,9 @@
 {
-  "name": "minecraftmarket-design",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/js/main.js",
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
     "bootstrap-select": "^1.10.0",
