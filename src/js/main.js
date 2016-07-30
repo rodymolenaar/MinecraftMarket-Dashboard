@@ -15,3 +15,11 @@ require('./components/selectpicker');
 require('./components/toggles/menuToggle');
 require('./components/toggles/modalToggle');
 require('./components/toggles/categoryToggle');
+
+/**
+ * Here we'll include some JS from the old admin panel
+ * to ensure backwards compatibility for the meanwhile.
+ */
+
+ require('./old/admin.js');
+ require('./old/dynamicforms.js');
